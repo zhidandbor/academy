@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1834" viewBox="0 0 1120 1834" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Маршрут согласования заявки на материалы</title>
+<desc id="desc">Учебная схема для M9 с последовательностью согласования заявки на материалы, возвратом на доработку и финальным созданием задачи закупщику.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1834" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M480,336.2 L480,381.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M480,538.2 L480,583.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M480,740.2 L480,785.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M480,942.2 L480,987.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M480,1144.2 L480,1189.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M480,1346.2 L480,1391.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="remarks" d="M116,461.2 L64,461.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<path data-edge="true" data-relation="remarks" d="M116,663.2 L64,663.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<path data-edge="true" data-relation="remarks" d="M116,865.2 L64,865.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+<path data-edge="true" data-relation="return-to-author" d="M64,865.2 L64,259.2 L114,259.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arrow-red)"/>
+<path data-edge="true" data-relation="within-limit-bypass-manager" d="M844,663.2 L1040,663.2 L1040,1067.2 L846,1067.2" fill="none" stroke="#946019" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="120" y="185.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="205.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-2" data-card="true" x="120" y="387.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="407.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="120" y="589.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="609.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="120" y="791.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="811.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="120" y="993.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="1013.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-6" data-card="true" x="120" y="1195.2" width="720" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="1215.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-7" data-card="true" x="120" y="1397.2" width="720" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="1417.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="note-8" data-card="true" x="40" y="1577.2" width="1040" height="96" rx="14" fill="#fff3f4" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect id="note-9" data-card="true" x="40" y="1705.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M9 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Учебный маршрут согласования заявки на материалы</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">M9: пример процесса, который уже нельзя сводить только к одному роботу или триггеру</tspan>
+</text>
+<text data-owner="card-1" x="144" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">1. Автор: Мастер</tspan>
+</text>
+<text data-owner="card-1" x="144" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Создает заявку и прикладывает потребность</tspan>
+</text>
+<text data-owner="card-2" x="144" y="435.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">2. Проверка: ПТО</tspan>
+</text>
+<text data-owner="card-2" x="144" y="480.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Проверяет состав, объем и корректность позиций</tspan>
+</text>
+<text data-owner="card-3" x="144" y="637.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">3. Наличие: Снабжение</tspan>
+</text>
+<text data-owner="card-3" x="144" y="682.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Проверяет склад, резерв и потребность в закупке</tspan>
+</text>
+<text data-owner="card-4" x="144" y="839.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">4. Порог: Руководитель</tspan>
+</text>
+<text data-owner="card-4" x="144" y="884.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Подключается, если сумма выше лимита</tspan>
+</text>
+<text data-owner="card-5" x="144" y="1041.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">5. ОК: Согласовано</tspan>
+</text>
+<text data-owner="card-5" x="144" y="1086.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Фиксируется решение и запускается действие</tspan>
+</text>
+<text data-owner="card-6" x="144" y="1243.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">6. Действие: Задача закупщику</tspan>
+</text>
+<text data-owner="card-6" x="144" y="1288.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Робот создает задачу и передает контекст</tspan>
+</text>
+<text data-owner="card-7" x="144" y="1445.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">7. Уведомление: Автору заявки</tspan>
+</text>
+<text data-owner="card-7" x="144" y="1490.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="144" dy="0">Сообщаем статус, срок и следующий шаг</tspan>
+</text>
+<text data-owner="" x="874" y="809.2" font-size="18" font-weight="600" fill="#946019">
+<tspan x="874" dy="0">Сумма в</tspan>
+<tspan x="874" dy="25.2">пределах лимита</tspan>
+</text>
+<text data-owner="" x="874" y="903.2" font-size="18" font-weight="400" fill="#946019">
+<tspan x="874" dy="0">Сразу к</tspan>
+<tspan x="874" dy="25.2">согласованию</tspan>
+</text>
+<text data-owner="note-8" x="68" y="1617.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Возврат На доработку. Если есть замечания, маршрут идет автору. Красная ветка: возврат. На доработке</tspan>
+<tspan x="68" dy="28">важны комментарий, срок и новый вход в маршрут</tspan>
+</text>
+<text data-owner="note-9" x="68" y="1745.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Правило M9: согласование описываем как маршрут с ролями и возвратами, а создание задачи</tspan>
+<tspan x="68" dy="28">закупщику оставляем роботу как отдельное действие</tspan>
+</text>
+</g>
+</svg>

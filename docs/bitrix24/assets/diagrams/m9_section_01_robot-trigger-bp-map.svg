@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1312" viewBox="0 0 1120 1312" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Сравнение робота, триггера и бизнес-процесса</title>
+<desc id="desc">Учебная схема для M9, показывающая различия между роботом, триггером и бизнес-процессом, а также их совместную работу в одном сценарии.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1312" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,767 L560,802" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,895 L560,930" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,1055 L560,1090" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="185.2" width="328" height="412" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="205.2" width="4" height="372" rx="2" fill="#0b7285"/>
+<rect id="card-2" data-card="true" x="396" y="185.2" width="328" height="412" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="397" y="205.2" width="4" height="372" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="752" y="185.2" width="328" height="412" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="753" y="205.2" width="4" height="372" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="680" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="700" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="704" x2="330" y2="740" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="808" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="828" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="832" x2="330" y2="868" stroke="#bfd0dc"/>
+<rect id="card-6" data-card="true" x="40" y="936" width="1040" height="116" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="956" width="4" height="76" rx="2" fill="#0b7285"/>
+<line x1="330" y1="960" x2="330" y2="1028" stroke="#bfd0dc"/>
+<rect id="card-7" data-card="true" x="40" y="1096" width="1040" height="84" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="1116" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="1120" x2="330" y2="1156" stroke="#bfd0dc"/>
+<rect id="note-8" data-card="true" x="40" y="1212" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M9 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Робот, триггер и бизнес-процесс: что за что отвечает</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">M9: сначала описываем процесс, потом выбираем минимально достаточный инструмент</tspan>
+</text>
+<text data-owner="card-1" x="64" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Робот</tspan>
+</text>
+<text data-owner="card-1" x="64" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Выполняет действие</tspan>
+</text>
+<text data-owner="card-1" x="64" y="314.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Создать задачу</tspan>
+</text>
+<text data-owner="card-1" x="64" y="350.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Отправить уведомление</tspan>
+</text>
+<text data-owner="card-1" x="64" y="386.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Сменить ответственного</tspan>
+</text>
+<text data-owner="card-1" x="64" y="422.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Поставить задержку или</tspan>
+<tspan x="64" dy="28">контроль</tspan>
+</text>
+<text data-owner="card-1" x="64" y="486.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Когда использовать: На</tspan>
+<tspan x="64" dy="28">известной стадии, когда</tspan>
+<tspan x="64" dy="28">действие повторяется</tspan>
+</text>
+<text data-owner="card-2" x="420" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="420" dy="0">Триггер</tspan>
+</text>
+<text data-owner="card-2" x="420" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Реагирует на событие</tspan>
+</text>
+<text data-owner="card-2" x="420" y="314.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Ответ клиента</tspan>
+</text>
+<text data-owner="card-2" x="420" y="350.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Загрузка файла</tspan>
+</text>
+<text data-owner="card-2" x="420" y="386.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Закрытие связанной задачи</tspan>
+</text>
+<text data-owner="card-2" x="420" y="422.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Переход на следующую</tspan>
+<tspan x="420" dy="28">стадию</tspan>
+</text>
+<text data-owner="card-2" x="420" y="486.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Когда использовать: Когда</tspan>
+<tspan x="420" dy="28">нужно поймать событие и</tspan>
+<tspan x="420" dy="28">сдвинуть объект по процессу</tspan>
+</text>
+<text data-owner="card-3" x="776" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="776" dy="0">Бизнес-процесс</tspan>
+</text>
+<text data-owner="card-3" x="776" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Управляет маршрутом</tspan>
+</text>
+<text data-owner="card-3" x="776" y="314.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Несколько ролей</tspan>
+</text>
+<text data-owner="card-3" x="776" y="350.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Возврат на доработку</tspan>
+</text>
+<text data-owner="card-3" x="776" y="386.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Ветки решения и</tspan>
+<tspan x="776" dy="28">согласования</tspan>
+</text>
+<text data-owner="card-3" x="776" y="450.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Протокол прохождения</tspan>
+</text>
+<text data-owner="card-3" x="776" y="486.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Когда использовать: Когда</tspan>
+<tspan x="776" dy="28">одного шага мало и нужен</tspan>
+<tspan x="776" dy="28">управляемый маршрут</tspan>
+</text>
+<text data-owner="" x="40" y="651.2" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Как они работают вместе</tspan>
+</text>
+<text data-owner="card-4" x="64" y="728" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Событие в процессе</tspan>
+</text>
+<text data-owner="card-4" x="354" y="724" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Ответ клиента, файл, срок</tspan>
+</text>
+<text data-owner="card-5" x="64" y="856" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Триггер</tspan>
+</text>
+<text data-owner="card-5" x="354" y="852" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Распознает событие</tspan>
+</text>
+<text data-owner="card-6" x="64" y="984" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Стадия или</tspan>
+<tspan x="64" dy="33.599999999999994">маршрут</tspan>
+</text>
+<text data-owner="card-6" x="354" y="980" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Сдвиг объекта по логике</tspan>
+</text>
+<text data-owner="card-7" x="64" y="1144" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Робот или БП</tspan>
+</text>
+<text data-owner="card-7" x="354" y="1140" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Действие или согласование</tspan>
+</text>
+<text data-owner="note-8" x="68" y="1252" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Правило M9 Не автоматизировать хаос без схемы</tspan>
+</text>
+</g>
+</svg>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модуль M7. Базовая отчетность и метрики в Битрикс24</title>
+<link rel="stylesheet" href="assets/common/course-theme.css">
+<link rel="stylesheet" href="assets/pages/m7.css">
+<link rel="stylesheet" href="assets/common/module-components.css">
+<link rel="stylesheet" href="assets/common/module-layout.css">
+<link rel="stylesheet" href="assets/common/module-hero.css">
+<link rel="stylesheet" href="assets/common/course-refresh.css">
+</head>
+<body class="course-module">
+<a class="skip-link" href="#course-content">Перейти к содержанию</a>
+<div class="page">
+  <div class="topbar course-header course-header--module">
+      <div>
+        <strong>Курс Битрикс24 для сотрудников</strong>
+        <div class="module-meta">Модуль M7 · Расширенный уровень · Практика и самопроверка</div>
+      </div>
+      <div class="module-links course-nav course-nav--meta" role="navigation" aria-label="Модули курса">
+      <a href="course_bitrix24_v02_index.html">&#1050;&#1091;&#1088;&#1089;</a>
+      <a href="module_m1_bitrix24_v02.html">M1</a>
+      <a href="module_m2_bitrix24_v02.html">M2</a>
+      <a href="module_m3_bitrix24_v02.html">M3</a>
+      <a href="module_m4_bitrix24_v02.html">M4</a>
+      <a href="module_m5_bitrix24_v02.html">M5</a>
+      <a href="module_m6_bitrix24_v02.html">M6</a>
+      <span aria-current="page">M7</span>
+      <a href="module_m8_bitrix24_v02.html">M8</a>
+      <a href="module_m9_bitrix24_v02.html">M9</a>
+      <a href="module_m10_bitrix24_v02.html">M10</a>
+    </div>
+    </div>
+
+  <main>
+  <section class="hero hero--module">
+    <div class="hero-grid hero-grid--module">
+      <div class="module-hero-copy">
+        <h1 id="course-content" tabindex="-1">Базовая отчетность и метрики в Битрикс24</h1>
+        <p class="lead">Этот модуль учит не просто открывать отчеты, а превращать данные по задачам и проектам в управленческое действие: видеть просрочки, находить задачи без движения, оценивать загрузку команды и формулировать короткий вывод для планерки.</p>
+        <div class="nav-card nav-card--module-intro">
+          <h2>Навигация по модулю</h2>
+          <nav class="section-nav course-nav course-nav--section" aria-label="Разделы модуля">
+      <a href="#management">Отчетность как инструмент</a>
+      <a href="#data-quality">Качество данных</a>
+      <a href="#basic-reports">Базовые отчеты</a>
+      <a href="#report-types">Стандартные и персональные</a>
+      <a href="#metrics">Метрики</a>
+      <a href="#practice">Практика чтения</a>
+      <a href="#bi">BI Конструктор</a>
+      <a href="#route">Сквозная практика</a>
+      <a href="#whatif">Что делать, если…</a>
+      <a href="#mistakes">Ошибки</a>
+      <a href="#test">Самопроверка</a>
+      <a href="#final-task">Итоговое задание</a>
+      <a href="#next">&#1063;&#1090;&#1086; &#1076;&#1072;&#1083;&#1100;&#1096;&#1077;</a>
+      <a href="#sources">&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;</a>
+    </nav>
+        </div>
+      </div>
+      <div class="module-hero-side">
+        <div class="info-card">
+        <h3>Что важно понять в M7</h3>
+        <p>Отчет в Битрикс24 нужен не для витрины цифр. Его задача — показать отклонение, помочь проверить причину и дать основание для действия.</p>
+
+      </div>
+        <div class="info-card">
+          <h3>Результат прохождения</h3>
+          <p>сотрудник умеет открыть базовый отчет, применить фильтры, увидеть риски и предложить действие</p>
+        </div>
+              <div class="info-card module-remember-panel">
+          <h3>Что стоит запомнить</h3>
+          <div class="remember-grid">
+      <div class="important">
+          <div class="label">Главная формула M7</div>
+          <p><strong>Хорошая отчетность = корректные задачи + понятные фильтры + 4–6 метрик + управленческий вывод.</strong></p>
+        </div>
+      <div class="warning">
+          <div class="label">Критично</div>
+          <p>Если задачи ведутся формально, без сроков, актуальных статусов и комментариев, отчет будет показывать не рабочую картину, а хаос в данных.</p>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+  </section>
+
+  <section class="section-card module-passport-card">
+    <h2>Паспорт модуля</h2>
+    <div class="passport-grid">
+      <div class="mini-card passport-card"><h3 class="card-heading">Место в курсе</h3><p>после M4, M5 и M6</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Входной уровень</h3><p>пользователь умеет работать с задачами, проектами, сроками и статусами</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Целевая аудитория</h3><p>сотрудники, руководители, ПТО, РП, координаторы проектов</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Итоговый результат</h3><p>сотрудник умеет открыть базовый отчет, применить фильтры, увидеть риски и предложить действие</p></div>
+    </div>
+    <div class="success passport-result-card">
+      <div class="label">Ожидаемый результат обучения</div>
+      <p>сотрудник умеет открыть базовый отчет, применить фильтры, увидеть риски и предложить действие</p>
+    </div>
+  </section>
+
+  <aside class="note" aria-label="В работе">
+    <p>В BI Конструкторе сверяйте период, права доступа, время обновления и определение каждого показателя.</p>
+  </aside>
+
+  <section class="section-card" id="management">
+    <h2>1. Отчетность как управленческий инструмент</h2>
+    <p>В M7 важно развести четыре сущности: отчет, метрика, вывод и действие. Пока пользователь не понимает эту связку, он либо смотрит на цифры без пользы, либо пытается оценивать людей только по количеству задач.</p>
+
+    <div class="process-shell">
+      <div class="process-head"><span>Центральная модель M7</span><span>Вопрос → отчет → метрика → вывод → действие</span></div>
+      <div class="process-body">
+        <div class="workflow-strip">
+          <div class="flow-box"><strong>Вопрос</strong><p>Что нужно понять по объекту, сотруднику или подразделению?</p></div>
+          <div class="flow-box"><strong>Отчет</strong><p>Где это посмотреть: список задач, отчет по сотруднику, проекту, срокам?</p></div>
+          <div class="flow-box"><strong>Метрика</strong><p>Какой показатель дает сигнал: просрочки, без движения, без срока, загрузка?</p></div>
+          <div class="flow-box"><strong>Вывод</strong><p>Что означает отклонение: риск, блокер, неверный срок, перегрузка?</p></div>
+          <div class="flow-box"><strong>Действие</strong><p>Что делаем: уточняем, перераспределяем, меняем сроки, поднимаем эскалацию?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m7_section_01_question-to-action.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m7_section_01_question-to-action.svg" alt="Учебная схема вопрос отчет метрика вывод действие для модуля M7" width="1120" height="942"></a>
+      <figcaption><strong>Рисунок M7-01.</strong> Учебная схема основной логики M7: управленческий вопрос переводит пользователя к нужному отчету, затем к метрике, короткому выводу и конкретному действию. Визуал нужен, чтобы с самого начала закрепить главный принцип модуля: отчетность ценна только тогда, когда заканчивается решением, а не просмотром цифр. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Отчетность как управленческий инструмент: Вопрос / Где смотреть / Метрика / Что делать">
+<table aria-label="Отчетность как управленческий инструмент: Вопрос / Где смотреть / Метрика / Что делать">
+      <thead>
+        <tr>
+          <th scope="col">Вопрос</th>
+          <th scope="col">Где смотреть</th>
+          <th scope="col">Метрика</th>
+          <th scope="col">Что делать</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Какие задачи горят?</td>
+          <td>Мои задачи / задачи проекта</td>
+          <td>Просроченные задачи</td>
+          <td>Уточнить причины, обновить сроки, проверить блокеры</td>
+        </tr>
+        <tr>
+          <td>Кто перегружен?</td>
+          <td>Отчет по сотрудникам</td>
+          <td>Активные задачи + просрочки</td>
+          <td>Перераспределить часть задач, уточнить приоритеты</td>
+        </tr>
+        <tr>
+          <td>Где объект буксует?</td>
+          <td>Отчет по проекту</td>
+          <td>Задачи без движения</td>
+          <td>Проверить сообщения в чате и результаты задачи, найти зависимость или блокер</td>
+        </tr>
+        <tr>
+          <td>Насколько команда дисциплинирована?</td>
+          <td>Отчет по срокам</td>
+          <td>Выполнение в срок</td>
+          <td>Пересмотреть постановку задач и ритм контроля</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="compare-grid">
+      <div class="compare-card bad">
+        <h3 class="card-heading">Неправильный подход</h3>
+        <ul>
+          <li>Смотреть на много показателей сразу без вопроса.</li>
+          <li>Судить о сотруднике только по количеству задач.</li>
+          <li>Считать, что любая просрочка означает плохую работу.</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h3 class="card-heading">Правильный подход</h3>
+        <ul>
+          <li>Сначала формулировать вопрос, потом выбирать отчет.</li>
+          <li>Проверять отклонение вручную на нескольких задачах.</li>
+          <li>Связывать цифру с действием, а не с формальной оценкой.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="label">Практический вывод</div>
+      <p>Отчетность в Bitrix24 — это инструмент диагностики. Она помогает принять решение по срокам, нагрузке и рискам, а не заменить здравый смысл, разговор с командой и проверку проблемной задачи.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="data-quality">
+    <h2>2. Качество данных: почему отчет может врать</h2>
+    <p>Любая отчетность зависит от того, насколько качественно ведутся задачи. Если в задачах нет дисциплины, цифры становятся красивыми или страшными, но бесполезными для управления.</p>
+
+    <div class="trouble">
+      <div class="label">Ключевая мысль</div>
+      <p><strong>Плохие задачи искажают отчетность.</strong> Задачи без сроков, без результата, со старыми статусами и без комментариев создают ложную картину состояния проекта.</p>
+    </div>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">Без срока</h3><p>Невозможно понять риск по срокам и расставить приоритеты.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Формальный срок</h3><p>Просрочка возникает не из-за работы, а из-за неправильной постановки.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Неактуальный статус</h3><p>Отчет показывает задержку, хотя работа уже движется или завершена.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Нет сообщений о ходе работы</h3><p>Нельзя отделить блокер, зависимость и просто забытые задачи.</p></div>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Качество данных: почему отчет может врать: Что искажает отчет / К чему это приводит / Что делать">
+<table aria-label="Качество данных: почему отчет может врать: Что искажает отчет / К чему это приводит / Что делать">
+      <thead>
+        <tr>
+          <th scope="col">Что искажает отчет</th>
+          <th scope="col">К чему это приводит</th>
+          <th scope="col">Что делать</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Задачи без срока</td>
+          <td>Нет контроля по дедлайнам</td>
+          <td>Вернуть постановщику на уточнение или согласовать срок</td>
+        </tr>
+        <tr>
+          <td>Закрытие без результата</td>
+          <td>Кажется, что работа завершена, но результат не подтвержден</td>
+          <td>Фиксировать итог в результатах задачи, включая отмеченные сообщения из ее чата</td>
+        </tr>
+        <tr>
+          <td>Задачи вне проекта</td>
+          <td>Объектный отчет неполный</td>
+          <td>Привязать задачи к проекту или рабочей группе</td>
+        </tr>
+        <tr>
+          <td>Дубли и «мешок-задачи»</td>
+          <td>Нагрузка искажается, анализ становится нечестным</td>
+          <td>Дробить крупные задачи и убирать дубли</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="task-card level2">
+      <div class="task-title">Мини-задание</div>
+      <p>Возьмите 10 задач по своему проекту и проверьте: у всех ли есть срок, понятный результат, актуальный статус и комментарий по задержке, если задача просрочена.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="basic-reports">
+    <h2>3. Базовые отчеты по задачам: с чего начинать</h2>
+    <p>Откройте <strong>Задачи → Ещё → Отчеты</strong>. Если пункта нет, проверьте права и доступность инструмента у администратора. <a href="https://helpdesk.bitrix24.ru/open/28872226/" target="_blank" rel="noopener">Актуальная справка по отчетам задач</a>.</p>
+    <p>На старте сотруднику и руководителю не нужен сложный BI-слой. Достаточно уверенно работать с несколькими базовыми отчетами и фильтрами, которые отвечают на повседневные вопросы управления.</p>
+
+    <div class="report-grid">
+      <div class="mini-card">
+        <h3 class="card-heading">Мои задачи</h3>
+        <p>Подходят для личного контроля: что просрочено, что на сегодня, где нет движения, что без срока.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Отчет по сотруднику</h3>
+        <p>Нужен, чтобы сравнивать активную нагрузку, просрочки и объем задач 2–3 исполнителей.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Отчет по проекту / объекту</h3>
+        <p>Показывает состояние задач в рамках одного контра: сроки, узкие места, проблемные этапы.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Отчет по срокам</h3>
+        <p>Помогает увидеть, насколько команда выполняет задачи в срок и где падает дисциплина планирования.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-02.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-02.webp" alt="Переход к отчетам по задачам через меню «Ещё»" width="3840" height="2172"></a>
+        <figcaption><strong>Рисунок M7-02.</strong> Переход к отчетам по задачам через меню «Ещё». <a href="https://helpdesk.bitrix24.ru/open/28872226/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-03.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-03.webp" alt="Список стандартных и пользовательских отчетов по задачам" width="3840" height="2172"></a>
+        <figcaption><strong>Рисунок M7-03.</strong> Список стандартных и пользовательских отчетов по задачам. <a href="https://helpdesk.bitrix24.ru/open/28872226/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="report-shell">
+      <div class="report-head"><span>Учебный макет отчета</span><span>Путь: Задачи → Еще → Отчеты</span></div>
+      <div class="report-body">
+        <div class="report-layout">
+          <div class="report-side">
+            <h3 class="card-heading u-mt-0">Фильтры</h3>
+            <ul>
+              <li>Период: последние 2–4 недели</li>
+              <li>Проект / объект</li>
+              <li>Ответственный</li>
+              <li>Статус</li>
+              <li>Только активные / просроченные</li>
+            </ul>
+          </div>
+          <div class="report-main">
+            <div class="metric-strip">
+              <div class="metric-box"><strong>Активные</strong><span>42</span></div>
+              <div class="metric-box"><strong>Просрочено</strong><span class="bad">9</span></div>
+              <div class="metric-box"><strong>Без движения</strong><span class="warn">6</span></div>
+              <div class="metric-box"><strong>В срок</strong><span class="good">68%</span></div>
+            </div>
+            <div class="bar-row"><div>ПТО</div><div class="bar-track"><div class="bar-fill bad bar-fill--pto"></div></div><div>18</div></div>
+            <div class="bar-row"><div>Производство работ</div><div class="bar-track"><div class="bar-fill warn bar-fill--production"></div></div><div>14</div></div>
+            <div class="bar-row"><div>Снабжение</div><div class="bar-track"><div class="bar-fill good bar-fill--supply"></div></div><div>8</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="success">
+      <div class="label">Практическое правило</div>
+      <p>Если задача обучения M7 — уверенно видеть риски, начните с 4–6 показателей и повторяемого набора фильтров. Не пытайтесь с первого раза строить большой аналитический портрет подразделения.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="report-types">
+    <h2>4. Стандартные и персональные отчеты</h2>
+    <p>В Bitrix24 полезно разделять готовые стандартные отчеты и персональные отчеты, которые вы настраиваете под свои вопросы. Это помогает не перегружать новичка и при этом не упираться в ограничения базового набора.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Стандартные отчеты</h3>
+        <p>Это готовые read-only отчеты Bitrix24. Их нельзя править напрямую, но можно копировать, экспортировать и использовать как отправную точку.</p>
+        <ul>
+          <li>Tasks this month</li>
+          <li>Tasks for last month</li>
+          <li>Efficiency report</li>
+          <li>Involvement in projects</li>
+          <li>Task resource tracking</li>
+          <li>Employee resource tracking</li>
+        </ul>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Персональные отчеты</h3>
+        <p>Настраиваются под конкретный вопрос: период, проект, статус, колонки, сортировка и нужный набор показателей для вашей роли или планерки.</p>
+        <ul>
+          <li>Отчет по одному объекту</li>
+          <li>Срез по сотруднику</li>
+          <li>Контроль просрочек за неделю</li>
+          <li>Краткий отчет для руководителя</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-04.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-04.jpg" alt="Фильтр отчета: выбор периода и проекта для анализа" width="2436" height="1402"></a>
+        <figcaption><strong>Рисунок M7-04.</strong> Фильтр отчета: выбор периода и проекта для анализа. <a href="https://helpdesk.bitrix24.ru/open/18268586/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-05.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-05.webp" alt="Конструктор отчета: период, колонки и условия отбора данных" width="3840" height="2172"></a>
+        <figcaption><strong>Рисунок M7-05.</strong> Конструктор отчета: период, колонки и условия отбора данных. <a href="https://helpdesk.bitrix24.ru/open/28872226/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Стандартные и персональные отчеты: Вопрос / Что взять на старте / Когда переходить к персональному отчету">
+<table aria-label="Стандартные и персональные отчеты: Вопрос / Что взять на старте / Когда переходить к персональному отчету">
+      <thead>
+        <tr>
+          <th scope="col">Вопрос</th>
+          <th scope="col">Что взять на старте</th>
+          <th scope="col">Когда переходить к персональному отчету</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Что происходит с задачами в этом месяце?</td>
+          <td>Стандартный отчет по задачам месяца</td>
+          <td>Когда нужен отдельный фильтр по объекту или подразделению</td>
+        </tr>
+        <tr>
+          <td>Кто перегружен?</td>
+          <td>Resource tracking</td>
+          <td>Когда важно сравнить конкретные роли или команду объекта</td>
+        </tr>
+        <tr>
+          <td>Насколько команда эффективна?</td>
+          <td>Efficiency report</td>
+          <td>Когда нужен свой набор колонок и учет локальных правил</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="task-card level3">
+      <div class="task-title">Практика настройки отчета</div>
+      <p>Для одного учебного объекта соберите персональный отчет: выберите период, добавьте проектный фильтр, оставьте только нужные колонки, отсортируйте по риску и сохраните шаблон для повторного использования.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="metrics">
+    <h2>5. Базовые метрики M7</h2>
+    <div class="note"><p><strong>Учебное определение «в срок».</strong> Для этого курса доля равна числу задач, завершенных не позже согласованного дедлайна, деленному на число завершенных за тот же период задач с дедлайном. При нулевом знаменателе пишем «нет данных». Задачи без срока показываем отдельно. Не подменяйте этой формулой встроенную «Эффективность»: у нее свое определение. Прежде чем сравнивать отчеты, согласуйте период, поле даты и правила учета переносов. <a href="https://helpdesk.bitrix24.ru/open/18195312/" target="_blank" rel="noopener">Что означают поля стандартного отчета</a>.</p></div>
+    <p>Метрика — это не итоговый ответ, а сигнал на проверку. Хороший набор для M7 — 4–6 показателей, которые легко объяснить команде и привязать к действию.</p>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <h3 class="card-heading">Выполнение в срок</h3>
+        <p>Показывает дисциплину планирования и качество постановки задач.</p>
+      </div>
+      <div class="metric-card">
+        <h3 class="card-heading">Просроченные задачи</h3>
+        <p>Сигнал о риске по срокам, но не автоматический ярлык плохой работы.</p>
+      </div>
+      <div class="metric-card">
+        <h3 class="card-heading">Активная загрузка</h3>
+        <p>Нужна для оценки перегрузки и баланса между сотрудниками.</p>
+      </div>
+      <div class="metric-card">
+        <h3 class="card-heading">Задачи без движения</h3>
+        <p>Помогают находить забытые, зависшие и блокированные задачи.</p>
+      </div>
+      <div class="metric-card">
+        <h3 class="card-heading">Задачи без срока</h3>
+        <p>Показывают слабое место в постановке и управлении дедлайнами.</p>
+      </div>
+      <div class="metric-card">
+        <h3 class="card-heading">Завершено за период</h3>
+        <p>Помогает видеть ритм закрытия задач и сравнивать его с нагрузкой.</p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m7_section_05_overdue-risk-chart.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m7_section_05_overdue-risk-chart.svg" alt="Учебный столбчатый график просроченных задач по контурам работы" width="1120" height="1014"></a>
+        <figcaption><strong>Рисунок M7-06.</strong> Учебный график просроченных задач по нескольким рабочим контурам. В модуле он нужен не как пример реальной отчетности компании, а как безопасный учебный сигнал: высокая просрочка указывает, где руководителю надо проверить причины, а не делать выводы только по числу задач. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m7_section_05_workload-balance-chart.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m7_section_05_workload-balance-chart.svg" alt="Учебный горизонтальный график активной загрузки сотрудников" width="1120" height="858"></a>
+        <figcaption><strong>Рисунок M7-07.</strong> Учебный график активной загрузки сотрудников с порогом перегрузки. Этот визуал помогает объяснить одну из ключевых метрик M7: загрузку читают как сигнал к перераспределению приоритетов и задач, а не как соревнование по количеству карточек. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m7_section_05_ontime-completion-chart.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m7_section_05_ontime-completion-chart.svg" alt="Учебный линейный график выполнения задач в срок по неделям" width="1120" height="794"></a>
+        <figcaption><strong>Рисунок M7-08.</strong> Учебный график динамики выполнения задач в срок по неделям. Он нужен, чтобы закрепить правильную интерпретацию метрики: снижение процента в срок требует анализа постановки задач, ритма контроля и загрузки команды, а не мгновенной оценки людей. Источник: создано внутри проекта.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <div class="label">Важно</div>
+      <p>Все три графика выше учебные. Они созданы внутри проекта как безопасные примеры чтения сигналов и не отражают реальные данные какой-либо компании.</p>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Базовые метрики M7: Метрика / Что спрашиваем / Что проверяем вручную / Типовое действие">
+<table aria-label="Базовые метрики M7: Метрика / Что спрашиваем / Что проверяем вручную / Типовое действие">
+      <thead>
+        <tr>
+          <th scope="col">Метрика</th>
+          <th scope="col">Что спрашиваем</th>
+          <th scope="col">Что проверяем вручную</th>
+          <th scope="col">Типовое действие</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Просрочки</td>
+          <td>Что горит?</td>
+          <td>Есть ли комментарий, блокер, согласованный перенос?</td>
+          <td>Уточнить причину, обновить срок, снять блокер</td>
+        </tr>
+        <tr>
+          <td>Без движения</td>
+          <td>Что зависло?</td>
+          <td>Когда был последний комментарий или изменение?</td>
+          <td>Связаться с ответственным, проверить зависимость</td>
+        </tr>
+        <tr>
+          <td>Без срока</td>
+          <td>Что неуправляемо?</td>
+          <td>Нужен ли срок и кто должен его поставить?</td>
+          <td>Вернуть задачу на уточнение</td>
+        </tr>
+        <tr>
+          <td>Активная загрузка</td>
+          <td>Кто перегружен?</td>
+          <td>Какие задачи действительно приоритетны?</td>
+          <td>Перераспределить нагрузку</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </section>
+
+  <section class="section-card" id="practice">
+    <h2>6. Практика чтения отчета и управленческого вывода</h2>
+    <p>Ниже — рабочий набор упражнений, который переводит M7 из теоретического модуля в прикладной. Здесь важно не просто посмотреть цифры, а научиться формулировать короткий вывод по схеме: статус → риски → причины → действия.</p>
+
+    <h3>Три уровня практики</h3>
+    <div class="grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Личный контроль</div>
+        <p>Открыть свои задачи, найти просрочки, задачи на сегодня, задачи без срока и сформулировать 3 приоритета на день.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Рабочее действие</div>
+        <p>Открыть отчет по проекту, выбрать период, определить просрочки, найти задачи без движения и подготовить краткий вывод.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Управленческое применение</div>
+        <p>Собрать отчет для планерки, выбрать 4–6 метрик, проверить проблемные задачи и предложить корректирующие действия.</p>
+      </div>
+    </div>
+
+    <h3>Практика 1. Отчет или метрика?</h3>
+    <div class="result-card">
+      <ol>
+        <li>Список задач по объекту за апрель.</li>
+        <li>Процент выполнения задач в срок.</li>
+        <li>Количество просроченных задач по сотруднику.</li>
+        <li>Таблица задач ПТО за неделю.</li>
+        <li>Доля задач без движения.</li>
+        <li>Дашборд по проектам.</li>
+      </ol>
+      <p><strong>Подсказка:</strong> отчет — это форма представления данных, а метрика — отдельный показатель внутри этой формы.</p>
+    </div>
+
+    <h3>Практика 2. Метрика → действие</h3>
+    <div class="result-card">
+      <ol>
+        <li>У сотрудника 28 активных задач и 7 просрочек.</li>
+        <li>По объекту 6 задач без движения больше 7 дней.</li>
+        <li>Выполнение в срок упало с 80% до 55%.</li>
+        <li>В отчете много задач без срока.</li>
+        <li>Один проект забирает 70% загрузки команды.</li>
+      </ol>
+      <p><strong>Задача:</strong> для каждой ситуации предложите проверку причины и конкретное управленческое действие.</p>
+    </div>
+
+    <h3>Практика 3. Короткий отчет по объекту</h3>
+    <div class="template-box">Объект:
+Период:
+Всего активных задач:
+Просрочено:
+Без движения:
+Завершено в срок:
+Основной риск:
+Причина:
+Что делаем:
+Кто отвечает:
+Дата повторной проверки:</div>
+
+    <div class="case">
+      <div class="label">Практический совет</div>
+      <p>Хороший короткий отчет не пересказывает весь список задач. Он показывает руководителю состояние объекта и подсказывает, что делать дальше.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="bi">
+    <h2>7. BI Конструктор как продвинутый уровень</h2>
+    <div class="important"><div class="label">BI Конструктор: свежесть и доступ</div><p>Отчеты BI Конструктора используют кеш: данные после открытия могут сохраняться на час. При расхождении со списком задач проверьте период, права, фильтры и время обновления. При наличии прав обновите данные в общих настройках конструктора. Практика: запишите время обновления отчета и сверяйте показатель на трех конкретных задачах. <a href="https://helpdesk.bitrix24.ru/open/24352300/" target="_blank" rel="noopener">Официальные ответы об обновлении данных</a>.</p></div>
+    <p>BI Конструктор нужен не вместо базовых отчетов, а после них. Пока команда не научилась работать с качеством задач, фильтрами и короткими управленческими выводами, сложный BI-уровень только увеличит шум.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Когда BI Конструктор уже нужен</h3>
+        <ul>
+          <li>Нужны дашборды для нескольких руководителей.</li>
+          <li>Требуется объединять несколько наборов данных.</li>
+          <li>Нужны более гибкие графики и визуальные срезы.</li>
+          <li>Базовых отчетов уже не хватает для регулярной аналитики.</li>
+        </ul>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Что новичку пока не нужно</h3>
+        <ul>
+          <li>SQL-запросы и сложные объединения датасетов.</li>
+          <li>Глубокая BI-архитектура.</li>
+          <li>Сложные KPI-модели ради самих моделей.</li>
+          <li>Сторонние BI-системы как обязательный этап.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-09.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-09.jpg" alt="BI Конструктор: каталог отчетов для анализа рабочих данных" width="1916" height="1086"></a>
+        <figcaption><strong>Рисунок M7-09.</strong> BI Конструктор: каталог отчетов для анализа рабочих данных. <a href="https://helpdesk.bitrix24.ru/open/19498394/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-10.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-10.jpg" alt="Раздел датасетов в BI Конструкторе: выбор набора данных для отчета" width="1280" height="738"></a>
+        <figcaption><strong>Рисунок M7-10.</strong> Раздел датасетов в BI Конструкторе: выбор набора данных для отчета. <a href="https://helpdesk.bitrix24.ru/open/19498394/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m7-img-11.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m7-img-11.jpg" alt="Создание графика по набору данных task: выбор датасета и типа визуализации" width="1280" height="733"></a>
+        <figcaption><strong>Рисунок M7-11.</strong> Создание графика по набору данных task: выбор датасета и типа визуализации. <a href="https://helpdesk.bitrix24.ru/open/23951190/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="dashboard-shell">
+      <div class="dashboard-head"><span>Что важно знать о datasets</span><span>Продвинутый блок</span></div>
+      <div class="dashboard-body">
+        <p>На следующем уровне вы будете работать с наборами данных по задачам и проектам: <code>task</code>, <code>task_stages</code>, <code>task_efficiency</code>, <code>flow</code>, <code>socialnetwork_group</code> и другими. Но для M7 достаточно понимать, что BI Конструктор — это отдельный слой аналитики, а не обязательный первый шаг.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="route">
+    <h2>8. Сквозная практика: «От списка задач к управленческому выводу»</h2>
+    <p>Этот сценарий связывает весь модуль M7 в единый маршрут и показывает полный цикл работы с базовой отчетностью.</p>
+
+    <div class="route">
+      <div class="step-card"><div class="step-no route-step__index">1</div><h3 class="card-heading">Берем список задач</h3><p>Определяем объект, сотрудника или подразделение для анализа.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">2</div><h3 class="card-heading">Настраиваем фильтры</h3><p>Выбираем период, проект, ответственных, статусы и нужный тип задач.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">3</div><h3 class="card-heading">Читаем метрики</h3><p>Смотрим на 4–6 показателей: просрочки, без движения, без срока, загрузку, выполнение в срок.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">4</div><h3 class="card-heading">Выбираем сигнал</h3><p>Определяем главное отклонение, которое требует проверки.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">5</div><h3 class="card-heading">Проверяем вручную</h3><p>Открываем 2–3 проблемные задачи и смотрим реальные причины.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">6</div><h3 class="card-heading">Формулируем вывод</h3><p>Пишем: статус, риски, причины, действия.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">7</div><h3 class="card-heading">Назначаем действие</h3><p>Перераспределяем, уточняем сроки, возвращаем задачи на доработку или эскалируем.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">8</div><h3 class="card-heading">Проверяем повторно</h3><p>Фиксируем дату следующего обзора и сравниваем результат.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="whatif">
+    <h2>9. Что делать, если…</h2>
+
+    <details>
+      <summary>Если отчет показывает много просрочек</summary>
+      <div>
+        <p>Разделите просрочки на критичные, технические, зависимые и вызванные плохой постановкой. Не все просрочки одинаковы по смыслу и реакции.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если у задач нет сроков</summary>
+      <div>
+        <p>Верните такие задачи постановщикам на уточнение или согласуйте сроки с ответственными. Без срока задача не должна участвовать в нормальной отчетности.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если сотрудник перегружен</summary>
+      <div>
+        <p>Проверьте приоритеты, реальную активность по задачам и возможность перераспределения. Не ограничивайтесь выводом «у него много задач».</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если в отчете много задач без движения</summary>
+      <div>
+        <p>Проверьте последний комментарий, наличие блокера, зависимость от другого подразделения и адекватность постановки задачи.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если цифры кажутся неправильными</summary>
+      <div>
+        <p>Сначала проверьте период, фильтры, статусы и привязку к проекту. Часто ошибка не в отчете, а в настройке выборки.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если руководитель смотрит слишком много показателей</summary>
+      <div>
+        <p>Сократите набор до 4–6 метрик, которые можно обсудить на планерке и превратить в действие.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если отчет не приводит к решениям</summary>
+      <div>
+        <p>Добавьте обязательный финальный блок: статус, риск, причина, действие и дата повторной проверки.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если стандартного отчета недостаточно</summary>
+      <div>
+        <p>Скопируйте стандартный отчет, настройте персональный вариант или переходите к BI Конструктору как к следующему уровню, а не к первому шагу.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="mistakes">
+    <h2>10. Типичные ошибки в отчетности</h2>
+    <div class="grid-2">
+      <div class="trouble"><div class="label">Ошибка 1</div><p>Смотреть на отчет без заранее сформулированного вопроса.</p></div>
+      <div class="trouble"><div class="label">Ошибка 2</div><p>Судить о сотруднике только по числу задач без учета сложности, контекста и результата.</p></div>
+      <div class="trouble"><div class="label">Ошибка 3</div><p>Верить любой просрочке, не открывая задачу и не проверяя реальную причину.</p></div>
+      <div class="trouble"><div class="label">Ошибка 4</div><p>Использовать слишком много показателей, которые не приводят к решениям.</p></div>
+      <div class="trouble"><div class="label">Ошибка 5</div><p>Не проверять качество данных: статусы, сроки, проектную привязку, комментарии.</p></div>
+      <div class="trouble"><div class="label">Ошибка 6</div><p>Не сохранять рабочий фильтр или шаблон отчета, из-за чего анализ каждый раз начинается заново.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="test">
+    <h2>11. Самопроверка</h2>
+    <p>Ниже — вопросы на понимание логики M7. Они проверяют не знание названий кнопок, а способность читать отчет и превращать его в решение.</p>
+
+    <div class="result-card">
+      <h3 class="card-heading">Вопросы</h3>
+      <ol>
+        <li>Чем отчет отличается от метрики?</li>
+        <li>Для чего нужен отчет по задачам?</li>
+        <li>Что чаще всего искажает отчетность?</li>
+        <li>Какая метрика показывает риск срыва сроков?</li>
+        <li>Как увидеть перегрузку сотрудника?</li>
+        <li>Что делать с задачами без движения?</li>
+        <li>Почему нельзя оценивать сотрудника только по количеству задач?</li>
+        <li>Что должен содержать короткий вывод по объекту?</li>
+        <li>Когда достаточно стандартного отчета?</li>
+        <li>Когда стоит переходить к BI Конструктору?</li>
+      </ol>
+    </div>
+
+    <details>
+      <summary>Проверить свои ответы</summary>
+      <div>
+        <ol>
+          <li>Отчет — это форма представления данных, метрика — конкретный показатель внутри нее.</li>
+          <li>Чтобы увидеть состояние работы, риск и принять действие, а не просто получить таблицу.</li>
+          <li>Некачественные задачи: без сроков, со старыми статусами, без комментариев и вне проекта.</li>
+          <li>Просроченные задачи и падение выполнения в срок.</li>
+          <li>Посмотреть активные задачи вместе с просрочками и проверить реальные приоритеты.</li>
+          <li>Проверить последние действия, комментарии, блокеры и ответственного.</li>
+          <li>Потому что число задач без контекста не показывает сложность, качество работы и внешние зависимости.</li>
+          <li>Статус, риски, причины, действия и дату повторной проверки.</li>
+          <li>Когда готовый набор метрик уже отвечает на рабочий вопрос без сложной настройки.</li>
+          <li>Когда базовых отчетов и фильтров уже не хватает для регулярной аналитики и дашбордов.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="final-task">
+    <h2>12. Итоговое практическое задание</h2>
+    <p><strong>Сценарий:</strong> по учебному объекту или реальному проекту нужно подготовить краткий отчет для планерки так, чтобы руководитель сразу увидел состояние, риски и необходимые действия.</p>
+
+    <ol>
+      <li>Выберите объект или проект.</li>
+      <li>Задайте период анализа: последние 2–4 недели.</li>
+      <li>Откройте отчет или список задач.</li>
+      <li>Отфильтруйте задачи по проекту.</li>
+      <li>Найдите активные, просроченные, без движения, без срока и завершенные задачи.</li>
+      <li>Оцените загрузку сотрудников.</li>
+      <li>Выберите 4–6 ключевых метрик.</li>
+      <li>Проверьте вручную 3 проблемные задачи.</li>
+      <li>Сформулируйте вывод: статус, риски, причины, действия.</li>
+      <li>Сохраните фильтр или шаблон отчета.</li>
+      <li>Укажите дату повторной проверки.</li>
+    </ol>
+
+    <h3>Критерии успешного прохождения</h3>
+    <ul class="checklist">
+      <li>Сотрудник понимает различие между отчетом, метрикой и выводом.</li>
+      <li>Сотрудник умеет открыть базовый отчет по задачам и настроить фильтры.</li>
+      <li>Сотрудник умеет находить просрочки, задачи без движения и задачи без срока.</li>
+      <li>Сотрудник понимает, как оценивать загрузку без поверхностных выводов.</li>
+      <li>Сотрудник умеет подготовить короткий управленческий вывод для планерки.</li>
+      <li>Сотрудник понимает, когда достаточно базовой отчетности, а когда нужен BI Конструктор.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="next">
+    <h2>13. Что дальше в курсе</h2>
+    <ul class="next-list">
+      <li><strong>Связка с M4:</strong> без качественной постановки задач хорошей отчетности не будет.</li>
+      <li><strong>Связка с M5:</strong> проекты и сроки дают контур, внутри которого отчетность становится осмысленной.</li>
+      <li><strong>Следующий уровень:</strong> после уверенной работы с базовыми отчетами можно переходить к продвинутой аналитике в BI Конструкторе.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="sources">
+    <h2>14. Полезные материалы</h2>
+    <ul class="source-list">
+      <li><a href="https://helpdesk.bitrix24.ru/open/28872226/" target="_blank" rel="noopener">Отчеты по задачам: анализ работы команды</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18268586/" target="_blank" rel="noopener">Стандартные отчеты по задачам</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18195312/" target="_blank" rel="noopener">Поля и показатели отчетов по задачам</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/27047638/" target="_blank" rel="noopener">Работа с задачами: исходные данные для отчетов</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/19498394/" target="_blank" rel="noopener">Как создавать отчеты в BI Конструкторе</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/23951190/" target="_blank" rel="noopener">Наборы данных BI Конструктора: задачи и проекты</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/24352300/" target="_blank" rel="noopener">Вопросы о BI-аналитике и обновлении данных</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <div class="footer-card course-footer-card">
+
+    <p class="small">Используйте модуль как практическую шпаргалку: сначала пройдите материал целиком, затем возвращайтесь к нужным разделам по мере работы в Битрикс24.</p>
+    <div class="footer-actions">
+      <a class="button button--secondary secondary" href="course_bitrix24_v02_index.html#modules">&#1050; &#1082;&#1072;&#1088;&#1090;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+      <a class="button button--secondary secondary" href="module_m6_bitrix24_v02.html">&#1053;&#1072;&#1079;&#1072;&#1076;: M6</a>
+      <a class="button button--primary primary" href="module_m8_bitrix24_v02.html">&#1044;&#1072;&#1083;&#1100;&#1096;&#1077;: M8</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1350" viewBox="0 0 1120 1350" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема CRM сущностей M8</title>
+<desc id="desc">Учебная схема для модуля M8, показывающая путь от входящего интереса к лиду, контакту, компании, сделке и следующей активности.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1350" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M465,328.2 L465,363.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M465,456.2 L465,491.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M465,612.2 L465,647.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M465,768.2 L465,803.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M465,924.2 L465,959.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="simple-crm-bypass-lead" d="M894,411.2 L1034,411.2 L1034,709.2 L896,709.2" fill="none" stroke="#946019" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="213.2" width="850" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="233.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="330" y1="237.2" x2="330" y2="301.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="369.2" width="850" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="389.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="393.2" x2="330" y2="429.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="497.2" width="850" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="517.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="330" y1="521.2" x2="330" y2="585.2" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="653.2" width="850" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="673.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="330" y1="677.2" x2="330" y2="741.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="809.2" width="850" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="829.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="330" y1="833.2" x2="330" y2="897.2" stroke="#bfd0dc"/>
+<rect id="card-6" data-card="true" x="40" y="965.2" width="850" height="112" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="985.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="330" y1="989.2" x2="330" y2="1053.2" stroke="#bfd0dc"/>
+<rect id="note-7" data-card="true" x="40" y="1109.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect id="note-8" data-card="true" x="40" y="1221.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M8 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">От входящего интереса к управляемой CRM-связке</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Учебная логика M8: сначала ищем существующую историю, затем создаем только нужные сущности и</tspan>
+<tspan x="40" dy="28">связываем их между собой.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Запрос</tspan>
+</text>
+<text data-owner="card-1" x="354" y="257.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Письмо, звонок, форма, рекомендация или повторный</tspan>
+<tspan x="354" dy="28">интерес.</tspan>
+</text>
+<text data-owner="card-2" x="64" y="417.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2. Поиск</tspan>
+</text>
+<text data-owner="card-2" x="354" y="413.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Ищем компанию, контакт и старые сделки в CRM.</tspan>
+</text>
+<text data-owner="card-3" x="64" y="545.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3. Лид</tspan>
+</text>
+<text data-owner="card-3" x="354" y="541.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Используем в classic CRM, если входящий интерес еще</tspan>
+<tspan x="354" dy="28">не разобран.</tspan>
+</text>
+<text data-owner="card-4" x="64" y="701.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4. Клиент</tspan>
+</text>
+<text data-owner="card-4" x="354" y="697.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Компания хранит организацию, контакт хранит</tspan>
+<tspan x="354" dy="28">человека.</tspan>
+</text>
+<text data-owner="card-5" x="64" y="857.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">5. Сделка</tspan>
+</text>
+<text data-owner="card-5" x="354" y="853.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Конкретная возможность, предмет работы, стадия и</tspan>
+<tspan x="354" dy="28">ответственный.</tspan>
+</text>
+<text data-owner="card-6" x="64" y="1013.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">6. Активность</tspan>
+</text>
+<text data-owner="card-6" x="354" y="1009.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Следующий звонок, письмо, встреча или задача по</tspan>
+<tspan x="354" dy="28">дате.</tspan>
+</text>
+<text data-owner="" x="918" y="515.2" font-size="18" font-weight="600" fill="#946019">
+<tspan x="918" dy="0">simple CRM</tspan>
+</text>
+<text data-owner="" x="918" y="545.2" font-size="18" font-weight="400" fill="#946019">
+<tspan x="918" dy="0">без лида</tspan>
+</text>
+<text data-owner="note-7" x="68" y="1149.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Правило M8: не создавайте новую сущность, пока не проверили CRM на существующую историю. Новая</tspan>
+<tspan x="68" dy="28">сделка по существующему клиенту допустима, новый дубль контакта или компании — нет.</tspan>
+</text>
+<text data-owner="note-8" x="68" y="1261.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Если портал работает в classic CRM, лид квалифицируется и затем превращается в связку клиента и</tspan>
+<tspan x="68" dy="28">сделки; в simple CRM часть этого шага может происходить сразу через сделку с контактами.</tspan>
+</text>
+</g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1078" viewBox="0 0 1120 1078" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Рабочее пространство проекта в Битрикс24</title>
+<desc id="desc">Проект объединяет людей, главный чат, задачи, файлы, ленту и календарь. Новая база знаний создается отдельно и связывается с проектом ссылкой.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1078" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="membership" d="M560,363.2 L560,483.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,483.2 L510,483.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,483.2 L610,483.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,483.2 L560,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,663.2 L510,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,663.2 L610,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,663.2 L560,843.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,843.2 L510,843.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,843.2 L610,843.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="220" y="213.2" width="680" height="148" rx="18" fill="#eef5fc" stroke="#1565a0" stroke-width="1.5"/>
+<rect x="221" y="233.2" width="4" height="108" rx="2" fill="#1565a0"/>
+<rect id="card-2" data-card="true" x="40" y="409.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="429.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="616" y="409.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="429.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="589.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="609.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="616" y="589.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="609.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-6" data-card="true" x="40" y="769.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="789.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-7" data-card="true" x="616" y="769.2" width="464" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="789.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="note-8" data-card="true" x="40" y="949.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M3 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Проект объединяет общение, задачи, встречи и файлы</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Пространство собирает людей, коммуникацию, задачи и материалы в одном месте, чтобы команда не</tspan>
+<tspan x="40" dy="28">зависела от личной переписки.</tspan>
+</text>
+<text data-owner="card-1" x="244" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="244" dy="0">Проект</tspan>
+</text>
+<text data-owner="card-1" x="244" y="306.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="244" dy="0">Общая тема, участники, правила, история и точка входа</tspan>
+</text>
+<text data-owner="card-2" x="64" y="457.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Лента</tspan>
+</text>
+<text data-owner="card-2" x="64" y="502.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Новости, правила, общий контекст</tspan>
+</text>
+<text data-owner="card-3" x="640" y="457.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Главный чат</tspan>
+</text>
+<text data-owner="card-3" x="640" y="502.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Быстрые вопросы и координация</tspan>
+</text>
+<text data-owner="card-4" x="64" y="637.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Задачи</tspan>
+</text>
+<text data-owner="card-4" x="64" y="682.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Сроки, ответственные, результат</tspan>
+</text>
+<text data-owner="card-5" x="640" y="637.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Диск</tspan>
+</text>
+<text data-owner="card-5" x="640" y="682.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Файлы, шаблоны, рабочие папки</tspan>
+</text>
+<text data-owner="card-6" x="64" y="817.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Календарь</tspan>
+</text>
+<text data-owner="card-6" x="64" y="862.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Встречи и выезды</tspan>
+</text>
+<text data-owner="card-7" x="640" y="817.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">База знаний</tspan>
+</text>
+<text data-owner="card-7" x="640" y="862.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Отдельно, по ссылке</tspan>
+</text>
+<text data-owner="note-8" x="68" y="989.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Если в теме есть только переписка, команда теряет память о решениях. Если есть пространство, каждый</tspan>
+<tspan x="68" dy="28">участник быстрее находит контекст, файлы и текущие действия.</tspan>
+</text>
+</g>
+</svg>

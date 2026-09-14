@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модуль M10. Интеграции, API и администрирование в Битрикс24</title>
+<link rel="stylesheet" href="assets/common/course-theme.css">
+<link rel="stylesheet" href="assets/pages/m10.css">
+<link rel="stylesheet" href="assets/common/module-components.css">
+<link rel="stylesheet" href="assets/common/module-layout.css">
+<link rel="stylesheet" href="assets/common/module-hero.css">
+<link rel="stylesheet" href="assets/common/course-refresh.css">
+</head>
+<body class="course-module">
+<a class="skip-link" href="#course-content">Перейти к содержанию</a>
+<div class="page">
+  <div class="topbar course-header course-header--module">
+      <div>
+        <strong>Курс Битрикс24 для сотрудников</strong>
+        <div class="module-meta">Модуль M10 · Продвинутый уровень · Практика и самопроверка</div>
+      </div>
+      <div class="module-links course-nav course-nav--meta" role="navigation" aria-label="Модули курса">
+      <a href="course_bitrix24_v02_index.html">&#1050;&#1091;&#1088;&#1089;</a>
+      <a href="module_m1_bitrix24_v02.html">M1</a>
+      <a href="module_m2_bitrix24_v02.html">M2</a>
+      <a href="module_m3_bitrix24_v02.html">M3</a>
+      <a href="module_m4_bitrix24_v02.html">M4</a>
+      <a href="module_m5_bitrix24_v02.html">M5</a>
+      <a href="module_m6_bitrix24_v02.html">M6</a>
+      <a href="module_m7_bitrix24_v02.html">M7</a>
+      <a href="module_m8_bitrix24_v02.html">M8</a>
+      <a href="module_m9_bitrix24_v02.html">M9</a>
+      <span aria-current="page">M10</span>
+    </div>
+    </div>
+
+  <main>
+  <section class="hero hero--module">
+    <div class="hero-grid hero-grid--module">
+      <div class="module-hero-copy">
+        <h1 id="course-content" tabindex="-1">Интеграции, API и администрирование в Битрикс24</h1>
+        <p class="lead">Этот модуль завершает курс и учит не программировать интеграции, а грамотно формулировать интеграционный сценарий: понимать, какие данные нужны, откуда они идут, кто владеет процессом, какие права допустимы, как тестировать подключение и как сопровождать его после запуска.</p>
+        <div class="nav-card nav-card--module-intro">
+          <h2>Навигация по модулю</h2>
+          <nav class="section-nav course-nav course-nav--section" aria-label="Разделы модуля">
+      <a href="#exchange">Интеграция как обмен данными</a>
+      <a href="#types">Типы интеграций</a>
+      <a href="#rest">REST API простым языком</a>
+      <a href="#webhooks">Вебхуки</a>
+      <a href="#security">Безопасность и права</a>
+      <a href="#limits">Лимиты и ошибки</a>
+      <a href="#registry">Реестр интеграций</a>
+      <a href="#route">Сквозная практика</a>
+      <a href="#whatif">Что делать, если…</a>
+      <a href="#mistakes">Ошибки</a>
+      <a href="#test">Самопроверка</a>
+      <a href="#final-task">Итоговое задание</a>
+      <a href="#next">&#1063;&#1090;&#1086; &#1076;&#1072;&#1083;&#1100;&#1096;&#1077;</a>
+      <a href="#sources">&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;</a>
+    </nav>
+        </div>
+      </div>
+      <div class="module-hero-side">
+        <div class="info-card">
+        <h3>Что важно понять в M10</h3>
+        <p>Интеграция — это не «подключить что-нибудь к Битрикс24». Это управляемый обмен данными между системами, который должен решать конкретную бизнес-проблему.</p>
+
+      </div>
+        <div class="info-card">
+          <h3>Результат прохождения</h3>
+          <p>сотрудник умеет сформулировать интеграционный сценарий, выбрать тип подключения и оценить риски</p>
+        </div>
+              <div class="info-card module-remember-panel">
+          <h3>Что стоит запомнить</h3>
+          <div class="remember-grid">
+      <div class="important">
+          <div class="label">Главная формула M10</div>
+          <p><strong>Хорошая интеграция = бизнес-цель + карта данных + владелец + минимальные права + тестовый сценарий + журнал ошибок + регламент сопровождения.</strong></p>
+        </div>
+      <div class="warning">
+          <div class="label">Порядок действий</div>
+          <p>Сначала описываем процесс и данные. Потом выбираем способ подключения. Потом выдаем минимальные права. Потом тестируем. Потом сопровождаем и контролируем.</p>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+  </section>
+
+  <section class="section-card module-passport-card">
+    <h2>Паспорт модуля</h2>
+    <div class="passport-grid">
+      <div class="mini-card passport-card"><h3 class="card-heading">Место в курсе</h3><p>финальный модуль после M1–M9</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Входной уровень</h3><p>пользователь понимает задачи, проекты, документы, отчетность, CRM и автоматизацию</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Целевая аудитория</h3><p>руководители, администраторы Битрикс24, методисты, CRM-ответственные, ИТ-специалисты, владельцы процессов</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Итоговый результат</h3><p>сотрудник умеет сформулировать интеграционный сценарий, выбрать тип подключения и оценить риски</p></div>
+    </div>
+    <div class="success passport-result-card">
+      <div class="label">Ожидаемый результат обучения</div>
+      <p>сотрудник умеет сформулировать интеграционный сценарий, выбрать тип подключения и оценить риски</p>
+    </div>
+  </section>
+
+  <aside class="note" aria-label="В работе">
+    <p>Входящий вебхук использует REST API: это способ авторизации, а не отдельная альтернатива API. Условия доступа к интеграциям зависят от тарифа, прав и подписки.</p>
+  </aside>
+
+  <section class="section-card" id="exchange">
+    <h2>1. Интеграция как управляемый обмен данными</h2>
+    <p>В M10 интеграция рассматривается не как техническая «хотелка», а как способ решить бизнес-проблему через обмен данными между системами. Если процесс не описан, источник истины не определен, а владелец не назначен, любая интеграция быстро превращается в риск.</p>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">Бизнес-цель</h3><p>Интеграция должна отвечать на вопрос: какую проблему она решает.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Источник истины</h3><p>Нужно понимать, где хранятся главные данные и какая система считается основной.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Проверяемость</h3><p>У интеграции должен быть тестовый сценарий и понятный контроль результата.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Сопровождение</h3><p>У интеграции должны быть владелец, журнал ошибок и регламент проверки.</p></div>
+    </div>
+
+    <div class="shell">
+      <div class="shell-head"><span>Центральная модель M10</span><span>Источник → событие → поля → действие → журнал</span></div>
+      <div class="shell-body">
+        <div class="workflow-strip">
+          <div class="flow-box"><strong>Источник данных</strong><p>Где рождается исходная информация: сайт, CRM, 1С, документ</p></div>
+          <div class="flow-box"><strong>Событие</strong><p>Что запускает обмен: заявка, изменение статуса, загрузка файла</p></div>
+          <div class="flow-box"><strong>Поля</strong><p>Какие данные передаем: имя, телефон, объект, стадия, сумма</p></div>
+          <div class="flow-box"><strong>Действие</strong><p>Что делает принимающая система: создает лид, задачу, комментарий</p></div>
+          <div class="flow-box"><strong>Журнал и контроль</strong><p>Как фиксируем успех, ошибку, повтор и кто это проверяет</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m10_section_01_api-as-exchange-layer.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m10_section_01_api-as-exchange-layer.svg" alt="Учебная схема M10: источник данных, событие, поля, действие и журнал сопровождения интеграции" width="1120" height="1302"></a>
+        <figcaption><strong>Рисунок M10-01.</strong> Учебная схема центральной логики M10: интеграция становится управляемой только тогда, когда описаны источник истины, событие запуска, карта полей, ожидаемое действие и журнал сопровождения. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-02.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-02.jpg" alt="Раздел «Разработчикам»: готовые сценарии интеграции и инструменты настройки" width="1280" height="662"></a>
+        <figcaption><strong>Рисунок M10-02.</strong> Раздел «Разработчикам»: готовые сценарии интеграции и инструменты настройки. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">Для M10 это базовое правило: сначала описываем бизнес-проблему и маршрут обмена, затем выбираем готовое подключение или собственное решение и способ авторизации его вызовов API.</div>
+
+    <div class="case">
+      <div class="label">Практическое правило</div>
+      <p>Для большинства сотрудников важно не писать код, а уметь описать сценарий интеграции: что передаем, откуда, куда, когда, кто владелец, какие права нужны и как мы проверяем результат.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="types">
+    <h2>2. Типы интеграций</h2>
+    <div class="note"><p><strong>Доступность подключения.</strong> Перед подключением проверьте тариф, права и действующую подписку BitrixGPT + Маркетплейс. Наличие пункта меню не гарантирует доступность конкретного сценария. <a href="https://helpdesk.bitrix24.ru/open/17451118/" target="_blank" rel="noopener">Официальные условия подписки</a>.</p></div>
+    <p>Перед тем как думать про API, нужно понять, нельзя ли закрыть задачу более простым способом. В Bitrix24 есть штатные подключения, готовые приложения и собственная разработка. Собственное решение может обращаться к REST API с авторизацией через входящий вебхук или OAuth; исходящий вебхук доставляет уведомления о событиях.</p>
+
+    <figure class="official-shot visual-card visual-card--official">
+      <a class="visual-open" href="assets/official/m10-img-03.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-03.jpg" alt="Каталог приложений: поиск готового решения перед собственной разработкой" width="2570" height="1466"></a>
+      <figcaption><strong>Рисунок M10-03.</strong> Каталог приложений: поиск готового решения перед собственной разработкой. <a href="https://helpdesk.bitrix24.ru/open/17381216/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+    </figure>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Типы интеграций: Тип / Когда подходит / Сильная сторона / Главный риск">
+<table aria-label="Типы интеграций: Тип / Когда подходит / Сильная сторона / Главный риск">
+      <thead>
+        <tr>
+          <th scope="col">Тип</th>
+          <th scope="col">Когда подходит</th>
+          <th scope="col">Сильная сторона</th>
+          <th scope="col">Главный риск</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Штатная интеграция</td>
+          <td>Есть готовое встроенное решение под вашу задачу</td>
+          <td>Быстрый запуск и меньшая нагрузка на сопровождение</td>
+          <td>Ограниченная гибкость</td>
+        </tr>
+        <tr>
+          <td>Приложение Маркетплейса</td>
+          <td>Нужен готовый поддерживаемый сценарий без собственной разработки</td>
+          <td>Скорость внедрения</td>
+          <td>Нужно проверять права и надежность поставщика</td>
+        </tr>
+        <tr>
+          <td>Входящий webhook</td>
+          <td>Нужен быстрый внутренний сценарий одного портала</td>
+          <td>Простота старта</td>
+          <td>Утечка URL дает доступ в рамках прав webhook</td>
+        </tr>
+        <tr>
+          <td>Исходящий webhook</td>
+          <td>Портал должен сообщать внешней системе о событии</td>
+          <td>Удобная реакция на событие</td>
+          <td>Нужен защищенный внешний обработчик и журналирование</td>
+        </tr>
+        <tr>
+          <td>Собственное приложение с REST API и OAuth</td>
+          <td>Нужна сложная двусторонняя логика и гибкая работа с данными</td>
+          <td>Максимальная управляемость сценария</td>
+          <td>Требует проектирования, прав, тестов и сопровождения</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="important">
+      <div class="label">Диагностическое правило</div>
+      <p>Сначала сравните штатное подключение, готовое приложение и собственную разработку по требованиям. Для локального серверного сценария одного портала может подойти входящий вебхук. Для устанавливаемого приложения или нескольких порталов рассматривайте OAuth. В обоих случаях обмен может использовать REST API; выбор авторизации не определяет сложность бизнес-процесса.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Нужна ли интеграция?</div>
+        <p>Для нескольких кейсов определите, можно ли решить задачу штатными средствами без интеграции.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Выбор варианта</div>
+        <p>Сравните готовое приложение, локальный сценарий через вебхук и приложение с OAuth по сроку, риску и сопровождению.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Обоснование</div>
+        <p>Подготовьте краткое объяснение, почему выбрали именно этот тип интеграции для процесса компании.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="rest">
+    <h2>3. REST API простым языком</h2>
+    <p>M10 не учит писать код, но пользователь должен понимать словарь интеграций. Это помогает формулировать требования для администратора или разработчика и не путать типы ошибок, прав и действий.</p>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-04.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-04.webp" alt="Генератор запросов: выбор REST-метода и его параметров" width="972" height="594"></a>
+        <figcaption><strong>Рисунок M10-04.</strong> Генератор запросов: выбор REST-метода и его параметров. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-05.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-05.webp" alt="Ответ REST-запроса: проверка результата или сообщения об ошибке" width="1072" height="590"></a>
+        <figcaption><strong>Рисунок M10-05.</strong> Ответ REST-запроса: проверка результата или сообщения об ошибке. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="tool-grid">
+      <div class="tool-card"><h3 class="card-heading">API</h3><p>Интерфейс, через который программы обращаются к функциям и данным другой системы.</p></div>
+      <div class="tool-card"><h3 class="card-heading">REST API</h3><p>Набор методов Битрикс24, вызываемых по HTTP. Метод API, например создание задачи, не следует путать с HTTP-методом GET или POST.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Метод</h3><p>Конкретное действие, например получить список, создать элемент, обновить поле.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Параметры</h3><p>Какие поля и значения мы передаем в запросе.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Ответ</h3><p>Что вернула система: данные, идентификатор, подтверждение успеха или ошибку.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Endpoint</h3><p>Точка, по которой система принимает запрос.</p></div>
+    </div>
+
+    <div class="shell">
+      <div class="shell-head"><span>Как объяснять REST API без кода</span><span>Понятная модель</span></div>
+      <div class="shell-body">
+        <div class="flow-strip">
+          <div class="flow-card"><strong>Запрос</strong><p>Система просит Bitrix24 выполнить действие</p></div>
+          <div class="flow-card"><strong>Права</strong><p>Bitrix24 проверяет, разрешено ли это действие</p></div>
+          <div class="flow-card"><strong>Обработка</strong><p>Система ищет нужный метод и применяет данные</p></div>
+          <div class="flow-card"><strong>Ответ</strong><p>Возвращается успех, ошибка или нужные данные</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning">
+      <div class="label">Важно для базового уровня</div>
+      <p>Сотруднику не обязательно знать синтаксис REST-запросов. Ему важно понимать, какие данные должны уйти, какое действие ожидается и какие права нужны для такого действия.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="webhooks">
+    <h2>4. Вебхуки</h2>
+    <p>Создавать вебхук и выполнять вызовы для этого модуля необязательно: достаточно карты обмена и тестовых примеров без рабочих ключей. <a href="https://apidocs.bitrix24.ru/local-integrations/local-webhooks.html" target="_blank" rel="noopener">Официальное описание входящих и исходящих вебхуков</a>.</p>
+    <p>Входящий вебхук содержит секрет для вызова методов REST API от имени создавшего его пользователя в пределах доступных прав. Исходящий вебхук передает событие во внешний обработчик; для чтения полных данных обработчику может потребоваться отдельный вызов API. Это разные направления обмена, а не два одинаковых способа входа в систему.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Входящий webhook</h3>
+        <p>Подходит для внутреннего сценария одного портала, когда внешняя система должна создавать или изменять данные в Bitrix24.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Исходящий webhook</h3>
+        <p>Подходит, когда Bitrix24 должен отправлять сигнал о событии наружу: например, при изменении статуса или создании элемента.</p>
+      </div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m10_section_04_incoming-outgoing-webhook.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m10_section_04_incoming-outgoing-webhook.svg" alt="Учебная схема различий между входящим и исходящим webhook в Bitrix24" width="1120" height="1043"></a>
+      <figcaption><strong>Рисунок M10-06.</strong> Учебная схема webhook для M10: входящий webhook открывает вход в Bitrix24 для внешней системы, а исходящий webhook отправляет событие из Bitrix24 во внешний обработчик. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-07.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-07.webp" alt="Адрес входящего вебхука: секретная часть URL скрыта" width="975" height="600"></a>
+        <figcaption><strong>Рисунок M10-07.</strong> Адрес входящего вебхука: секретная часть URL скрыта. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-08.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-08.webp" alt="Исходящий вебхук: адрес обработчика и событие для отправки уведомления" width="612" height="296"></a>
+        <figcaption><strong>Рисунок M10-08.</strong> Исходящий вебхук: адрес обработчика и событие для отправки уведомления. <a href="https://apidocs.bitrix24.ru/local-integrations/local-webhooks.html" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="trouble">
+      <div class="label">Главное правило безопасности</div>
+      <p>URL webhook — это чувствительный доступ. Его нельзя хранить в открытых чатах, письмах, общих документах и скриншотах. Утечка URL означает утечку доступа в рамках прав, выданных этому webhook.</p>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Вебхуки: Что проверить / Почему это важно">
+<table aria-label="Вебхуки: Что проверить / Почему это важно">
+      <thead>
+        <tr>
+          <th scope="col">Что проверить</th>
+          <th scope="col">Почему это важно</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Где хранится URL webhook</td>
+          <td>Чтобы он не оказался в открытом доступе</td>
+        </tr>
+        <tr>
+          <td>Какие права выданы</td>
+          <td>Чтобы webhook не имел лишнего доступа</td>
+        </tr>
+        <tr>
+          <td>Кто владелец</td>
+          <td>Чтобы было понятно, кто отвечает за отключение и обновление</td>
+        </tr>
+        <tr>
+          <td>Есть ли запись в реестре</td>
+          <td>Чтобы webhook не стал «невидимой» интеграцией без контроля</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </section>
+
+  <section class="section-card" id="security">
+    <h2>5. Безопасность и минимально достаточные права</h2>
+    <p>Принцип минимально достаточных прав означает, что интеграция должна получить только тот доступ, который действительно нужен для сценария. Если приложение или webhook просят больше, чем нужно для заявленной функции, это уже повод для проверки и вопросов.</p>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m10_section_05_security-contour.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m10_section_05_security-contour.svg" alt="Учебная схема контура безопасности интеграции: права, токены, журнал и владелец" width="1120" height="898"></a>
+        <figcaption><strong>Рисунок M10-09.</strong> Учебная схема контура безопасности M10: минимальные права, защищенное хранение токенов, тесты и журнал, а также назначенный владелец образуют обязательный каркас безопасной интеграции. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-10.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-10.webp" alt="Настройка прав вебхука: доступ к выбранным инструментам" width="977" height="598"></a>
+        <figcaption><strong>Рисунок M10-10.</strong> Настройка прав вебхука: доступ к выбранным инструментам. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">Минимальные права</h3><p>Даем только те права, без которых сценарий не работает.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Токены и ключи</h3><p>Храним как чувствительные данные и не публикуем открыто.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Проверка приложения</h3><p>Сравниваем заявленную функцию и фактически запрашиваемые доступы.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Увольнение владельца</h3><p>Проверяем все токены, webhook и приложения, связанные с его учетной записью.</p></div>
+    </div>
+
+    <h3>Практика «Оценка прав приложения»</h3>
+    <div class="result-card">
+      <p>Приложение заявляет, что нужно только для загрузки заявок с сайта и отправки уведомлений по сделкам. При этом оно просит права на CRM, задачи, Диск, пользователей, структуру компании и бизнес-процессы.</p>
+      <ol>
+        <li>Определите, какие права могут быть оправданы.</li>
+        <li>Определите, какие права выглядят избыточными.</li>
+        <li>Сформулируйте вопросы поставщику.</li>
+        <li>Примите решение: разрешить, ограничить или отклонить.</li>
+        <li>Зафиксируйте решение в реестре интеграций.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-card" id="limits">
+    <h2>6. Лимиты, ошибки и устойчивость</h2>
+    <div class="important"><div class="label">Повторять запрос нужно с учетом результата</div><p>При <code>503 / QUERY_LIMIT_EXCEEDED</code> уменьшайте частоту запросов и повторяйте с задержкой. Ошибка <code>429 / OPERATION_TIME_LIMIT</code> означает другой лимит: ресурсоемкость метода. Ошибки прав и полей не исправляются бесконечным повтором. После тайм-аута создания записи сначала проверьте внешний идентификатор: запись могла создаться, даже если ответ потерялся. Пакетный вызов не отменяет все ограничения. <a href="https://apidocs.bitrix24.ru/limits.html" target="_blank" rel="noopener">Лимиты REST API</a>; <a href="https://apidocs.bitrix24.ru/error-codes.html" target="_blank" rel="noopener">коды ошибок</a>.</p></div>
+    <p>Интеграция должна уметь не только отправлять данные, но и переживать ошибки. В REST API Bitrix24 существуют лимиты запросов, и при превышении порога система может возвращать ошибку <code>QUERY_LIMIT_EXCEEDED</code>. Это значит, что интеграция должна уметь работать с повторами, задержками, очередями и контролем ошибок.</p>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-11.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-11.jpg" alt="Статистика REST: всплеск числа запросов как повод проверить нагрузку и журнал ошибок" width="1280" height="849"></a>
+        <figcaption><strong>Рисунок M10-11.</strong> Статистика REST: всплеск числа запросов как повод проверить нагрузку и журнал ошибок. <a href="https://helpdesk.bitrix24.ru/open/20986032/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m10-img-12.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-12.webp" alt="Статистика REST: просмотр числа запросов за выбранную дату" width="1280" height="752"></a>
+        <figcaption><strong>Рисунок M10-12.</strong> Статистика REST: просмотр числа запросов за выбранную дату. <a href="https://helpdesk.bitrix24.ru/open/20986032/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="metric-boxes">
+      <div class="metric-box"><strong>Лимит</strong><span class="warn">Есть</span></div>
+      <div class="metric-box"><strong>Ошибка</strong><span class="bad">503</span></div>
+      <div class="metric-box"><strong>Нужен</strong><span>Backoff</span></div>
+      <div class="metric-box"><strong>Обязателен</strong><span class="good">Журнал</span></div>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Лимиты, ошибки и устойчивость: Проблема / Что нужно сделать">
+<table aria-label="Лимиты, ошибки и устойчивость: Проблема / Что нужно сделать">
+      <thead>
+        <tr>
+          <th scope="col">Проблема</th>
+          <th scope="col">Что нужно сделать</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ошибка лимита <code>QUERY_LIMIT_EXCEEDED</code></td>
+          <td>Добавить задержку, очередь, повторную попытку или пакетную обработку</td>
+        </tr>
+        <tr>
+          <td>Дубли данных</td>
+          <td>Проверить внешний ключ, ID, телефон, email или другой идентификатор</td>
+        </tr>
+        <tr>
+          <td>Сломалось после изменения поля</td>
+          <td>Проверить карту данных, обязательные поля и тестовый сценарий</td>
+        </tr>
+        <tr>
+          <td>Неясно, где искать ошибку</td>
+          <td>Вести журнал: время, ID события, метод, статус и обезличенная ошибка; исключать токены, секретную часть URL и лишние персональные данные</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="case">
+      <div class="label">Практический вывод</div>
+      <p>Интеграция без обработки ошибок и журналирования может какое-то время выглядеть рабочей, но при первом изменении полей, перегрузке или внешнем сбое быстро становится источником хаоса.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="registry">
+    <h2>7. Администрирование и реестр интеграций</h2>
+    <p>Любая интеграция должна быть видимой для компании. Если никто не знает, зачем она существует, кто владелец, какие права выданы и как ее проверять, значит управление интеграцией отсутствует.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Владелец интеграции</h3>
+        <p>Отвечает за бизнес-цель, полезность сценария и решение, нужна ли интеграция дальше.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Технический ответственный</h3>
+        <p>Понимает, где лежат настройки, как проверить работу, где смотреть журнал и как менять параметры.</p>
+      </div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--official">
+      <a class="visual-open" href="assets/official/m10-img-13.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m10-img-13.webp" alt="Список интеграций: название, владелец и предоставленные права" width="945" height="625"></a>
+      <figcaption><strong>Рисунок M10-13.</strong> Список интеграций: название, владелец и предоставленные права. <a href="https://helpdesk.bitrix24.ru/open/20886106/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+    </figure>
+
+    <h3>Практика «Реестр интеграций»</h3>
+    <div class="template-box">Название:
+Бизнес-цель:
+Системы-участники:
+Тип интеграции:
+Владелец:
+Технический ответственный:
+Передаваемые поля:
+Права:
+Тестовый сценарий:
+Журнал ошибок:
+Риски:
+Дата проверки:
+Ссылка на инструкцию:</div>
+
+    <div class="success">
+      <div class="label">Developer Resources</div>
+      <p>Все, что создается в Developer Resources, должно попадать в реестр интеграций. Иначе через несколько месяцев в портале появятся подключения, вебхуки и права, про которые никто уже не помнит.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="route">
+    <h2>8. Сквозная практика: «Сайт → CRM → задача инженеру»</h2>
+    <p>Этот сценарий связывает весь M10 в единый учебный маршрут и показывает полный цикл: от бизнес-проблемы до регламента сопровождения интеграции.</p>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m10_section_08_site-crm-engineer-flow.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m10_section_08_site-crm-engineer-flow.svg" alt="Учебная схема маршрута Сайт, CRM, задача инженеру, журнал и реестр в M10" width="1120" height="1100"></a>
+      <figcaption><strong>Рисунок M10-14.</strong> Учебная схема ключевого маршрута M10: заявка проходит путь от сайта через CRM к задаче инженеру, а затем закрепляется журналом, правами и записью в реестре интеграций. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="route">
+      <div class="step-card"><div class="step-no route-step__index">1</div><h3 class="card-heading">Проблема</h3><p>Заявки с сайта приходят на почту, менеджер переносит их вручную, инженер узнает о заявке с задержкой.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">2</div><h3 class="card-heading">Карта данных</h3><p>Определяем поля: имя, компания, телефон, email, объект, тип работ, комментарий, источник.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">3</div><h3 class="card-heading">Выбор подключения</h3><p>Выбираем готовое или собственное решение; для вызовов REST API определяем авторизацию через вебхук или OAuth.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">4</div><h3 class="card-heading">Права</h3><p>Выдаем только минимально необходимые доступы для создания лида или сделки и постановки задачи.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">5</div><h3 class="card-heading">Тест</h3><p>Проверяем успешную заявку, пустое поле, повторную отправку и недоступность внешней системы.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">6</div><h3 class="card-heading">Журнал</h3><p>Фиксируем успехи, ошибки, повторы, время срабатывания и ответственного за разбор.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">7</div><h3 class="card-heading">Реестр</h3><p>Вносим интеграцию в реестр и связываем с инструкцией в базе знаний.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">8</div><h3 class="card-heading">Сопровождение</h3><p>Проверяем работу после изменений полей, стадий, ролей или процесса.</p></div>
+    </div>
+
+    <h3>Практика «Карта данных»</h3>
+    <div class="result-card">
+      <p>Для сценария <code>Сайт → CRM → задача инженеру</code> перечислите:</p>
+      <ol>
+        <li>какие поля обязательны;</li>
+        <li>какие поля служебные;</li>
+        <li>что делать, если одно из обязательных полей пустое;</li>
+        <li>как предотвратить повторное создание заявки при дубле отправки формы.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-card" id="whatif">
+    <h2>9. Что делать, если…</h2>
+
+    <details>
+      <summary>Если непонятно, какой тип интеграции выбрать</summary>
+      <div>
+        <p>Сначала опишите цель, данные, событие, владельца и частоту обмена. Затем сравните штатное подключение, готовое приложение и собственную разработку с подходящим способом авторизации.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если приложение просит слишком много прав</summary>
+      <div>
+        <p>Сравните заявленную функцию и фактические права. Если права не обоснованы, не устанавливайте приложение до разъяснения.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если webhook URL попал в открытый доступ</summary>
+      <div>
+        <p>Немедленно отключите или пересоздайте webhook, проверьте журнал действий и обновите записи в реестре и инструкциях.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если интеграция перестала работать после изменения поля</summary>
+      <div>
+        <p>Проверьте карту данных, обязательные поля, журнал ошибок и тестовый сценарий. Часто проблема связана именно с изменением структуры данных.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если данные задублировались</summary>
+      <div>
+        <p>Проверьте правило идентификации: ID, ИНН, email, телефон или внешний ключ. Добавьте защиту от повторов.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если API возвращает ошибку лимита</summary>
+      <div>
+        <p>Проверьте частоту запросов, добавьте очередь, задержки, batch-подход или повтор с backoff.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если владелец интеграции уволился</summary>
+      <div>
+        <p>Проверьте все токены, webhook и приложения, связанные с его учетной записью, и назначьте нового владельца и технического ответственного.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если никто не знает, зачем нужна интеграция</summary>
+      <div>
+        <p>Приостановите сценарий, найдите бизнес-владельца, проверьте фактическое использование и примите решение: оставить, изменить или отключить.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="mistakes">
+    <h2>10. Типичные ошибки</h2>
+    <div class="grid-2">
+      <div class="trouble"><div class="label">Ошибка 1</div><p>Начинать интеграцию с технологии, а не с бизнес-проблемы и карты данных.</p></div>
+      <div class="trouble"><div class="label">Ошибка 2</div><p>Выдавать приложению или webhook больше прав, чем нужно для сценария.</p></div>
+      <div class="trouble"><div class="label">Ошибка 3</div><p>Хранить URL webhook в открытом виде в чатах, письмах или документах.</p></div>
+      <div class="trouble"><div class="label">Ошибка 4</div><p>Не вести журнал ошибок и не иметь тестового сценария.</p></div>
+      <div class="trouble"><div class="label">Ошибка 5</div><p>Не фиксировать интеграцию в реестре и не назначать владельца.</p></div>
+      <div class="trouble"><div class="label">Ошибка 6</div><p>Не проверять интеграцию после изменения полей, стадий или бизнес-процесса.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="test">
+    <h2>11. Самопроверка</h2>
+    <p>Вопросы ниже проверяют не знание терминов ради терминов, а умение мыслить интеграцией как управляемым процессом.</p>
+
+    <div class="result-card">
+      <h3 class="card-heading">Вопросы</h3>
+      <ol>
+        <li>Что нужно сделать до выбора типа интеграции?</li>
+        <li>Как связаны готовая интеграция, REST API и входящий вебхук?</li>
+        <li>Когда подходит входящий webhook?</li>
+        <li>Чем опасна утечка URL webhook?</li>
+        <li>Что означает принцип минимально достаточных прав?</li>
+        <li>Что должно быть в реестре интеграций?</li>
+        <li>Что такое источник истины?</li>
+        <li>Что делать при ошибке <code>QUERY_LIMIT_EXCEEDED</code>?</li>
+        <li>Зачем нужен тестовый сценарий?</li>
+        <li>Когда интеграцию нужно отключить или пересмотреть?</li>
+      </ol>
+    </div>
+
+    <details>
+      <summary>Проверить свои ответы</summary>
+      <div>
+        <ol>
+          <li>Описать бизнес-проблему, данные, событие, владельца и ожидаемый результат.</li>
+          <li>Интеграция решает рабочую задачу и может использовать REST API. Входящий вебхук дает способ авторизации для вызова его методов; собственное приложение также может использовать OAuth.</li>
+          <li>Когда нужен быстрый внутренний сценарий одного портала и понятен набор прав.</li>
+          <li>Утечка URL дает доступ в рамках прав этого webhook.</li>
+          <li>Интеграция получает только те доступы, которые реально нужны для ее функции.</li>
+          <li>Название, бизнес-цель, системы, тип, владельца, ответственного, права, тесты, журнал, риски и дату проверки.</li>
+          <li>Система, в которой данные считаются главными и откуда их нужно брать как эталон.</li>
+          <li>Добавить очередь, задержку, backoff, повтор или пакетную обработку и проверить журнал.</li>
+          <li>Чтобы проверить сценарий на успех, ошибку, дубль и сбой до боевого запуска.</li>
+          <li>Когда никто не знает ее цель, когда изменилась бизнес-логика или когда сопровождение и риск перестали быть оправданными.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="final-task">
+    <h2>12. Итоговое практическое задание</h2>
+    <p><strong>Сценарий:</strong> компания хочет автоматизировать процесс «Заявка с сайта → CRM → задача инженеру». Сейчас заявки приходят на почту, менеджер вручную переносит данные, инженер узнает о заявке с задержкой.</p>
+
+    <ol>
+      <li>Опишите бизнес-проблему.</li>
+      <li>Опишите ожидаемый результат.</li>
+      <li>Определите системы-участники.</li>
+      <li>Определите событие запуска.</li>
+      <li>Составьте карту данных: имя, компания, телефон, email, объект, тип работ, комментарий, источник.</li>
+      <li>Выберите тип интеграции и обоснуйте выбор.</li>
+      <li>Определите минимальные права.</li>
+      <li>Назначьте владельца и технического ответственного.</li>
+      <li>Опишите тестовые сценарии: успешная заявка, пустое поле, повторная отправка, недоступность внешней системы.</li>
+      <li>Опишите журнал ошибок.</li>
+      <li>Заполните реестр интеграции.</li>
+      <li>Подготовьте краткую инструкцию для базы знаний.</li>
+      <li>Опишите, как оценить эффект через месяц.</li>
+    </ol>
+
+    <h3>Критерии успешного прохождения</h3>
+    <ul class="checklist">
+      <li>Сотрудник различает готовое решение, интерфейс REST API, авторизацию через вебхук или OAuth и исходящее уведомление о событии.</li>
+      <li>Сотрудник умеет описать интеграционный сценарий через данные, событие и действие.</li>
+      <li>Сотрудник понимает риски URL webhook и принцип минимально достаточных прав.</li>
+      <li>Сотрудник умеет оценить права приложения и зафиксировать решение.</li>
+      <li>Сотрудник умеет заполнить базовый реестр интеграций.</li>
+      <li>Сотрудник понимает необходимость тестового сценария, журнала и сопровождения.</li>
+      <li>Сотрудник может подготовить понятное ТЗ на интеграцию для администратора или разработчика.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="next">
+    <h2>13. Что дальше после курса</h2>
+    <ul class="next-list">
+      <li><strong>Для сотрудников:</strong> применять базовую дисциплину описания требований к интеграциям и не запускать подключения без владельца и реестра.</li>
+      <li><strong>Для администраторов:</strong> развивать реестр интеграций, регламент проверок и базу знаний по подключенным решениям.</li>
+      <li><strong>Для продвинутого уровня:</strong> дальше можно идти в developer-документацию, REST API, SDK и архитектуру приложений только после освоения базовой логики M10.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="sources">
+    <h2>14. Полезные материалы</h2>
+    <ul class="source-list">
+      <li><a href="https://apidocs.bitrix24.ru/" target="_blank" rel="noopener">REST API Битрикс24: документация</a></li>
+      <li><a href="https://apidocs.bitrix24.ru/local-integrations/local-webhooks.html" target="_blank" rel="noopener">Входящие и исходящие вебхуки</a></li>
+      <li><a href="https://apidocs.bitrix24.ru/limits.html" target="_blank" rel="noopener">Лимиты REST API</a></li>
+      <li><a href="https://apidocs.bitrix24.ru/error-codes.html" target="_blank" rel="noopener">Коды ошибок REST API</a></li>
+      <li><a href="https://apidocs.bitrix24.ru/local-integrations/developers-area.html" target="_blank" rel="noopener">Раздел «Разработчикам»</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/20986032/" target="_blank" rel="noopener">Как проверить нагрузку REST</a></li>
+      <li><a href="https://www.bitrix24.ru/apps/" target="_blank" rel="noopener">Маркетплейс Битрикс24</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <div class="footer-card course-footer-card">
+
+    <p class="small">Используйте модуль как практическую шпаргалку: сначала пройдите материал целиком, затем возвращайтесь к нужным разделам по мере работы в Битрикс24.</p>
+    <div class="footer-actions">
+      <a class="button button--secondary secondary" href="course_bitrix24_v02_index.html#modules">&#1050; &#1082;&#1072;&#1088;&#1090;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+      <a class="button button--secondary secondary" href="module_m9_bitrix24_v02.html">&#1053;&#1072;&#1079;&#1072;&#1076;: M9</a>
+      <a class="button button--primary primary" href="course_bitrix24_v02_index.html#next">&#1055;&#1086;&#1089;&#1083;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1454" viewBox="0 0 1120 1454" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Цикл тестирования автоматизации</title>
+<desc id="desc">Учебная схема для M9 с безопасным циклом тестирования робота, триггера или бизнес-процесса до запуска в боевом процессе.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1454" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M380,364.2 L380,419.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M380,576.2 L380,631.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M380,788.2 L380,843.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M380,1000.2 L380,1055.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="test-failed" d="M724,923.2 L802,923.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+<path data-edge="true" data-relation="retest-after-fix" d="M944,845.2 L944,711.2 L726,711.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arrow-red)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="213.2" width="680" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="233.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-2" data-card="true" x="40" y="425.2" width="680" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="445.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="40" y="637.2" width="680" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="657.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="849.2" width="680" height="148" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="869.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="40" y="1061.2" width="680" height="148" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="1081.2" width="4" height="108" rx="2" fill="#0b7285"/>
+<rect id="card-6" data-card="true" x="808" y="849.2" width="272" height="238" rx="18" fill="#fff3f4" stroke="#ac3549" stroke-width="1.5"/>
+<rect x="809" y="869.2" width="4" height="198" rx="2" fill="#ac3549"/>
+<rect id="note-7" data-card="true" x="40" y="1241.2" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect id="note-8" data-card="true" x="40" y="1325.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M9 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Цикл тестирования автоматизации до боевого запуска</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">M9: проверяем логику на учебном объекте, ловим дубли и лишних получателей, только потом переносим в</tspan>
+<tspan x="40" dy="28">рабочий процесс</tspan>
+</text>
+<text data-owner="card-1" x="64" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1 Описать гипотезу</tspan>
+</text>
+<text data-owner="card-1" x="64" y="306.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Что должно сработать, где, когда и для кого</tspan>
+</text>
+<text data-owner="card-2" x="64" y="473.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2 Собрать учебный объект</tspan>
+</text>
+<text data-owner="card-2" x="64" y="518.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Отдельная сделка, задача или смарт-элемент для проверки</tspan>
+</text>
+<text data-owner="card-3" x="64" y="685.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3 Запустить тест</tspan>
+</text>
+<text data-owner="card-3" x="64" y="730.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Проверить условие, событие, срок и права</tspan>
+</text>
+<text data-owner="card-4" x="64" y="897.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4 Проверить результат</tspan>
+</text>
+<text data-owner="card-4" x="64" y="942.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Логи, получатели, дубли, повторные запуски</tspan>
+</text>
+<text data-owner="card-5" x="64" y="1109.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">6 Перенести в бой</tspan>
+</text>
+<text data-owner="card-5" x="64" y="1154.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Запустить рабочую версию и наблюдать первые кейсы</tspan>
+</text>
+<text data-owner="card-6" x="832" y="897.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="832" dy="0">5 Исправить и</tspan>
+<tspan x="832" dy="33.599999999999994">записать</tspan>
+</text>
+<text data-owner="card-6" x="832" y="976.4000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="832" dy="0">Что изменили, какой</tspan>
+<tspan x="832" dy="28">риск сняли, кто</tspan>
+<tspan x="832" dy="28">владелец сценария</tspan>
+</text>
+<text data-owner="" x="762" y="691.2" font-size="18" font-weight="600" fill="#ac3549">
+<tspan x="762" dy="0">Повторный тест</tspan>
+</text>
+<text data-owner="" x="746" y="823.2" font-size="18" font-weight="600" fill="#ac3549">
+<tspan x="746" dy="0">Есть ошибки</tspan>
+</text>
+<text data-owner="" x="400" y="1029.2" font-size="18" font-weight="600" fill="#0b7285">
+<tspan x="400" dy="0">Проверки пройдены</tspan>
+</text>
+<text data-owner="note-7" x="68" y="1281.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Красная стрелка показывает правило возврата</tspan>
+</text>
+<text data-owner="note-8" x="68" y="1365.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Если тест дал шум, дубли или неверных получателей, сценарий возвращается на доработку, а не идет</tspan>
+<tspan x="68" dy="28">сразу в боевую базу</tspan>
+</text>
+</g>
+</svg>

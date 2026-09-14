@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="858" viewBox="0 0 1120 858" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Учебный график активной загрузки</title>
+<desc id="desc">Учебная горизонтальная диаграмма загрузки сотрудников для модуля M7.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="858" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<line x1="300" y1="257.2" x2="300" y2="645.2" stroke="#bfd0dc"/>
+<line x1="476" y1="257.2" x2="476" y2="645.2" stroke="#bfd0dc"/>
+<line x1="652" y1="257.2" x2="652" y2="645.2" stroke="#bfd0dc"/>
+<line x1="828" y1="257.2" x2="828" y2="645.2" stroke="#bfd0dc"/>
+<line x1="1004" y1="257.2" x2="1004" y2="645.2" stroke="#bfd0dc"/>
+<g id="connections">
+</g>
+<g id="blocks">
+<rect data-value="28" data-unit="22" x="300" y="265.2" width="616" height="38" rx="5" fill="#ac3549"/>
+<rect data-value="24" data-unit="22" x="300" y="341.2" width="528" height="38" rx="5" fill="#ac3549"/>
+<rect data-value="20" data-unit="22" x="300" y="417.2" width="440" height="38" rx="5" fill="#0b7285"/>
+<rect data-value="15" data-unit="22" x="300" y="493.2" width="330" height="38" rx="5" fill="#0b7285"/>
+<rect data-value="11" data-unit="22" x="300" y="569.2" width="242" height="38" rx="5" fill="#0b7285"/>
+<line data-threshold="20" x1="740" y1="257.2" x2="740" y2="645.2" stroke="#ac3549" stroke-width="2" stroke-dasharray="7 6"/>
+<rect id="note-1" data-card="true" x="40" y="729.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M7 / УЧЕБНЫЙ ГРАФИК</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Учебный график: как увидеть перегрузку и дисбаланс нагрузки</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Учебные данные для M7, не реальные показатели компании.</tspan>
+</text>
+<text data-owner="" x="40" y="205.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Активные задачи, шт.</tspan>
+</text>
+<text data-owner="" x="40" y="239.2" font-size="20" font-weight="600" fill="#ac3549">
+<tspan x="40" dy="0">Порог перегрузки: 20 активных задач</tspan>
+</text>
+<text data-owner="" x="290" y="679.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="290" dy="0">0</tspan>
+</text>
+<text data-owner="" x="466" y="679.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="466" dy="0">8</tspan>
+</text>
+<text data-owner="" x="642" y="679.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="642" dy="0">16</tspan>
+</text>
+<text data-owner="" x="818" y="679.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="818" dy="0">24</tspan>
+</text>
+<text data-owner="" x="994" y="679.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="994" dy="0">32</tspan>
+</text>
+<text data-owner="" x="40" y="290.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Иван Петров</tspan>
+</text>
+<text data-owner="" x="928" y="291.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="928" dy="0">28</tspan>
+</text>
+<text data-owner="" x="40" y="366.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Мария Сидорова</tspan>
+</text>
+<text data-owner="" x="840" y="367.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="840" dy="0">24</tspan>
+</text>
+<text data-owner="" x="40" y="442.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Анна Крылова</tspan>
+</text>
+<text data-owner="" x="752" y="443.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="752" dy="0">20</tspan>
+</text>
+<text data-owner="" x="40" y="518.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Денис Орлов</tspan>
+</text>
+<text data-owner="" x="642" y="519.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="642" dy="0">15</tspan>
+</text>
+<text data-owner="" x="40" y="594.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Елена Миронова</tspan>
+</text>
+<text data-owner="" x="554" y="595.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="554" dy="0">11</tspan>
+</text>
+<text data-owner="note-1" x="68" y="769.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Интерпретация для M7: перегрузка читается как сигнал к проверке приоритетов, перераспределению</tspan>
+<tspan x="68" dy="28">задач и уточнению реальной критичности работ.</tspan>
+</text>
+</g>
+</svg>

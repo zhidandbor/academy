@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1302" viewBox="0 0 1120 1302" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">API как слой управляемого обмена данными</title>
+<desc id="desc">Учебная схема для M10: источник данных, событие, поля, действие и журнал сопровождения интеграции.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1302" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,344.2 L560,379.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,544.2 L560,579.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,744.2 L560,779.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,944.2 L560,979.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="185.2" width="1040" height="156" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="205.2" width="4" height="116" rx="2" fill="#0b7285"/>
+<line x1="330" y1="209.2" x2="330" y2="317.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="385.2" width="1040" height="156" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="405.2" width="4" height="116" rx="2" fill="#0b7285"/>
+<line x1="330" y1="409.2" x2="330" y2="517.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="585.2" width="1040" height="156" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="605.2" width="4" height="116" rx="2" fill="#0b7285"/>
+<line x1="330" y1="609.2" x2="330" y2="717.2" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="785.2" width="1040" height="156" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="805.2" width="4" height="116" rx="2" fill="#0b7285"/>
+<line x1="330" y1="809.2" x2="330" y2="917.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="985.2" width="1040" height="156" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="1005.2" width="4" height="116" rx="2" fill="#0b7285"/>
+<line x1="330" y1="1009.2" x2="330" y2="1117.2" stroke="#bfd0dc"/>
+<rect id="note-6" data-card="true" x="40" y="1173.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M10 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">API как слой управляемого обмена</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Для M10 интеграция описывается через бизнес-сценарий, а не через абстрактную технологию.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Источник</tspan>
+</text>
+<text data-owner="card-1" x="354" y="229.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Сайт, CRM, 1С, документ, сервис</tspan>
+</text>
+<text data-owner="card-1" x="354" y="265.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Где рождается главная запись</tspan>
+</text>
+<text data-owner="card-1" x="354" y="301.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Источник истины</tspan>
+</text>
+<text data-owner="card-2" x="64" y="433.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2. Событие</tspan>
+</text>
+<text data-owner="card-2" x="354" y="429.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Заявка, смена стадии, новый файл</tspan>
+</text>
+<text data-owner="card-2" x="354" y="465.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Что запускает обмен данными</tspan>
+</text>
+<text data-owner="card-2" x="354" y="501.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Точка старта</tspan>
+</text>
+<text data-owner="card-3" x="64" y="633.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3. Поля</tspan>
+</text>
+<text data-owner="card-3" x="354" y="629.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Имя, телефон, объект, стадия</tspan>
+</text>
+<text data-owner="card-3" x="354" y="665.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Какие данные нужно передать</tspan>
+</text>
+<text data-owner="card-3" x="354" y="701.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Карта данных</tspan>
+</text>
+<text data-owner="card-4" x="64" y="833.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4. Действие</tspan>
+</text>
+<text data-owner="card-4" x="354" y="829.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Создать лид, сделку или задачу</tspan>
+</text>
+<text data-owner="card-4" x="354" y="865.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Какой результат ожидает бизнес</tspan>
+</text>
+<text data-owner="card-4" x="354" y="901.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Результат</tspan>
+</text>
+<text data-owner="card-5" x="64" y="1033.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">5. Журнал</tspan>
+</text>
+<text data-owner="card-5" x="354" y="1029.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Успех, ошибка, повтор, владелец</tspan>
+</text>
+<text data-owner="card-5" x="354" y="1065.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Как проверяем и сопровождаем</tspan>
+</text>
+<text data-owner="card-5" x="354" y="1101.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Контроль</tspan>
+</text>
+<text data-owner="note-6" x="68" y="1213.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Правило M10 Сначала описываем бизнес-проблему, источник истины, событие и поля, затем выбираем</tspan>
+<tspan x="68" dy="28">тип подключения, а уже после этого обсуждаем API, webhook, права, тесты и журнал сопровождения.</tspan>
+</text>
+</g>
+</svg>

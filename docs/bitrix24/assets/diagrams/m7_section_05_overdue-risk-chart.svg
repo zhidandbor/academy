@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1014" viewBox="0 0 1120 1014" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Учебный график просроченных задач</title>
+<desc id="desc">Учебная столбчатая диаграмма для модуля M7, показывающая количество просроченных задач по четырем контурам работы.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1014" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<line x1="40" y1="620" x2="1080" y2="620" stroke="#bfd0dc"/>
+<line x1="40" y1="540" x2="1080" y2="540" stroke="#bfd0dc"/>
+<line x1="40" y1="460" x2="1080" y2="460" stroke="#bfd0dc"/>
+<line x1="40" y1="380" x2="1080" y2="380" stroke="#bfd0dc"/>
+<line x1="40" y1="300" x2="1080" y2="300" stroke="#bfd0dc"/>
+<g id="connections">
+</g>
+<g id="blocks">
+<rect data-value="12" data-unit="26.666666666666668" x="102" y="300" width="120" height="320" rx="4" fill="#ac3549"/>
+<rect id="card-1" data-card="true" x="40" y="644" width="244" height="210" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="664" width="4" height="170" rx="2" fill="#0b7285"/>
+<rect data-value="9" data-unit="26.666666666666668" x="366" y="380" width="120" height="240" rx="4" fill="#ac3549"/>
+<rect id="card-2" data-card="true" x="304" y="644" width="244" height="210" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="305" y="664" width="4" height="170" rx="2" fill="#0b7285"/>
+<rect data-value="6" data-unit="26.666666666666668" x="630" y="460" width="120" height="160" rx="4" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="568" y="644" width="244" height="210" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="569" y="664" width="4" height="170" rx="2" fill="#0b7285"/>
+<rect data-value="4" data-unit="26.666666666666668" x="894" y="513.3333333333334" width="120" height="106.66666666666666" rx="4" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="832" y="644" width="244" height="210" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="833" y="664" width="4" height="170" rx="2" fill="#0b7285"/>
+<rect id="note-5" data-card="true" x="40" y="886" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M7 / УЧЕБНЫЙ ГРАФИК</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Учебный график: где просрочка уже стала управленческим</tspan>
+<tspan x="40" dy="44.8">риском</tspan>
+</text>
+<text data-owner="" x="40" y="190" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Учебные данные для M7, не реальные показатели компании.</tspan>
+</text>
+<text data-owner="" x="40" y="250" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Просроченные задачи, шт.</tspan>
+</text>
+<text data-owner="" x="40" y="612" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="40" dy="0">0</tspan>
+</text>
+<text data-owner="" x="40" y="532" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="40" dy="0">3</tspan>
+</text>
+<text data-owner="" x="40" y="452" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="40" dy="0">6</tspan>
+</text>
+<text data-owner="" x="40" y="372" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="40" dy="0">9</tspan>
+</text>
+<text data-owner="" x="40" y="292" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="40" dy="0">12</tspan>
+</text>
+<text data-owner="" x="144" y="284" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">12</tspan>
+</text>
+<text data-owner="card-1" x="64" y="692" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">ПТО</tspan>
+</text>
+<text data-owner="card-1" x="64" y="737.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Сигнал к разбору</tspan>
+<tspan x="64" dy="28">сроков и блокеров</tspan>
+</text>
+<text data-owner="" x="408" y="364" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="408" dy="0">9</tspan>
+</text>
+<text data-owner="card-2" x="328" y="692" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="328" dy="0">Производство</tspan>
+</text>
+<text data-owner="card-2" x="328" y="737.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="328" dy="0">Нужна</tspan>
+<tspan x="328" dy="28">приоритизация</tspan>
+<tspan x="328" dy="28">задач</tspan>
+</text>
+<text data-owner="" x="672" y="444" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="672" dy="0">6</tspan>
+</text>
+<text data-owner="card-3" x="592" y="692" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="592" dy="0">Снабжение</tspan>
+</text>
+<text data-owner="card-3" x="592" y="737.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="592" dy="0">Контроль раз в</tspan>
+<tspan x="592" dy="28">неделю</tspan>
+</text>
+<text data-owner="" x="936" y="497.33333333333337" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="936" dy="0">4</tspan>
+</text>
+<text data-owner="card-4" x="856" y="692" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="856" dy="0">Проектный</tspan>
+<tspan x="856" dy="33.599999999999994">офис</tspan>
+</text>
+<text data-owner="card-4" x="856" y="771.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="856" dy="0">Наблюдение без</tspan>
+<tspan x="856" dy="28">эскалации</tspan>
+</text>
+<text data-owner="note-5" x="68" y="926" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Интерпретация для M7: график не оценивает людей, а показывает, где нужна ручная проверка причин</tspan>
+<tspan x="68" dy="28">просрочки и пересмотр текущих сроков.</tspan>
+</text>
+</g>
+</svg>

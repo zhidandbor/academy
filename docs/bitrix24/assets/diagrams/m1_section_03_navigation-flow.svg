@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="584" viewBox="0 0 1120 584" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема базовой навигации в Битрикс24</title>
+<desc id="desc">Слева сотрудник выбирает рабочий раздел, сверху ищет нужный объект и проверяет уведомления, а в центральной области работает с открытым разделом.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="584" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M356,304.2 L398,304.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M720,304.2 L762,304.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="185.2" width="312" height="238" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="205.2" width="4" height="198" rx="2" fill="#0b7285"/>
+<rect id="card-2" data-card="true" x="404" y="185.2" width="312" height="238" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="405" y="205.2" width="4" height="198" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="768" y="185.2" width="312" height="238" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="769" y="205.2" width="4" height="198" rx="2" fill="#0b7285"/>
+<rect id="note-4" data-card="true" x="40" y="455.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M1 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Базовая логика навигации в Bitrix24</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Сначала выбираем раздел, затем ищем и проверяем события, после этого работаем с содержимым раздела.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Слева выбираю</tspan>
+<tspan x="64" dy="33.599999999999994">раздел</tspan>
+</text>
+<text data-owner="card-1" x="64" y="312.4" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Лента, Задачи, Диск,</tspan>
+<tspan x="64" dy="28">Группы и проекты, CRM и</tspan>
+<tspan x="64" dy="28">другие разделы</tspan>
+</text>
+<text data-owner="card-2" x="428" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="428" dy="0">2. Сверху</tspan>
+<tspan x="428" dy="33.599999999999994">ориентируюсь</tspan>
+</text>
+<text data-owner="card-2" x="428" y="312.4" font-size="20" font-weight="400" fill="#526579">
+<tspan x="428" dy="0">Поиск, уведомления,</tspan>
+<tspan x="428" dy="28">профиль, быстрые действия</tspan>
+</text>
+<text data-owner="card-3" x="792" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="792" dy="0">3. В центре работаю</tspan>
+</text>
+<text data-owner="card-3" x="792" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="792" dy="0">Читаю ленту, открываю</tspan>
+<tspan x="792" dy="28">задачу, документ или</tspan>
+<tspan x="792" dy="28">карточку</tspan>
+</text>
+<text data-owner="note-4" x="68" y="495.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Если интерфейс на вашем портале немного отличается, ориентируйтесь на эту логику, а не на</tspan>
+<tspan x="68" dy="28">буквальное совпадение экрана.</tspan>
+</text>
+</g>
+</svg>

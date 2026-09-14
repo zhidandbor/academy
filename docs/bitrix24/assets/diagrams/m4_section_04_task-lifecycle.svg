@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1138" viewBox="0 0 1120 1138" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема жизненного цикла задачи</title>
+<desc id="desc">Постановка, ознакомление, исполнение в чате задачи и сдача результата. Отдельная приемка с возвратом на доработку требует включенной настройки контроля после завершения.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1138" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,300.2 L560,335.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,456.2 L560,491.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,612.2 L560,647.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,768.2 L560,803.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="rework" d="M116,865.2 L72,865.2 L72,553.2 L114,553.2" fill="none" stroke="#ac3549" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arrow-red)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="120" y="185.2" width="880" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="205.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="410" y1="209.2" x2="410" y2="273.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="120" y="341.2" width="880" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="361.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="410" y1="365.2" x2="410" y2="429.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="120" y="497.2" width="880" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="517.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="410" y1="521.2" x2="410" y2="585.2" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="120" y="653.2" width="880" height="112" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="673.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="410" y1="677.2" x2="410" y2="741.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="120" y="809.2" width="880" height="112" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="121" y="829.2" width="4" height="72" rx="2" fill="#0b7285"/>
+<line x1="410" y1="833.2" x2="410" y2="897.2" stroke="#bfd0dc"/>
+<rect id="note-6" data-card="true" x="40" y="953.2" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect id="note-7" data-card="true" x="40" y="1037.2" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M4 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Жизненный цикл задачи: от постановки до приемки</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Для отдельной приемки постановщиком включите контроль задачи после завершения.</tspan>
+</text>
+<text data-owner="card-1" x="144" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">1. Постановка</tspan>
+</text>
+<text data-owner="card-1" x="434" y="229.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="434" dy="0">Название, описание, срок, материалы и критерии</tspan>
+<tspan x="434" dy="28">приемки.</tspan>
+</text>
+<text data-owner="card-2" x="144" y="389.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">2. Ознакомление</tspan>
+</text>
+<text data-owner="card-2" x="434" y="385.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="434" dy="0">Ответственный читает, задает вопросы и подтверждает</tspan>
+<tspan x="434" dy="28">понимание.</tspan>
+</text>
+<text data-owner="card-3" x="144" y="545.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">3. Исполнение</tspan>
+</text>
+<text data-owner="card-3" x="434" y="541.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="434" dy="0">Работа, чат задачи, файлы и промежуточный контекст</tspan>
+<tspan x="434" dy="28">живут в задаче.</tspan>
+</text>
+<text data-owner="card-4" x="144" y="701.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">4. Сдача</tspan>
+</text>
+<text data-owner="card-4" x="434" y="697.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="434" dy="0">Исполнитель прикладывает итог и пишет, что работа</tspan>
+<tspan x="434" dy="28">готова к проверке.</tspan>
+</text>
+<text data-owner="card-5" x="144" y="857.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="144" dy="0">5. Приемка</tspan>
+</text>
+<text data-owner="card-5" x="434" y="853.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="434" dy="0">Постановщик принимает результат или возвращает его</tspan>
+<tspan x="434" dy="28">на доработку.</tspan>
+</text>
+<text data-owner="note-6" x="68" y="993.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Пунктирная красная связь: приемка → исполнение, если нужна доработка.</tspan>
+</text>
+<text data-owner="note-7" x="68" y="1077.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">При возврате на доработку замечание и история обсуждения сохраняются в задаче.</tspan>
+</text>
+</g>
+</svg>

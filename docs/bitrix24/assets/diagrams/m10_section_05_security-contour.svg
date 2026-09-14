@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="898" viewBox="0 0 1120 898" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Контур безопасности интеграции</title>
+<desc id="desc">Учебная схема для M10: минимальные права, токены, журнал и владелец интеграции.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="898" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="membership" d="M560,335.2 L560,469.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,469.2 L510,469.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,469.2 L610,469.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,469.2 L560,677.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,677.2 L510,677.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,677.2 L610,677.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="220" y="185.2" width="680" height="148" rx="18" fill="#eef5fc" stroke="#1565a0" stroke-width="1.5"/>
+<rect x="221" y="205.2" width="4" height="108" rx="2" fill="#1565a0"/>
+<rect id="card-2" data-card="true" x="40" y="381.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="401.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="616" y="381.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="401.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="589.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="609.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="616" y="589.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="609.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="note-6" data-card="true" x="40" y="797.2" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M10 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Контур безопасности M10</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Интеграция считается безопасной, когда права, токены, журнал и ответственность описаны заранее.</tspan>
+</text>
+<text data-owner="card-1" x="244" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="244" dy="0">Интеграция</tspan>
+</text>
+<text data-owner="card-1" x="244" y="278.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="244" dy="0">цель + данные права + журнал</tspan>
+</text>
+<text data-owner="card-2" x="64" y="429.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Минимальные права</tspan>
+</text>
+<text data-owner="card-2" x="64" y="474.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Только те scope и доступы, без которых</tspan>
+<tspan x="64" dy="28">сценарий не работает.</tspan>
+</text>
+<text data-owner="card-3" x="640" y="429.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Токены и URL</tspan>
+</text>
+<text data-owner="card-3" x="640" y="474.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Хранятся как чувствительные данные, не</tspan>
+<tspan x="640" dy="28">публично.</tspan>
+</text>
+<text data-owner="card-4" x="64" y="637.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Журнал и тест</tspan>
+</text>
+<text data-owner="card-4" x="64" y="682.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Логи, тестовый сценарий, контроль ошибок</tspan>
+<tspan x="64" dy="28">и повторов.</tspan>
+</text>
+<text data-owner="card-5" x="640" y="637.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Владелец</tspan>
+</text>
+<text data-owner="card-5" x="640" y="682.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Есть бизнес-владелец и технический</tspan>
+<tspan x="640" dy="28">ответственный.</tspan>
+</text>
+<text data-owner="note-6" x="68" y="837.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Если хотя бы одного блока нет, растет риск хаоса.</tspan>
+</text>
+</g>
+</svg>

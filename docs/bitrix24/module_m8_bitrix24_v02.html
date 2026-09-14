@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модуль M8. CRM: основы, контакты и сделки в Битрикс24</title>
+<link rel="stylesheet" href="assets/common/course-theme.css">
+<link rel="stylesheet" href="assets/pages/m8.css">
+<link rel="stylesheet" href="assets/common/module-components.css">
+<link rel="stylesheet" href="assets/common/module-layout.css">
+<link rel="stylesheet" href="assets/common/module-hero.css">
+<link rel="stylesheet" href="assets/common/course-refresh.css">
+</head>
+<body class="course-module">
+<a class="skip-link" href="#course-content">Перейти к содержанию</a>
+<div class="page">
+  <div class="topbar course-header course-header--module">
+      <div>
+        <strong>Курс Битрикс24 для сотрудников</strong>
+        <div class="module-meta">Модуль M8 · Расширенный уровень · Практика и самопроверка</div>
+      </div>
+      <div class="module-links course-nav course-nav--meta" role="navigation" aria-label="Модули курса">
+      <a href="course_bitrix24_v02_index.html">&#1050;&#1091;&#1088;&#1089;</a>
+      <a href="module_m1_bitrix24_v02.html">M1</a>
+      <a href="module_m2_bitrix24_v02.html">M2</a>
+      <a href="module_m3_bitrix24_v02.html">M3</a>
+      <a href="module_m4_bitrix24_v02.html">M4</a>
+      <a href="module_m5_bitrix24_v02.html">M5</a>
+      <a href="module_m6_bitrix24_v02.html">M6</a>
+      <a href="module_m7_bitrix24_v02.html">M7</a>
+      <span aria-current="page">M8</span>
+      <a href="module_m9_bitrix24_v02.html">M9</a>
+      <a href="module_m10_bitrix24_v02.html">M10</a>
+    </div>
+    </div>
+
+  <main>
+  <section class="hero hero--module">
+    <div class="hero-grid hero-grid--module">
+      <div class="module-hero-copy">
+        <h1 id="course-content" tabindex="-1">CRM: основы, контакты и сделки в Битрикс24</h1>
+        <p class="lead">Этот модуль учит вести клиентскую работу в CRM так, чтобы компания не теряла историю общения, договоренности, следующий шаг и реальную картину по сделкам. Главная задача — убрать дубли, неполные карточки и «мертвые» сделки.</p>
+        <div class="nav-card nav-card--module-intro">
+          <h2>Навигация по модулю</h2>
+          <nav class="section-nav course-nav course-nav--section" aria-label="Разделы модуля">
+      <a href="#context">CRM как контекст</a>
+      <a href="#entities">CRM-сущности</a>
+      <a href="#contacts">Контакты и компании</a>
+      <a href="#deals">Сделки</a>
+      <a href="#duplicates">Дубли и качество базы</a>
+      <a href="#scenarios">Сценарии работы</a>
+      <a href="#route">Сквозная практика</a>
+      <a href="#whatif">Что делать, если…</a>
+      <a href="#mistakes">Ошибки</a>
+      <a href="#test">Самопроверка</a>
+      <a href="#final-task">Итоговое задание</a>
+      <a href="#next">&#1063;&#1090;&#1086; &#1076;&#1072;&#1083;&#1100;&#1096;&#1077;</a>
+      <a href="#sources">&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;</a>
+    </nav>
+        </div>
+      </div>
+      <div class="module-hero-side">
+        <div class="info-card">
+        <h3>Что важно понять в M8</h3>
+        <p>CRM — это не телефонная книга и не формальный список клиентов. Это рабочая система клиентского контекста, которая хранит, с кем мы общаемся, какую организацию он представляет, по какой возможности идет работа и что должно произойти дальше.</p>
+        
+      </div>
+        <div class="info-card">
+          <h3>Результат прохождения</h3>
+          <p>сотрудник умеет корректно создавать и обновлять CRM-карточки, фиксировать историю и следующий шаг</p>
+        </div>
+              <div class="info-card module-remember-panel">
+          <h3>Что стоит запомнить</h3>
+          <div class="remember-grid">
+      <div class="important">
+          <div class="label">Главная формула M8</div>
+          <p><strong>Качественная CRM = нет дублей + понятные карточки + актуальные стадии + зафиксированные коммуникации + следующий шаг.</strong></p>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+  </section>
+
+  <section class="section-card module-passport-card">
+    <h2>Паспорт модуля</h2>
+    <div class="passport-grid">
+      <div class="mini-card passport-card"><h3 class="card-heading">Место в курсе</h3><p>после модулей по задачам, проектам, документам и отчетности</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Входной уровень</h3><p>пользователь умеет фиксировать договоренности и работать с задачами и документами</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Целевая аудитория</h3><p>коммерческий блок, РП, ПТО, инженеры, координаторы, сотрудники, работающие с заказчиками и подрядчиками</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Итоговый результат</h3><p>сотрудник умеет корректно создавать и обновлять CRM-карточки, фиксировать историю и следующий шаг</p></div>
+    </div>
+    <div class="success passport-result-card">
+      <div class="label">Ожидаемый результат обучения</div>
+      <p>сотрудник умеет корректно создавать и обновлять CRM-карточки, фиксировать историю и следующий шаг</p>
+    </div>
+  </section>
+
+  <aside class="note" aria-label="В работе">
+    <p>CRM может работать с лидами или без них. Выполняйте практику в режиме, который уже принят в компании.</p>
+  </aside>
+
+  <section class="section-card" id="context">
+    <h2>1. CRM как система клиентского контекста</h2>
+    <p>CRM в Битрикс24 хранит не только имя клиента и номер телефона. Она собирает историю коммуникаций, документы, сделки, договоренности, следующий шаг и делает клиентскую работу передаваемой между сотрудниками. Это особенно важно, когда в процессе участвуют коммерческий блок, РП, ПТО и руководители.</p>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">История</h3><p>В CRM видно, кто, когда и о чем говорил с клиентом.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Передача</h3><p>Клиента можно передать другому сотруднику без потери контекста.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Управление</h3><p>Руководитель видит реальную воронку, а не устные обещания.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Контроль</h3><p>Снижается риск забытых звонков, потерянных писем и незафиксированных договоренностей.</p></div>
+    </div>
+
+    <div class="trouble">
+      <div class="label">Что теряется без CRM</div>
+      <p>Если звонок, письмо или договоренность не отражены в CRM, компания становится зависимой от памяти конкретного сотрудника. В этом случае новый менеджер, руководитель или координатор не может быстро понять, что уже обещано клиенту и что делать дальше.</p>
+    </div>
+
+    <div class="case">
+      <div class="label">Рабочее правило</div>
+      <p>После любой значимой коммуникации с клиентом в CRM должен остаться след: комментарий, письмо, звонок, встреча, обновленная стадия или следующий шаг.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="entities">
+    <h2>2. CRM-сущности: кто есть кто</h2>
+    <div class="important"><div class="label">Лид есть не в каждом режиме</div><p>В простом режиме CRM работа ведется без лидов; в классическом есть отдельная квалификация лидов, если она доступна на тарифе. Для практики выясните принятый режим и выполните маршрут в нем. Не переключайте рабочую CRM ради упражнения: при переходе из классического режима в простой незакрытые лиды автоматически конвертируются. <a href="https://helpdesk.bitrix24.ru/open/23440468/" target="_blank" rel="noopener">Режимы CRM и последствия переключения</a>.</p></div>
+    <p>Базовый уровень M8 строится на пяти сущностях: лид, контакт, компания, сделка и дело или активность. Пользователь должен не просто выучить определения, а понимать, какую роль каждая сущность играет в рабочем процессе.</p>
+
+    <div class="entity-grid">
+      <div class="entity-card">
+        <h3 class="card-heading">Лид</h3>
+        <p>Входящий интерес, который еще нужно разобрать и квалифицировать.</p>
+      </div>
+      <div class="entity-card">
+        <h3 class="card-heading">Контакт</h3>
+        <p>Конкретный человек, с которым идет общение.</p>
+      </div>
+      <div class="entity-card">
+        <h3 class="card-heading">Компания</h3>
+        <p>Организация, которую представляет контакт.</p>
+      </div>
+      <div class="entity-card">
+        <h3 class="card-heading">Сделка</h3>
+        <p>Конкретная возможность, предмет работы или коммерческий процесс.</p>
+      </div>
+      <div class="entity-card">
+        <h3 class="card-heading">Дело / активность</h3>
+        <p>Следующий звонок, письмо, встреча или иное действие по CRM.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m8_section_02_lead-contact-company-deal-flow.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m8_section_02_lead-contact-company-deal-flow.svg" alt="Учебная схема связи лида, контакта, компании, сделки и активности в CRM Bitrix24" width="1120" height="1350"></a>
+        <figcaption><strong>Рисунок M8-01.</strong> Учебная схема центральной логики M8: входящий интерес сначала проверяется на наличие истории в CRM, затем при необходимости проходит через лид, компанию, контакт, сделку и следующую активность. Схема нужна, чтобы пользователь перестал создавать сущности хаотично и увидел, как они собираются в единый клиентский контур. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-02.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-02.webp" alt="Выбор простого или классического режима CRM" width="1280" height="726"></a>
+        <figcaption><strong>Рисунок M8-02.</strong> Выбор простого или классического режима CRM. <a href="https://helpdesk.bitrix24.ru/open/23440468/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="crm-shell">
+      <div class="crm-head"><span>Логика связи CRM-сущностей</span><span>Базовая модель M8</span></div>
+      <div class="crm-body">
+        <div class="link-tree">
+          <div class="tree-row"><div class="tree-node"><strong>Входящий запрос</strong><span>Письмо, звонок, рекомендация, повторный интерес</span></div></div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-row">
+            <div class="tree-node"><strong>Поиск в CRM</strong><span>Проверяем, нет ли компании, контакта или старой сделки</span></div>
+          </div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-row">
+            <div class="tree-node"><strong>Компания</strong><span>Организация клиента</span></div>
+            <div class="tree-node"><strong>Контакт</strong><span>Человек внутри этой организации</span></div>
+          </div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-row">
+            <div class="tree-node"><strong>Сделка</strong><span>Конкретная возможность, предмет и стадия</span></div>
+            <div class="tree-node"><strong>Активность</strong><span>Следующий шаг: звонок, письмо, встреча</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning">
+      <div class="label">Поле «Клиент»</div>
+      <p>Именно через поле «Клиент» в сделке обычно связываются контакты и компания. Сделка может включать несколько контактов, но только одну компанию. Поэтому важно не просто создать сущности, а правильно связать их между собой.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="contacts">
+    <h2>3. Контакты и компании</h2>
+    <p>Качественная CRM начинается с дисциплины карточек. Сотрудник должен понимать, какие поля обязательны, что проверять перед созданием и как обновлять существующие записи, если клиент уже есть в базе.</p>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Контакты и компании: Сущность / Рекомендуемый рабочий минимум / Что повышает ценность карточки">
+<table aria-label="Контакты и компании: Сущность / Рекомендуемый рабочий минимум / Что повышает ценность карточки">
+      <thead>
+        <tr>
+          <th scope="col">Сущность</th>
+          <th scope="col">Рекомендуемый рабочий минимум</th>
+          <th scope="col">Что повышает ценность карточки</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Контакт</td>
+          <td>ФИО, телефон или email, компания, ответственный</td>
+          <td>Должность, роль, комментарий, объект, связанная сделка</td>
+        </tr>
+        <tr>
+          <td>Компания</td>
+          <td>Название, тип, ответственный</td>
+          <td>ИНН, регион, сегмент, история работы, примечания</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-03.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-03.webp" alt="Список контактов CRM: записи, ответственные и активность" width="1280" height="727"></a>
+        <figcaption><strong>Рисунок M8-03.</strong> Список контактов CRM: записи, ответственные и активность. <a href="https://helpdesk.bitrix24.ru/open/25042958/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-04.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-04.webp" alt="Карточка контакта: связанные компании и история взаимодействий" width="1830" height="1086"></a>
+        <figcaption><strong>Рисунок M8-04.</strong> Карточка контакта: связанные компании и история взаимодействий. <a href="https://helpdesk.bitrix24.ru/open/27912504/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="compare-grid">
+        <div class="compare-card bad">
+        <h3 class="card-heading">Плохая карточка</h3>
+        <ul>
+          <li>Имя: Сергей</li>
+          <li>Телефон: есть</li>
+          <li>Комментарий: звонил</li>
+          <li>Нет компании, роли и следующего шага</li>
+        </ul>
+      </div>
+        <div class="compare-card good">
+        <h3 class="card-heading">Хорошая карточка</h3>
+        <ul>
+          <li>ФИО, должность, телефон, email</li>
+          <li>Связана с компанией</li>
+          <li>Понятна роль контакта в процессе</li>
+          <li>Есть комментарий, объект и связанная сделка</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="important">
+      <div class="label">Поиск перед созданием</div>
+      <p>Перед созданием новой карточки всегда проверьте ФИО, телефон, email, название компании и историю похожих записей. В большинстве случаев дубль появляется не из-за системы, а из-за спешки пользователя.</p>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-05.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-05.webp" alt="Блок «Клиент»: компания и контакт в карточке CRM" width="1830" height="1086"></a>
+        <figcaption><strong>Рисунок M8-05.</strong> Блок «Клиент»: компания и контакт в карточке CRM. <a href="https://helpdesk.bitrix24.ru/open/27912504/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-06.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-06.webp" alt="Несколько контактов одной компании в клиентской связке" width="1830" height="1086"></a>
+        <figcaption><strong>Рисунок M8-06.</strong> Несколько контактов одной компании в клиентской связке. <a href="https://helpdesk.bitrix24.ru/open/27912504/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Найти или создать</div>
+        <p>Для пяти учебных кейсов определите, нужно ли создавать новую компанию, новый контакт или достаточно обновить существующую карточку.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Хорошая карточка</div>
+        <p>Переделайте неполную карточку контакта в рабочую: добавьте обязательные поля, компанию, комментарий и связь со сделкой.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Обновление данных</div>
+        <p>Смоделируйте ситуацию, когда контакт сменил должность или компанию, и опишите, как правильно обновить базу.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="deals">
+    <h2>4. Сделки: стадия, следующий шаг и результат</h2>
+    <p>Сделка в M8 — это не просто запись о потенциальной продаже. Это управляемая единица клиентской работы, в которой должно быть понятно, что происходит сейчас, что уже сделано и какое следующее действие должно произойти.</p>
+
+    <div class="pipeline-shell">
+      <div class="pipeline-head"><span>Пример базовой логики стадий</span><span>Стадии должны отражать фактическое состояние</span></div>
+      <div class="pipeline-body">
+        <div class="pipeline-grid">
+          <div class="pipeline-col"><h3 class="card-heading">Новый запрос</h3><div class="mini-item"><strong>Критерий</strong>Понятно, кто клиент и в чем запрос</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Квалификация</h3><div class="mini-item"><strong>Критерий</strong>Уточнены объект, объем, ЛПР и вводные</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Подготовка предложения</h3><div class="mini-item"><strong>Критерий</strong>Назначен срок ТКП и ответственный</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Согласование</h3><div class="mini-item"><strong>Критерий</strong>Есть замечания клиента и дата следующего контакта</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Договорной этап</h3><div class="mini-item"><strong>Критерий</strong>Согласуются условия или документы</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Успех / отказ</h3><div class="mini-item"><strong>Критерий</strong>Результат и причина зафиксированы</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-07.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-07.webp" alt="Карточка сделки: стадия, сумма и запланированный следующий шаг" width="1280" height="724"></a>
+        <figcaption><strong>Рисунок M8-07.</strong> Карточка сделки: стадия, сумма и запланированный следующий шаг. <a href="https://helpdesk.bitrix24.ru/open/26161116/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-08.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-08.jpg" alt="Канбан CRM: стадии воронки и карточки сделок" width="1277" height="725"></a>
+        <figcaption><strong>Рисунок M8-08.</strong> Канбан CRM: стадии воронки и карточки сделок. <a href="https://helpdesk.bitrix24.ru/open/26161116/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="metric-boxes">
+      <div class="metric-box"><strong>Название сделки</strong><span>1</span></div>
+      <div class="metric-box"><strong>Актуальная стадия</strong><span>1</span></div>
+      <div class="metric-box"><strong>Следующий шаг</strong><span>1</span></div>
+      <div class="metric-box"><strong>Причина результата</strong><span>1</span></div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m8_section_04_deal-next-step-result.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m8_section_04_deal-next-step-result.svg" alt="Учебная схема цикла сделки от коммуникации к следующему шагу и результату" width="1120" height="1098"></a>
+      <figcaption><strong>Рисунок M8-09.</strong> Учебная схема жизненного цикла сделки в M8: коммуникация фиксируется в комментарии, затем превращается в активность с датой, после чего стадия обновляется по факту и приводит либо к следующему циклу, либо к финальному результату. Схема нужна, чтобы закрепить главное правило раздела: без следующего шага с датой сделка перестает быть управляемой. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Сделки: стадия, следующий шаг и результат: Что должно быть в сделке / Зачем это нужно / Типичная ошибка">
+<table aria-label="Сделки: стадия, следующий шаг и результат: Что должно быть в сделке / Зачем это нужно / Типичная ошибка">
+      <thead>
+        <tr>
+          <th scope="col">Что должно быть в сделке</th>
+          <th scope="col">Зачем это нужно</th>
+          <th scope="col">Типичная ошибка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Понятное название</td>
+          <td>Чтобы руководитель и коллега понимали предмет сделки без открытия карточки</td>
+          <td>Одинаковые или абстрактные названия вроде «Сделка 1»</td>
+        </tr>
+        <tr>
+          <td>Клиент, стадия и ответственный</td>
+          <td>Чтобы была понятна принадлежность и текущее состояние</td>
+          <td>Сделка без связи с компанией или контактами</td>
+        </tr>
+        <tr>
+          <td>Комментарий после коммуникации</td>
+          <td>Чтобы не терять историю и договоренности</td>
+          <td>«Созвонились» без сути разговора</td>
+        </tr>
+        <tr>
+          <td>Следующий шаг с датой</td>
+          <td>Чтобы сделка не зависала без движения</td>
+          <td>Есть стадия, но нет следующего действия</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-10.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-10.webp" alt="Представление «Дела»: просроченные и предстоящие действия, отдельная колонка «Без дел»" width="1280" height="724"></a>
+        <figcaption><strong>Рисунок M8-10.</strong> Представление «Дела»: просроченные и предстоящие действия, отдельная колонка «Без дел». <a href="https://helpdesk.bitrix24.ru/open/18500870/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-11.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-11.webp" alt="Запланированное дело в карточке сделки: действие и дата выполнения" width="1280" height="724"></a>
+        <figcaption><strong>Рисунок M8-11.</strong> Запланированное дело в карточке сделки: действие и дата выполнения. <a href="https://helpdesk.bitrix24.ru/open/18500870/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="case">
+      <div class="label">Практическое правило</div>
+      <p>Если после разговора с клиентом в сделке не появился новый комментарий, активность или следующий шаг, значит CRM не отражает реальную работу и сделка начинает умирать.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="duplicates">
+    <h2>5. Дубли и качество базы</h2>
+    <div class="note"><p><strong>Перед объединением.</strong> Совпадение телефона или названия является поводом проверить карточки, а не достаточным доказательством дубля. Сравните историю, реквизиты, контакты и связанные сделки; затем выберите основную запись и разрешите конфликты полей. В учебной практике объединяйте только тестовые записи. Доступность автоматического объединения и права на операцию проверяются отдельно. <a href="https://helpdesk.bitrix24.ru/open/25343258/" target="_blank" rel="noopener">Официальный порядок объединения</a>.</p></div>
+    <p>Дубли и неполные карточки разрушают CRM так же быстро, как «мертвые» сделки. Из-за них история общения распадается на несколько записей, аналитика искажается, а новый сотрудник не понимает, какая карточка является основной.</p>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">Откуда берутся дубли</h3><p>Спешка, отсутствие поиска, разное написание имен и компаний, повторные обращения.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Что искажается</h3><p>История, количество клиентов, картина по воронке и отчетность по сотрудникам.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Как предотвращать</h3><p>Искать по телефону, email, ФИО, названию компании и проверять историю.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Что делать с уже созданным дублем</h3><p>Выбрать основную запись и объединить данные вручную или через механизм объединения дублей.</p></div>
+    </div>
+
+    <div class="warning">
+      <div class="label">Практический блок</div>
+      <p>Если найден дубль, не создавайте третью карточку «на всякий случай». Сначала определите основную запись, затем объедините поля и сохраните в базе только рабочий вариант.</p>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-12.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-12.jpg" alt="Выбор записей и команда «Объединить» для обработки дублей" width="1280" height="695"></a>
+        <figcaption><strong>Рисунок M8-12.</strong> Выбор записей и команда «Объединить» для обработки дублей. <a href="https://helpdesk.bitrix24.ru/open/25343258/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m8-img-13.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m8-img-13.webp" alt="Сравнение полей и выбор данных при объединении дублей" width="1470" height="798"></a>
+        <figcaption><strong>Рисунок M8-13.</strong> Сравнение полей и выбор данных при объединении дублей. <a href="https://helpdesk.bitrix24.ru/open/25343258/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Практика «Создать или найти?»</h3>
+    <div class="result-card">
+      <ol>
+        <li>В CRM уже есть компания «ЭнергоСеть», но новый человек пишет с корпоративного email.</li>
+        <li>Есть контакт Иванов И.И., но новый звонок пришел с другого номера.</li>
+        <li>Клиент обратился повторно по новому объекту.</li>
+        <li>Есть компания с похожим названием, но в другом регионе.</li>
+      </ol>
+      <p><strong>Задание:</strong> для каждого кейса решите, что делать: обновить, связать, создать новую сделку или объединить дубликаты.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="scenarios">
+    <h2>6. Сценарии работы</h2>
+    <p>Ниже собраны типовые рабочие ситуации, которые помогают закрепить CRM не как набор терминов, а как повседневный инструмент коммерческой и проектной работы.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Сценарий 1. Новый заказчик</h3>
+        <p>Пришел новый запрос. Нужно проверить базу, создать компанию и контакт, открыть сделку, зафиксировать вводные и назначить следующий шаг.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Сценарий 2. Действующий клиент, новый объем</h3>
+        <p>Компания и контакт уже есть. Новую карточку клиента создавать не нужно, но по новому предмету работы должна появиться отдельная сделка.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Сценарий 3. Сделка без движения</h3>
+        <p>Сделка 10 дней стоит на стадии «Согласование», последний комментарий «Отправили ТКП», следующего шага нет.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Сценарий 4. Проигранная сделка</h3>
+        <p>Сделка завершилась отказом. Нужно зафиксировать причину, комментарий и, если нужно, напоминание о возвращении позже.</p>
+      </div>
+    </div>
+
+    <h3>Практика «Плохая карточка → хорошая карточка»</h3>
+    <div class="template-box">Плохая карточка:
+Имя: Сергей
+Телефон: есть
+Комментарий: звонил
+
+Переделайте в хорошую карточку:
+ФИО:
+Компания:
+Должность:
+Телефон:
+Email:
+Роль:
+Объект:
+Ответственный:
+Комментарий:
+Связанная сделка:
+Следующий шаг:</div>
+
+    <h3>Практика «Сделка без движения»</h3>
+    <div class="result-card">
+      <ol>
+        <li>Проверьте историю коммуникаций.</li>
+        <li>Определите фактическую стадию сделки.</li>
+        <li>Добавьте комментарий по текущему статусу.</li>
+        <li>Создайте следующий шаг.</li>
+        <li>Назначьте срок активности.</li>
+        <li>Сформулируйте короткий статус для руководителя.</li>
+      </ol>
+    </div>
+
+    <h3>Практика «Причина проигрыша»</h3>
+    <div class="result-card">
+      <p>Если сделка проиграна, нужно зафиксировать причину: цена, сроки, проиграли конкуренту, не наш профиль, клиент перенес проект, нет бюджета, нет ответа или другое. Затем коротко написать, что произошло, что можно улучшить и нужен ли возврат к клиенту позже.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="route">
+    <h2>7. Сквозная практика: «От входящего запроса до управляемой сделки»</h2>
+    <p>Этот маршрут объединяет весь M8 в одну рабочую логику и показывает, как из отдельного обращения сформировать прозрачный CRM-процесс.</p>
+
+    <div class="route">
+      <div class="step-card"><div class="step-no route-step__index">1</div><h3 class="card-heading">Получаем запрос</h3><p>Фиксируем, кто обратился, по какому объекту или предмету и что нужно клиенту.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">2</div><h3 class="card-heading">Проверяем базу</h3><p>Ищем компанию, контакт и старые сделки, чтобы не плодить дубли.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">3</div><h3 class="card-heading">Создаем или обновляем</h3><p>При необходимости создаем компанию и контакт либо обновляем существующие записи.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">4</div><h3 class="card-heading">Открываем сделку</h3><p>Задаем понятное название, предмет, стадию, ответственного и ожидаемый результат.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">5</div><h3 class="card-heading">Фиксируем следующий шаг</h3><p>После звонка или письма создаем активность с датой и комментарием.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">6</div><h3 class="card-heading">Обновляем стадию</h3><p>Перемещаем сделку только по фактическому состоянию, а не формально.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">7</div><h3 class="card-heading">Завершаем результат</h3><p>При успехе или отказе фиксируем итог, причину и дальнейшие договоренности.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">8</div><h3 class="card-heading">Проверяем качество</h3><p>Смотрим, нет ли дублей, пустых полей и сделок без движения.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="whatif">
+    <h2>8. Что делать, если…</h2>
+
+    <details>
+      <summary>Если не знаете, создавать контакт или компанию</summary>
+      <div>
+        <p>Контакт — это человек, компания — это организация. Если у вас есть конкретный человек от организации, обычно нужны обе карточки и связь между ними.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если похожий контакт уже есть</summary>
+      <div>
+        <p>Не создавайте новый сразу. Проверьте телефон, email, компанию и историю. После этого решите: обновить карточку или объединить дубли.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если клиент обратился повторно</summary>
+      <div>
+        <p>Найдите существующую компанию и контакт. Если это новый предмет работы, создайте новую сделку, а не новый контакт или новую компанию.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если сделка давно без движения</summary>
+      <div>
+        <p>Проверьте историю, обновите стадию, добавьте комментарий и создайте следующий шаг с датой.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если сделка проиграна</summary>
+      <div>
+        <p>Закройте ее как неуспешную, укажите причину отказа и, если нужно, оставьте пометку о возможном возвращении к клиенту позже.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если контакт сменил должность или компанию</summary>
+      <div>
+        <p>Обновите карточку, добавьте комментарий об изменении и при необходимости свяжите контакт с новой компанией.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если руководитель не понимает статус сделки</summary>
+      <div>
+        <p>Проверьте название, стадию, комментарии, следующий шаг и срок. Если по этим полям непонятно, что происходит, сделка ведется слабо.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если сделок слишком много и они не различимы</summary>
+      <div>
+        <p>Введите правило наименования: объект + предмет + клиент или тип работ. Это сразу повышает управляемость воронки.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="mistakes">
+    <h2>9. Типичные ошибки в CRM</h2>
+    <div class="grid-2">
+      <div class="trouble"><div class="label">Ошибка 1</div><p>Создавать новый контакт без поиска по базе.</p></div>
+      <div class="trouble"><div class="label">Ошибка 2</div><p>Хранить карточку клиента в формате «Имя + телефон» без контекста и связи со сделкой.</p></div>
+      <div class="trouble"><div class="label">Ошибка 3</div><p>Оставлять сделку в старой стадии, хотя фактически работа уже ушла дальше или остановилась.</p></div>
+      <div class="trouble"><div class="label">Ошибка 4</div><p>Не фиксировать следующий шаг после звонка или письма.</p></div>
+      <div class="trouble"><div class="label">Ошибка 5</div><p>Держать проигранные сделки активными, искажая воронку и отчетность.</p></div>
+      <div class="trouble"><div class="label">Ошибка 6</div><p>Использовать одинаковые названия сделок, из-за чего руководитель не понимает, о чем идет речь.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="test">
+    <h2>10. Самопроверка</h2>
+    <p>Эти вопросы проверяют, понимаете ли вы рабочую логику CRM, а не только названия сущностей.</p>
+
+    <div class="result-card">
+      <h3 class="card-heading">Вопросы</h3>
+      <ol>
+        <li>Чем контакт отличается от компании?</li>
+        <li>Что нужно сделать перед созданием нового контакта?</li>
+        <li>Что такое сделка?</li>
+        <li>Что обязательно должно быть в сделке?</li>
+        <li>Зачем сделке нужен следующий шаг?</li>
+        <li>Почему нельзя держать проигранную сделку активной?</li>
+        <li>Что делать, если найден дубль контакта?</li>
+        <li>Почему одинаковые названия сделок мешают работе?</li>
+        <li>Что нужно фиксировать после звонка с клиентом?</li>
+        <li>Когда по существующему клиенту нужно создавать новую сделку?</li>
+      </ol>
+    </div>
+
+    <details>
+      <summary>Проверить свои ответы</summary>
+      <div>
+        <ol>
+          <li>Контакт — это человек, компания — организация, которую он представляет.</li>
+          <li>Сначала выполнить поиск по базе по телефону, email, ФИО и компании.</li>
+          <li>Сделка — это конкретная возможность или процесс работы с клиентом по определенному предмету.</li>
+          <li>Понятное название, клиент, стадия, ответственный и следующий шаг.</li>
+          <li>Чтобы сделка не зависала без движения и была понятна следующая точка контакта.</li>
+          <li>Это искажает воронку, аналитику и управленческую картину.</li>
+          <li>Определить основную запись, проверить поля и объединить дубликаты или обновить существующую карточку.</li>
+          <li>Потому что по ним нельзя быстро понять предмет сделки и ее статус.</li>
+          <li>Комментарий по сути разговора, договоренности, изменение стадии и следующую активность.</li>
+          <li>Когда клиент тот же, но предмет работы, объект или возможность новые.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="final-task">
+    <h2>11. Итоговое практическое задание</h2>
+    <p><strong>Сценарий:</strong> поступил запрос от АО «ЭнергоСеть» на монтаж оборудования ПС 110 кВ. Нужно оформить клиентскую работу в CRM так, чтобы другой сотрудник мог продолжить процесс без потери контекста.</p>
+
+    <ol>
+      <li>Проверьте, есть ли компания в CRM.</li>
+      <li>Если компании нет, создайте карточку.</li>
+      <li>Проверьте, есть ли контактное лицо.</li>
+      <li>Если контакта нет, создайте карточку.</li>
+      <li>Заполните ФИО, должность, телефон, email, роль и комментарий.</li>
+      <li>Свяжите контакт с компанией.</li>
+      <li>Создайте сделку с понятным названием.</li>
+      <li>Укажите предмет сделки, стадию, ответственного и ожидаемый результат.</li>
+      <li>Зафиксируйте вводные по объекту.</li>
+      <li>Создайте следующий шаг с датой.</li>
+      <li>Добавьте комментарий после условного звонка.</li>
+      <li>Переведите сделку на следующую стадию при наличии основания.</li>
+      <li>Если сделка проиграна, закройте ее с причиной.</li>
+      <li>Проверьте чек-лист качества CRM.</li>
+    </ol>
+
+    <h3>Критерии успешного прохождения</h3>
+    <ul class="checklist">
+      <li>Сотрудник понимает назначение CRM и различает лид, контакт, компанию, сделку и активность.</li>
+      <li>Сотрудник умеет искать существующую карточку перед созданием новой.</li>
+      <li>Сотрудник умеет создать контакт с обязательным минимумом данных.</li>
+      <li>Сотрудник умеет связать контакт с компанией и сделкой.</li>
+      <li>Сотрудник умеет выбрать стадию по фактическому состоянию.</li>
+      <li>Сотрудник умеет зафиксировать следующий шаг и обновить историю после коммуникации.</li>
+      <li>Сотрудник понимает, как дубли и «мертвые» сделки искажают CRM.</li>
+      <li>Сотрудник умеет закрыть сделку с причиной результата.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="next">
+    <h2>12. Что дальше в курсе</h2>
+    <ul class="next-list">
+      <li><strong>Следующий уровень:</strong> после уверенной базовой дисциплины можно переходить к автоматизации, роботам, туннелям продаж и аналитике.</li>
+      <li><strong>Связка с M7:</strong> качество CRM напрямую влияет на отчетность и управленческую картину по клиентской работе.</li>
+      <li><strong>Связка с M4 и M6:</strong> договоренности из CRM часто переходят в задачи, документы и проектный контур.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="sources">
+    <h2>13. Полезные материалы</h2>
+    <ul class="source-list">
+      <li><a href="https://helpdesk.bitrix24.ru/open/26035204/" target="_blank" rel="noopener">Как начать работать с CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/23440468/" target="_blank" rel="noopener">Как выбрать режим работы CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/25042958/" target="_blank" rel="noopener">Контакты: что это и как с ними работать</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/22804914/" target="_blank" rel="noopener">Карточка CRM: возможности и настройки</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/27912504/" target="_blank" rel="noopener">Как связать компании, контакты и сделки</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/26161116/" target="_blank" rel="noopener">Сделки: что это и как с ними работать</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18500870/" target="_blank" rel="noopener">Представление «Дела» в CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18673862/" target="_blank" rel="noopener">Умные дела: создание напоминаний</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/25343258/" target="_blank" rel="noopener">Как объединить дубликаты в CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/25368844/" target="_blank" rel="noopener">Автоматическое объединение дубликатов</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <div class="footer-card course-footer-card">
+
+    <p class="small">Используйте модуль как практическую шпаргалку: сначала пройдите материал целиком, затем возвращайтесь к нужным разделам по мере работы в Битрикс24.</p>
+    <div class="footer-actions">
+      <a class="button button--secondary secondary" href="course_bitrix24_v02_index.html#modules">&#1050; &#1082;&#1072;&#1088;&#1090;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+      <a class="button button--secondary secondary" href="module_m7_bitrix24_v02.html">&#1053;&#1072;&#1079;&#1072;&#1076;: M7</a>
+      <a class="button button--primary primary" href="module_m9_bitrix24_v02.html">&#1044;&#1072;&#1083;&#1100;&#1096;&#1077;: M9</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

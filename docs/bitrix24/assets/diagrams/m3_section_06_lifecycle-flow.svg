@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="970" viewBox="0 0 1120 970" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема жизненного цикла рабочей группы или проекта</title>
+<desc id="desc">Схема показывает пять этапов жизненного цикла пространства: создать, запустить, работать, пересмотреть и архивировать.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="970" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,300.2 L560,335.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,428.2 L560,463.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,556.2 L560,591.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,684.2 L560,719.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="213.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="233.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="237.2" x2="330" y2="273.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="341.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="361.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="365.2" x2="330" y2="401.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="469.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="489.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="493.2" x2="330" y2="529.2" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="597.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="617.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="621.2" x2="330" y2="657.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="725.2" width="1040" height="84" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="745.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="749.2" x2="330" y2="785.2" stroke="#bfd0dc"/>
+<rect id="note-6" data-card="true" x="40" y="841.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M3 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Жизненный цикл пространства: от запуска до архивирования</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Полезная группа или проект не только создаются, но и регулярно пересматриваются, чтобы не превращаться в</tspan>
+<tspan x="40" dy="28">мертвый архив.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Создать</tspan>
+</text>
+<text data-owner="card-1" x="354" y="257.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Появилась устойчивая тема, участники, документы и задачи.</tspan>
+</text>
+<text data-owner="card-2" x="64" y="389.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2. Запустить</tspan>
+</text>
+<text data-owner="card-2" x="354" y="385.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Назначены владелец, участники, инструменты и стартовые правила.</tspan>
+</text>
+<text data-owner="card-3" x="64" y="517.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3. Работать</tspan>
+</text>
+<text data-owner="card-3" x="354" y="513.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Команда живет в одном контуре: лента, чат, задачи, диск, календарь.</tspan>
+</text>
+<text data-owner="card-4" x="64" y="645.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4. Пересмотреть</tspan>
+</text>
+<text data-owner="card-4" x="354" y="641.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Проверяем состав, папки, лишние темы и дублирующие места.</tspan>
+</text>
+<text data-owner="card-5" x="64" y="773.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">5. Архивировать</tspan>
+</text>
+<text data-owner="card-5" x="354" y="769.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Завершенные темы не должны мешать живому рабочему полю.</tspan>
+</text>
+<text data-owner="note-6" x="68" y="881.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Хорошая ревизия задает вопрос не только &quot;что оставить&quot;, но и &quot;что убрать&quot;, чтобы рабочее</tspan>
+<tspan x="68" dy="28">пространство не теряло смысл.</tspan>
+</text>
+</g>
+</svg>

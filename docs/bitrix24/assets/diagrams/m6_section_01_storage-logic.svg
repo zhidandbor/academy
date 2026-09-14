@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="998" viewBox="0 0 1120 998" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема логики хранения документов и знаний в Bitrix24</title>
+<desc id="desc">Схема показывает, как различаются Диск, База знаний, задача и проектный контур при работе с файлами, инструкциями и комплектами по объекту.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="998" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="membership" d="M560,408 L560,542" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="choice" d="M560,542 L510,542" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="choice" d="M560,542 L610,542" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="membership" d="M560,542 L560,750" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="choice" d="M560,750 L510,750" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="choice" d="M560,750 L610,750" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="220" y="258" width="680" height="148" rx="18" fill="#eef5fc" stroke="#1565a0" stroke-width="1.5"/>
+<rect x="221" y="278" width="4" height="108" rx="2" fill="#1565a0"/>
+<rect id="card-2" data-card="true" x="40" y="454" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="474" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="616" y="454" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="474" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="662" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="682" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="616" y="662" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="682" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="note-6" data-card="true" x="40" y="870" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M6 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">В M6 важно различать файл, инструкцию, задачу и комплект по</tspan>
+<tspan x="40" dy="44.8">объекту</tspan>
+</text>
+<text data-owner="" x="40" y="190" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Когда команда понимает роль каждого контура, документы перестают расползаться по чатам, личным папкам</tspan>
+<tspan x="40" dy="28">и случайным копиям.</tspan>
+</text>
+<text data-owner="card-1" x="244" y="306" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="244" dy="0">Что у вас в руках?</tspan>
+</text>
+<text data-owner="card-1" x="244" y="351.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="244" dy="0">Файл, правило работы, поручение или комплект по объекту</tspan>
+</text>
+<text data-owner="card-2" x="64" y="502" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Диск</tspan>
+</text>
+<text data-owner="card-2" x="64" y="547.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Здесь живет сам файл: шаблон, акт, фото,</tspan>
+<tspan x="64" dy="28">таблица, схема</tspan>
+</text>
+<text data-owner="card-3" x="640" y="502" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">База знаний</tspan>
+</text>
+<text data-owner="card-3" x="640" y="547.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Здесь живет порядок действий: кто, когда и</tspan>
+<tspan x="640" dy="28">как работает</tspan>
+</text>
+<text data-owner="card-4" x="64" y="710" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Задача</tspan>
+</text>
+<text data-owner="card-4" x="64" y="755.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Здесь живет работа по файлу: срок,</tspan>
+<tspan x="64" dy="28">ответственный, результат</tspan>
+</text>
+<text data-owner="card-5" x="640" y="710" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Проект</tspan>
+</text>
+<text data-owner="card-5" x="640" y="755.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Здесь живет комплект по объекту: файлы,</tspan>
+<tspan x="640" dy="28">задачи, участники, события</tspan>
+</text>
+<text data-owner="note-6" x="68" y="910" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Простое правило M6: файл кладем на Диск, правило описываем в Базе знаний, работу по документу</tspan>
+<tspan x="68" dy="28">ведем в задаче, а комплект по объекту собираем в проектном контуре.</tspan>
+</text>
+</g>
+</svg>

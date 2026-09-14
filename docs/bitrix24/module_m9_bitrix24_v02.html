@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модуль M9. Автоматизация: роботы, триггеры и бизнес-процессы в Битрикс24</title>
+<link rel="stylesheet" href="assets/common/course-theme.css">
+<link rel="stylesheet" href="assets/pages/m9.css">
+<link rel="stylesheet" href="assets/common/module-components.css">
+<link rel="stylesheet" href="assets/common/module-layout.css">
+<link rel="stylesheet" href="assets/common/module-hero.css">
+<link rel="stylesheet" href="assets/common/course-refresh.css">
+</head>
+<body class="course-module">
+<a class="skip-link" href="#course-content">Перейти к содержанию</a>
+<div class="page">
+  <div class="topbar course-header course-header--module">
+      <div>
+        <strong>Курс Битрикс24 для сотрудников</strong>
+        <div class="module-meta">Модуль M9 · Продвинутый уровень · Практика и самопроверка</div>
+      </div>
+      <div class="module-links course-nav course-nav--meta" role="navigation" aria-label="Модули курса">
+      <a href="course_bitrix24_v02_index.html">&#1050;&#1091;&#1088;&#1089;</a>
+      <a href="module_m1_bitrix24_v02.html">M1</a>
+      <a href="module_m2_bitrix24_v02.html">M2</a>
+      <a href="module_m3_bitrix24_v02.html">M3</a>
+      <a href="module_m4_bitrix24_v02.html">M4</a>
+      <a href="module_m5_bitrix24_v02.html">M5</a>
+      <a href="module_m6_bitrix24_v02.html">M6</a>
+      <a href="module_m7_bitrix24_v02.html">M7</a>
+      <a href="module_m8_bitrix24_v02.html">M8</a>
+      <span aria-current="page">M9</span>
+      <a href="module_m10_bitrix24_v02.html">M10</a>
+    </div>
+    </div>
+
+  <main>
+  <section class="hero hero--module">
+    <div class="hero-grid hero-grid--module">
+      <div class="module-hero-copy">
+        <h1 id="course-content" tabindex="-1">Автоматизация: роботы, триггеры и бизнес-процессы в Битрикс24</h1>
+        <p class="lead">Этот модуль учит безопасно и осмысленно внедрять автоматизацию в Битрикс24: не автоматизировать хаос, выбирать правильный инструмент, тестировать сценарий до запуска и понимать, кто владеет процессом после включения автоматизации.</p>
+        <div class="nav-card nav-card--module-intro">
+          <h2>Навигация по модулю</h2>
+          <nav class="section-nav course-nav course-nav--section" aria-label="Разделы модуля">
+      <a href="#process">Процесс до автоматизации</a>
+      <a href="#robots">Роботы</a>
+      <a href="#triggers">Триггеры</a>
+      <a href="#workflows">Бизнес-процессы</a>
+      <a href="#smart">Смарт-процессы</a>
+      <a href="#testing">Тестирование</a>
+      <a href="#route">Сквозная практика</a>
+      <a href="#whatif">Что делать, если…</a>
+      <a href="#mistakes">Ошибки</a>
+      <a href="#test">Самопроверка</a>
+      <a href="#final-task">Итоговое задание</a>
+      <a href="#next">&#1063;&#1090;&#1086; &#1076;&#1072;&#1083;&#1100;&#1096;&#1077;</a>
+      <a href="#sources">&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;</a>
+    </nav>
+        </div>
+      </div>
+      <div class="module-hero-side">
+        <div class="info-card">
+        <h3>Что важно понять в M9</h3>
+        <p>Автоматизация не заменяет процесс. Она помогает выполнять повторяющиеся действия только тогда, когда заранее понятны роли, стадии, условия и результат.</p>
+
+      </div>
+        <div class="info-card">
+          <h3>Результат прохождения</h3>
+          <p>сотрудник умеет выбрать инструмент, описать процесс, настроить базовый сценарий и протестировать его</p>
+        </div>
+              <div class="info-card module-remember-panel">
+          <h3>Что стоит запомнить</h3>
+          <div class="remember-grid">
+      <div class="important">
+          <div class="label">Главная формула M9</div>
+          <p><strong>Хорошая автоматизация = описанный процесс + понятные роли + правильный инструмент + тестирование + владелец процесса.</strong></p>
+        </div>
+      <div class="warning">
+          <div class="label">Центральное правило</div>
+          <p><strong>Нельзя автоматизировать хаос.</strong> Если процесс не описан, роли не определены, стадии не понятны, робот только ускорит ошибки.</p>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+  </section>
+
+  <section class="section-card module-passport-card">
+    <h2>Паспорт модуля</h2>
+    <div class="passport-grid">
+      <div class="mini-card passport-card"><h3 class="card-heading">Место в курсе</h3><p>после M4–M8</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Входной уровень</h3><p>пользователь понимает задачи, проекты, документы, отчетность и CRM</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Целевая аудитория</h3><p>ПТО, РП, инженеры, мастера, снабжение, документооборот, CRM-ответственные, администраторы Битрикс24</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Итоговый результат</h3><p>сотрудник умеет выбрать инструмент, описать процесс, настроить базовый сценарий и протестировать его</p></div>
+    </div>
+    <div class="success passport-result-card">
+      <div class="label">Ожидаемый результат обучения</div>
+      <p>сотрудник умеет выбрать инструмент, описать процесс, настроить базовый сценарий и протестировать его</p>
+    </div>
+  </section>
+
+  <aside class="note" aria-label="В работе">
+    <p>Наборы роботов и триггеров различаются для задач, CRM и других инструментов. Сверяйте название события в выбранном инструменте.</p>
+  </aside>
+
+  <section class="section-card" id="process">
+    <h2>1. Автоматизация как продолжение процесса</h2>
+    <p>В M9 сначала нужно описать процесс, а уже потом настраивать робота, триггер или бизнес-процесс. Автоматизация не исправляет плохую постановку задач, не заменяет ответственного и не создает смысл там, где нет понятного результата.</p>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m9_section_01_robot-trigger-bp-map.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m9_section_01_robot-trigger-bp-map.svg" alt="Учебная схема различий между роботом, триггером и бизнес-процессом в Bitrix24" width="1120" height="1312"></a>
+        <figcaption><strong>Рисунок M9-01.</strong> Учебная карта различий между роботом, триггером и бизнес-процессом: что выполняет действие, что ловит событие и что ведет сложный маршрут. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-02.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-02.jpg" alt="Автоматизация CRM: роботы и триггеры по стадиям процесса" width="1280" height="743"></a>
+        <figcaption><strong>Рисунок M9-02.</strong> Автоматизация CRM: роботы и триггеры по стадиям процесса. <a href="https://helpdesk.bitrix24.ru/open/6908975/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">Для M9 это базовое правило: сначала описываем событие, роли и ожидаемый результат, и только потом выбираем, достаточно ли робота, нужен ли триггер или уже требуется маршрут согласования.</div>
+
+    <div class="signal-grid">
+      <div class="signal-card"><h3 class="card-heading">Что должно произойти?</h3><p>Нужно четко описать ожидаемое действие или результат.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Когда это должно произойти?</h3><p>Нужны стадия, событие, срок или условие запуска.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Кто отвечает?</h3><p>Должен быть известен получатель задачи, уведомления или согласования.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Как проверить результат?</h3><p>Нужно заранее определить критерий успешного срабатывания.</p></div>
+    </div>
+
+    <div class="case">
+      <div class="label">5 вопросов перед настройкой</div>
+      <ol>
+        <li>Что должно произойти?</li>
+        <li>Когда это должно произойти?</li>
+        <li>Кто должен получить задачу или уведомление?</li>
+        <li>Какой результат должен быть зафиксирован?</li>
+        <li>Как проверить, что автоматизация сработала правильно?</li>
+      </ol>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Автоматизация как продолжение процесса: Без описания процесса / После описания процесса">
+<table aria-label="Автоматизация как продолжение процесса: Без описания процесса / После описания процесса">
+      <thead>
+        <tr>
+          <th scope="col">Без описания процесса</th>
+          <th scope="col">После описания процесса</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Непонятно, кого уведомлять и когда создавать задачу</td>
+          <td>Есть роли, стадии, условия и ожидаемый результат</td>
+        </tr>
+        <tr>
+          <td>Робот работает, но создает шум и дубли</td>
+          <td>Автоматизация закрывает конкретную повторяющуюся рутину</td>
+        </tr>
+        <tr>
+          <td>Никто не отвечает за сопровождение сценария</td>
+          <td>Назначен владелец процесса и обновляется инструкция в базе знаний</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="success">
+      <div class="label">Владелец процесса</div>
+      <p>У каждой автоматизации должен быть владелец: человек, который понимает, зачем она нужна, проверяет ее актуальность, принимает решения об изменениях и обновляет описание в базе знаний.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="robots">
+    <h2>2. Роботы</h2>
+    <div class="note"><p><strong>Сначала выберите инструмент.</strong> Роботы задач и CRM настраиваются в своих разделах и имеют разный набор действий. Перед упражнением проверьте тариф, права на настройку и наличие нужного робота. Если настройка недоступна, подготовьте схему и тестовые примеры без запуска. <a href="https://helpdesk.bitrix24.ru/open/28743694/" target="_blank" rel="noopener">Роботы и триггеры задач</a>.</p></div>
+    <p>Робот выполняет действие: создает задачу, отправляет уведомление, меняет ответственного, запускает задержку или оформляет другой повторяющийся шаг. Роботы полезны там, где известно, что нужно сделать на конкретной стадии или при наступлении условия.</p>
+
+    <div class="tool-grid">
+      <div class="tool-card"><h3 class="card-heading">Когда нужен робот</h3><p>Есть понятная стадия, понятный получатель и конкретное действие, которое повторяется много раз.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Когда робот не нужен</h3><p>Если процесс еще не описан или решение требует сложного маршрута согласования с возвратами.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Что важно настроить</h3><p>Стадию, условие, задержку, получателя, текст уведомления и проверку результата.</p></div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-03.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-03.webp" alt="Переход к роботам из воронки сделок CRM" width="1236" height="692"></a>
+        <figcaption><strong>Рисунок M9-03.</strong> Переход к роботам из воронки сделок CRM. <a href="https://helpdesk.bitrix24.ru/open/24367166/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-04.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-04.jpg" alt="Настройка робота уведомления: время запуска, условия и получатель" width="2590" height="1398"></a>
+        <figcaption><strong>Рисунок M9-04.</strong> Настройка робота уведомления: время запуска, условия и получатель. <a href="https://helpdesk.bitrix24.ru/open/24367166/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="shell">
+      <div class="shell-head"><span>Учебный макет робота</span><span>Стадия «СМР»</span></div>
+      <div class="shell-body">
+        <div class="pipeline-grid">
+          <div class="pipeline-col"><h3 class="card-heading">Стадия</h3><div class="mini-item"><strong>Точка запуска</strong>Объект вошел в СМР</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Условие</h3><div class="mini-item"><strong>Проверка</strong>Есть ответственный и проект</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Задержка</h3><div class="mini-item"><strong>Логика</strong>Через 1 день после перехода</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Получатель</h3><div class="mini-item"><strong>Кому</strong>ПТО и руководитель проекта</div></div>
+          <div class="pipeline-col"><h3 class="card-heading">Результат</h3><div class="mini-item"><strong>Что делает</strong>Создает задачу и отправляет уведомление</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning">
+      <div class="label">Как избежать спама</div>
+      <p>Не создавайте несколько роботов с похожими условиями на одной стадии. Проверяйте, не уйдет ли уведомление лишним людям и не создастся ли повторная задача при повторном входе элемента в стадию.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Робот-уведомление</div>
+        <p>Настройте базовое напоминание ответственному о контрольной точке по объекту.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Робот-создание задачи</div>
+        <p>Опишите условия создания задачи ПТО при входе элемента в рабочую стадию.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Робот со сменой роли</div>
+        <p>Спроектируйте логику, при которой после подтверждения этапа меняется ответственный или участники контроля.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="triggers">
+    <h2>3. Триггеры</h2>
+    <p>Триггер реагирует на событие и переводит элемент на нужную стадию. Сам по себе он не решает задачу бизнеса, а лишь переводит элемент туда, где уже могут сработать роботы и другие правила.</p>
+
+    <div class="important">
+      <div class="label">Ключевое различие</div>
+      <p><strong>Робот выполняет действие.</strong> <strong>Триггер реагирует на событие и переводит элемент на стадию.</strong> На этой стадии уже запускаются роботы.</p>
+    </div>
+
+    <div class="flow-strip">
+      <div class="flow-card"><strong>Событие</strong><p>В выбранном инструменте произошло поддерживаемое событие: письмо, изменение поля или статуса связанной задачи</p></div>
+      <div class="flow-card"><strong>Триггер</strong><p>Распознал событие и понял, что условие выполнено</p></div>
+      <div class="flow-card"><strong>Стадия</strong><p>Элемент переведен в нужное состояние процесса</p></div>
+      <div class="flow-card"><strong>Роботы</strong><p>На новой стадии запускаются действия: уведомления, задачи, проверки</p></div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-05.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-05.jpg" alt="Настройка триггера: отслеживаемое событие и дополнительные условия" width="2474" height="1394"></a>
+        <figcaption><strong>Рисунок M9-05.</strong> Настройка триггера: отслеживаемое событие и дополнительные условия. <a href="https://helpdesk.bitrix24.ru/open/24473054/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-06.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-06.jpg" alt="Несколько триггеров на одной стадии: настройки нужно проверять на пересечения" width="2456" height="1392"></a>
+        <figcaption><strong>Рисунок M9-06.</strong> Несколько триггеров на одной стадии: настройки нужно проверять на пересечения. <a href="https://helpdesk.bitrix24.ru/open/24473054/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Триггеры: Типовое событие / Что делает триггер / На что обратить внимание">
+<table aria-label="Триггеры: Типовое событие / Что делает триггер / На что обратить внимание">
+      <thead>
+        <tr>
+          <th scope="col">Типовое событие</th>
+          <th scope="col">Что делает триггер</th>
+          <th scope="col">На что обратить внимание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Клиент ответил на письмо</td>
+          <td>Переводит сделку на следующую стадию</td>
+          <td>Проверьте, не срабатывает ли на нерелевантные ответы</td>
+        </tr>
+        <tr>
+          <td>Связанная задача закрыта</td>
+          <td>Перемещает CRM-элемент или другой объект процесса</td>
+          <td>Убедитесь, что связанная задача действительно обязательна</td>
+        </tr>
+        <tr>
+          <td>Изменилось выбранное поле CRM</td>
+          <td>Триггер изменения поля переводит элемент на настроенную стадию</td>
+          <td>Выберите поле и условие; загрузка произвольного вложения не равнозначна подтверждению готовности документа</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="trouble">
+      <div class="label">Ложные срабатывания</div>
+      <p>Если триггер переводит элемент неправильно, проверьте событие, условие, возможность возврата на предыдущую стадию и наличие другого триггера, который тоже реагирует на похожее действие.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="workflows">
+    <h2>4. Бизнес-процессы</h2>
+    <p>Бизнес-процесс нужен там, где мало одного робота или триггера: есть несколько согласующих, возвраты на доработку, ветки решения и необходимость фиксировать протокол прохождения. Для M9 важно уметь отличать последовательный процесс от процесса со статусами.</p>
+
+    <div class="grid-2">
+      <div class="mini-card">
+        <h3 class="card-heading">Последовательный процесс</h3>
+        <p>Подходит для маршрута от начала к завершению; внутри возможны условия, циклы и параллельные действия.</p>
+      </div>
+      <div class="mini-card">
+        <h3 class="card-heading">Процесс со статусами</h3>
+        <p>Подходит, когда процесс удобнее описывать состояниями, событиями и переходами между ними. Само наличие параллельных шагов не требует процесса со статусами.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-07.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-07.jpg" alt="Создание последовательного бизнес-процесса или процесса со статусами" width="1280" height="702"></a>
+        <figcaption><strong>Рисунок M9-07.</strong> Создание последовательного бизнес-процесса или процесса со статусами. <a href="https://helpdesk.bitrix24.ru/open/23951294/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-08.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-08.jpg" alt="Шаблон бизнес-процесса: действия, условия и ветви маршрута согласования" width="2502" height="1464"></a>
+        <figcaption><strong>Рисунок M9-08.</strong> Шаблон бизнес-процесса: действия, условия и ветви маршрута согласования. <a href="https://helpdesk.bitrix24.ru/open/21918154/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="shell">
+      <div class="shell-head"><span>Практический пример</span><span>Заявка на материалы</span></div>
+      <div class="shell-body">
+        <div class="link-tree">
+          <div class="tree-row"><div class="tree-node"><strong>Мастер</strong><span>Создает заявку</span></div></div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-row">
+            <div class="tree-node"><strong>ПТО</strong><span>Проверяет состав и корректность</span></div>
+            <div class="tree-node"><strong>Снабжение</strong><span>Проверяет наличие или закупку</span></div>
+            <div class="tree-node"><strong>Руководитель</strong><span>Подключается при превышении порога</span></div>
+          </div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-row">
+            <div class="tree-node"><strong>Возврат</strong><span>Если есть замечания, заявка возвращается автору</span></div>
+            <div class="tree-node"><strong>Результат</strong><span>Создается задача закупщику и уходит уведомление автору</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m9_section_04_material-request-approval-route.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m9_section_04_material-request-approval-route.svg" alt="Учебная схема маршрута согласования заявки на материалы с возвратом на доработку" width="1120" height="1834"></a>
+      <figcaption><strong>Рисунок M9-09.</strong> Учебный маршрут согласования заявки на материалы: несколько ролей, возврат на доработку и отдельное финальное действие робота после согласования. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="case">
+      <div class="label">Что нужно описать до настройки</div>
+      <p>Роли, стадии, ветки согласования, условия возврата, итоговый результат, уведомления и способ фиксации протокола процесса.</p>
+    </div>
+  </section>
+
+  <section class="section-card" id="smart">
+    <h2>5. Смарт-процессы и автоматизированные решения</h2>
+    <p>Иногда задачи, CRM или Диск уже не подходят как основная сущность процесса. Тогда нужен отдельный смарт-процесс или automated solution: например, для заявки, изменения РД, рекламации или внутреннего согласования с собственным набором стадий и полей.</p>
+
+    <div class="tool-grid">
+      <div class="tool-card"><h3 class="card-heading">Когда стоит думать о смарт-процессе</h3><p>Когда процесс не укладывается в сделку или задачу и требует собственной сущности со стадиями и полями.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Что оставить на базовый уровень</h3><p>Понимание, что смарт-процесс — отдельная сущность, а не обязательный первый шаг автоматизации.</p></div>
+      <div class="tool-card"><h3 class="card-heading">Что вынести в продвинутый блок</h3><p>Детальную настройку сущности, формы, полей и расширенную архитектуру решения.</p></div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-10.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-10.webp" alt="Карточка смарт-процесса: собственные поля для отдельного вида учета" width="1280" height="724"></a>
+        <figcaption><strong>Рисунок M9-10.</strong> Карточка смарт-процесса: собственные поля для отдельного вида учета. <a href="https://helpdesk.bitrix24.ru/open/18913888/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-11.webp" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-11.webp" alt="Стадии и автоматизация смарт-процесса" width="1280" height="727"></a>
+        <figcaption><strong>Рисунок M9-11.</strong> Стадии и автоматизация смарт-процесса. <a href="https://helpdesk.bitrix24.ru/open/18913888/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section-card" id="testing">
+    <h2>6. Тестирование и сопровождение автоматизации</h2>
+    <p>Хорошая автоматизация проверяется до запуска и пересматривается после запуска. Нельзя настраивать сценарий сразу в боевой базе и считать, что на этом работа закончена.</p>
+
+    <div class="test-grid">
+      <div class="signal-card"><h3 class="card-heading">Учебный контур</h3><p>Сначала тестируйте на учебной задаче, сделке или отдельном сценарии, а не на живом объекте.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Проверка условий</h3><p>Убедитесь, что триггер или робот запускается только при нужном событии.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Проверка получателей</h3><p>Посмотрите, не уходит ли задача или уведомление лишним людям.</p></div>
+      <div class="signal-card"><h3 class="card-heading">Проверка повторных запусков</h3><p>Проверьте, не создает ли сценарий дубли при повторном входе в стадию или изменении поля.</p></div>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--diagram">
+        <a class="visual-open" href="assets/diagrams/m9_section_06_automation-test-loop.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m9_section_06_automation-test-loop.svg" alt="Учебная схема цикла тестирования автоматизации до боевого запуска" width="1120" height="1454"></a>
+        <figcaption><strong>Рисунок M9-12.</strong> Учебный цикл тестирования M9: гипотеза, учебный объект, тест, проверка логов, исправление и только потом перенос в рабочий процесс. Источник: создано внутри проекта.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m9-img-13.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m9-img-13.jpg" alt="Отладчик роботов: журнал выполнения для проверки условий и результатов" width="1280" height="729"></a>
+        <figcaption><strong>Рисунок M9-13.</strong> Отладчик роботов: журнал выполнения для проверки условий и результатов. <a href="https://helpdesk.bitrix24.ru/open/19361188/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Практика «Что выбрать: робот, триггер или бизнес-процесс?»</h3>
+    <div class="result-card">
+      <ol>
+        <li>Нужно напомнить ПТО за 3 дня до контрольной даты.</li>
+        <li>После проверки документов сотрудник меняет выбранное поле CRM; нужно перевести сделку в стадию «Документы получены». Проверьте наличие соответствующего триггера и его условия.</li>
+        <li>Нужно согласовать заявку на материалы через несколько ролей с возвратом на доработку.</li>
+        <li>Нужно создать задачу закупщику, когда заявка согласована.</li>
+      </ol>
+      <p><strong>Задание:</strong> для каждого кейса выберите инструмент и коротко объясните, почему именно он подходит лучше остальных.</p>
+    </div>
+
+    <h3>Практика «Описание процесса до автоматизации»</h3>
+    <div class="template-box">Процесс:
+Проблема:
+Что повторяется:
+Роли:
+Стадии:
+Условие запуска:
+Какой результат нужен:
+Кто владелец процесса:
+Как будем проверять, что сценарий работает правильно:</div>
+
+    <h3>Практика «Тестирование робота»</h3>
+    <div class="result-card">
+      <ol>
+        <li>Создайте учебную сделку или задачу.</li>
+        <li>Настройте робота уведомления.</li>
+        <li>Задайте условие и получателя.</li>
+        <li>Запустите тест.</li>
+        <li>Проверьте, пришло ли уведомление.</li>
+        <li>Проверьте, не ушло ли оно лишним людям.</li>
+        <li>Исправьте настройки и зафиксируйте результат теста.</li>
+      </ol>
+    </div>
+
+    <h3>Практика «Бизнес-процесс заявки на материалы»</h3>
+    <div class="result-card">
+      <ol>
+        <li>Автор заявки — мастер.</li>
+        <li>Проверка состава — ПТО.</li>
+        <li>Проверка наличия или закупки — снабжение.</li>
+        <li>Если сумма выше порога — руководитель.</li>
+        <li>Если есть замечания — возврат автору.</li>
+        <li>Если согласовано — задача закупщику.</li>
+        <li>Автор получает уведомление о результате.</li>
+        <li>Все действия фиксируются в протоколе.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-card" id="route">
+    <h2>7. Сквозная практика: «От ручного контроля заявки до автоматизированного процесса»</h2>
+    <p>Этот маршрут связывает весь M9 в одну рабочую логику и показывает полный цикл от проблемы до контролируемой автоматизации.</p>
+
+    <div class="route">
+      <div class="step-card"><div class="step-no route-step__index">1</div><h3 class="card-heading">Находим проблему</h3><p>Есть повторяющаяся ручная операция: заявки теряются, согласования зависают, сроки срываются.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">2</div><h3 class="card-heading">Описываем процесс</h3><p>Фиксируем роли, стадии, условия, точки возврата и результат.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">3</div><h3 class="card-heading">Выбираем инструмент</h3><p>Определяем, где нужен робот, где триггер, а где бизнес-процесс.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">4</div><h3 class="card-heading">Настраиваем сценарий</h3><p>Создаем правила, условия, задержки, уведомления и получателей.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">5</div><h3 class="card-heading">Тестируем</h3><p>Проверяем работу на учебном контуре, ловим ложные срабатывания и лишние уведомления.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">6</div><h3 class="card-heading">Запускаем</h3><p>Переносим рабочую версию в боевой процесс с понятной инструкцией.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">7</div><h3 class="card-heading">Контролируем</h3><p>Смотрим, работает ли сценарий и нет ли зависаний, дублей и непонятных задач.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">8</div><h3 class="card-heading">Улучшаем</h3><p>Обновляем схему, владельца, инструкцию и настройки по результатам использования.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="whatif">
+    <h2>8. Что делать, если…</h2>
+
+    <details>
+      <summary>Если робот не сработал</summary>
+      <div>
+        <p>Проверьте стадию, условие, время запуска, права, ответственного и статус элемента. Часто причина в одной пропущенной настройке.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если робот сработал не тем людям</summary>
+      <div>
+        <p>Проверьте получателей, роли, переменные, ответственного и участников процесса. Не исключено, что процесс опирается на старую роль или неверное поле.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если триггер перевел элемент неправильно</summary>
+      <div>
+        <p>Проверьте событие, условие, разрешен ли возврат на предыдущую стадию и нет ли ложного срабатывания из-за похожего действия.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если автоматизация создает слишком много задач</summary>
+      <div>
+        <p>Проверьте условия, задержки, повторный запуск и наличие дублирующих роботов на соседних стадиях.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если бизнес-процесс завис</summary>
+      <div>
+        <p>Проверьте текущий шаг, исполнителя, протокол, уведомления и ветку возврата. Зависание часто связано с отсутствием действия одного из согласующих.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если сотрудники не понимают, почему появилась задача</summary>
+      <div>
+        <p>Добавьте понятный текст задачи, ссылку на объект, контекст и статью базы знаний, где объяснен сценарий автоматизации.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если процесс поменялся</summary>
+      <div>
+        <p>Обновите схему процесса, владельца, настройки автоматизации и инструкцию в базе знаний. Не оставляйте старую логику работать «по привычке».</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если автоматизация мешает работе</summary>
+      <div>
+        <p>Приостановите или отключите сценарий, проведите разбор и запускайте исправленную версию только после теста.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="mistakes">
+    <h2>9. Типичные ошибки автоматизации</h2>
+    <div class="grid-2">
+      <div class="trouble"><div class="label">Ошибка 1</div><p>Настраивать роботов без описанного процесса и ролей.</p></div>
+      <div class="trouble"><div class="label">Ошибка 2</div><p>Смешивать роли триггера, робота и бизнес-процесса в одном непонятном сценарии.</p></div>
+      <div class="trouble"><div class="label">Ошибка 3</div><p>Не тестировать автоматизацию на учебном контуре.</p></div>
+      <div class="trouble"><div class="label">Ошибка 4</div><p>Создавать дублирующие уведомления и задачи на соседних стадиях.</p></div>
+      <div class="trouble"><div class="label">Ошибка 5</div><p>Не назначать владельца процесса и не обновлять инструкцию в базе знаний.</p></div>
+      <div class="trouble"><div class="label">Ошибка 6</div><p>Считать автоматизацию завершенной после первого запуска и не пересматривать ее дальше.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="test">
+    <h2>10. Самопроверка</h2>
+    <p>Вопросы ниже проверяют, понимаете ли вы не только термины, но и рабочую логику M9.</p>
+
+    <div class="result-card">
+      <h3 class="card-heading">Вопросы</h3>
+      <ol>
+        <li>Чем робот отличается от триггера?</li>
+        <li>Что делает робот на стадии?</li>
+        <li>Что делает триггер?</li>
+        <li>Когда нужен бизнес-процесс?</li>
+        <li>Почему нельзя автоматизировать хаос?</li>
+        <li>Что нужно описать до настройки автоматизации?</li>
+        <li>Что проверить, если робот не сработал?</li>
+        <li>Когда нужен процесс со статусами?</li>
+        <li>Зачем тестировать автоматизацию на учебном контуре?</li>
+        <li>Кто должен быть владельцем автоматизированного процесса?</li>
+      </ol>
+    </div>
+
+    <details>
+      <summary>Проверить свои ответы</summary>
+      <div>
+        <ol>
+          <li>Робот выполняет действие, триггер реагирует на событие и переводит элемент на стадию.</li>
+          <li>Создает задачу, отправляет уведомление, меняет ответственного или выполняет другое заданное действие.</li>
+          <li>Отслеживает событие и переводит элемент в нужное состояние процесса.</li>
+          <li>Когда есть несколько согласующих, ветки, возвраты и необходимость фиксировать протокол прохождения.</li>
+          <li>Потому что автоматизация усилит ошибки, если роли, стадии и условия не определены.</li>
+          <li>Роли, стадии, условия запуска, результат, владельца и способ проверки.</li>
+          <li>Стадию, условие, время запуска, права, ответственного и статус элемента.</li>
+          <li>Когда процесс удобнее описать состояниями и переходами по событиям. Ветвления и параллельные действия возможны и в последовательном процессе.</li>
+          <li>Чтобы поймать ложные срабатывания, лишних получателей и дубли до боевого запуска.</li>
+          <li>Человек, который понимает цель сценария, контролирует его пользу и обновляет процесс при изменениях.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="final-task">
+    <h2>11. Итоговое практическое задание</h2>
+    <p><strong>Сценарий:</strong> в компании заявки на материалы по объектам сейчас приходят в чатах и Excel. Часть заявок теряется, сроки поставки срываются, руководитель не видит статус.</p>
+
+    <ol>
+      <li>Опишите текущий ручной процесс.</li>
+      <li>Определите проблему и повторяющиеся действия.</li>
+      <li>Назначьте роли: мастер, ПТО, снабжение, руководитель, закупщик.</li>
+      <li>Определите стадии заявки.</li>
+      <li>Выберите инструменты: где нужен робот, где триггер, где бизнес-процесс.</li>
+      <li>Спроектируйте маршрут согласования.</li>
+      <li>Опишите условия возврата на доработку.</li>
+      <li>Опишите, какие задачи и уведомления создаются автоматически.</li>
+      <li>Составьте план тестирования.</li>
+      <li>Опишите, как будет оцениваться эффект через 1 месяц.</li>
+      <li>Подготовьте краткую инструкцию для базы знаний.</li>
+    </ol>
+
+    <h3>Критерии успешного прохождения</h3>
+    <ul class="checklist">
+      <li>Сотрудник понимает разницу между роботом, триггером и бизнес-процессом.</li>
+      <li>Сотрудник умеет выбрать инструмент под конкретный сценарий.</li>
+      <li>Сотрудник понимает, что автоматизация должна опираться на описанный процесс.</li>
+      <li>Сотрудник умеет описать роли, стадии и условия.</li>
+      <li>Сотрудник умеет настроить или описать простого робота.</li>
+      <li>Сотрудник понимает принцип работы триггера.</li>
+      <li>Сотрудник умеет спроектировать простой маршрут согласования.</li>
+      <li>Сотрудник понимает необходимость тестирования и знает типичные ошибки автоматизации.</li>
+      <li>Сотрудник умеет предложить метрики оценки эффекта.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="next">
+    <h2>12. Что дальше в курсе</h2>
+    <ul class="next-list">
+      <li><strong>Следующий уровень:</strong> после уверенной базовой логики можно переходить к более сложным сценариям, смарт-процессам и расширенному Workflow Designer.</li>
+      <li><strong>Связка с M4–M8:</strong> качество автоматизации зависит от того, насколько хорошо в компании уже выстроены задачи, проекты, документы, отчетность и CRM.</li>
+      <li><strong>Практическое развитие:</strong> каждая автоматизация должна быть описана в базе знаний и периодически пересматриваться по результатам использования.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="sources">
+    <h2>13. Полезные материалы</h2>
+    <ul class="source-list">
+      <li><a href="https://helpdesk.bitrix24.ru/open/24633726/" target="_blank" rel="noopener">Роботы и триггеры в Битрикс24</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/28743694/" target="_blank" rel="noopener">Как использовать роботов и триггеры в задачах</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/24367166/" target="_blank" rel="noopener">Роботы в CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/24473054/" target="_blank" rel="noopener">Триггеры в CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/22892250/" target="_blank" rel="noopener">Роботы и триггеры CRM: управление задачами</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/23951294/" target="_blank" rel="noopener">Как выбрать тип бизнес-процесса</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/21918154/" target="_blank" rel="noopener">Как создать шаблон последовательного бизнес-процесса</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/20703790/" target="_blank" rel="noopener">Бизнес-процессы на Диске</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/22955798/" target="_blank" rel="noopener">Как работать в дизайнере бизнес-процессов</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18913888/" target="_blank" rel="noopener">Как настроить смарт-процесс в CRM</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/26143052/" target="_blank" rel="noopener">RPA: как автоматизировать рутинные задачи</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/19361188/" target="_blank" rel="noopener">Отладчик роботов: проверка автоматизации</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <div class="footer-card course-footer-card">
+
+    <p class="small">Используйте модуль как практическую шпаргалку: сначала пройдите материал целиком, затем возвращайтесь к нужным разделам по мере работы в Битрикс24.</p>
+    <div class="footer-actions">
+      <a class="button button--secondary secondary" href="course_bitrix24_v02_index.html#modules">&#1050; &#1082;&#1072;&#1088;&#1090;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+      <a class="button button--secondary secondary" href="module_m8_bitrix24_v02.html">&#1053;&#1072;&#1079;&#1072;&#1076;: M8</a>
+      <a class="button button--primary primary" href="module_m10_bitrix24_v02.html">&#1044;&#1072;&#1083;&#1100;&#1096;&#1077;: M10</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

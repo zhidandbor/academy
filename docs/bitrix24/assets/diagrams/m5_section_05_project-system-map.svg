@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="954" viewBox="0 0 1120 954" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема связки проект - задачи - канбан - Гант - календарь</title>
+<desc id="desc">Схема показывает, как проект объединяет задачи, канбан, диаграмму Ганта и календарь в единую систему управления работой по объекту.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="954" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="membership" d="M560,391.2 L560,525.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,525.2 L510,525.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,525.2 L610,525.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,525.2 L560,733.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,733.2 L510,733.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path data-edge="true" data-relation="membership" d="M560,733.2 L610,733.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="220" y="213.2" width="680" height="176" rx="18" fill="#eef5fc" stroke="#1565a0" stroke-width="1.5"/>
+<rect x="221" y="233.2" width="4" height="136" rx="2" fill="#1565a0"/>
+<rect id="card-2" data-card="true" x="40" y="437.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="457.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="616" y="437.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="457.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="40" y="645.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="665.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="616" y="645.2" width="464" height="176" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="665.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="note-6" data-card="true" x="40" y="853.2" width="1040" height="68" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M5 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Проект собирает все инструменты в один контур управления</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Пользователь видит не отдельные функции, а путь от общей рамки проекта к задачам, стадиям, срокам и</tspan>
+<tspan x="40" dy="28">календарным событиям.</tspan>
+</text>
+<text data-owner="card-1" x="244" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="244" dy="0">Проект</tspan>
+</text>
+<text data-owner="card-1" x="244" y="306.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="244" dy="0">Цель, команда, правила, материалы и точка входа для работы по</tspan>
+<tspan x="244" dy="28">объекту</tspan>
+</text>
+<text data-owner="card-2" x="64" y="485.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Задачи</tspan>
+</text>
+<text data-owner="card-2" x="64" y="530.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Что сделать, кто отвечает, какие сроки</tspan>
+<tspan x="64" dy="28">нужны и какой результат</tspan>
+</text>
+<text data-owner="card-3" x="640" y="485.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Канбан</tspan>
+</text>
+<text data-owner="card-3" x="640" y="530.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">На какой стадии находится каждая задача и</tspan>
+<tspan x="640" dy="28">где узкое место</tspan>
+</text>
+<text data-owner="card-4" x="64" y="693.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Гант</tspan>
+</text>
+<text data-owner="card-4" x="64" y="738.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Как работа разложена по времени и</tspan>
+<tspan x="64" dy="28">зависимостям</tspan>
+</text>
+<text data-owner="card-5" x="640" y="693.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Календарь</tspan>
+</text>
+<text data-owner="card-5" x="640" y="738.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Когда проходят встречи, выезды и окна</tspan>
+<tspan x="640" dy="28">работ контрольные точки</tspan>
+</text>
+<text data-owner="note-6" x="68" y="893.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Проект связывает задачи, канбан, Гант и календарь в один рабочий контур.</tspan>
+</text>
+</g>
+</svg>

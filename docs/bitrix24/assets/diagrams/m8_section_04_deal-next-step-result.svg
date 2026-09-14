@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1098" viewBox="0 0 1120 1098" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема сделка следующий шаг результат</title>
+<desc id="desc">Учебная схема для модуля M8, показывающая цикл сделки от коммуникации к следующему шагу и результату.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1098" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,317 L560,352" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,445 L560,480" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,573 L560,608" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,701 L560,736" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="230" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="250" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="254" x2="330" y2="290" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="358" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="378" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="382" x2="330" y2="418" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="486" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="506" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="510" x2="330" y2="546" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="614" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="634" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="638" x2="330" y2="674" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="742" width="1040" height="84" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="762" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="766" x2="330" y2="802" stroke="#bfd0dc"/>
+<rect id="note-6" data-card="true" x="40" y="858" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect id="note-7" data-card="true" x="40" y="970" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M8 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Сделка живет, пока после коммуникации появляется</tspan>
+<tspan x="40" dy="44.8">следующий шаг</tspan>
+</text>
+<text data-owner="" x="40" y="190" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Учебная логика M8: каждая стадия опирается на факт общения, комментарий и активность с датой.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="278" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Коммуникация</tspan>
+</text>
+<text data-owner="card-1" x="354" y="274" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Звонок, письмо, встреча, переписка или уточнение по предложению.</tspan>
+</text>
+<text data-owner="card-2" x="64" y="406" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2. Обновление</tspan>
+</text>
+<text data-owner="card-2" x="354" y="402" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">В сделке появляется комментарий по сути разговора и договоренностям.</tspan>
+</text>
+<text data-owner="card-3" x="64" y="534" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3. Следующий шаг</tspan>
+</text>
+<text data-owner="card-3" x="354" y="530" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Создается активность с датой, владельцем и понятным действием.</tspan>
+</text>
+<text data-owner="card-4" x="64" y="662" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4. Стадия</tspan>
+</text>
+<text data-owner="card-4" x="354" y="658" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Меняется только по факту процесса, а не формально.</tspan>
+</text>
+<text data-owner="card-5" x="64" y="790" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">5. Результат</tspan>
+</text>
+<text data-owner="card-5" x="354" y="786" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Успех, отказ или новый цикл работы.</tspan>
+</text>
+<text data-owner="note-6" x="68" y="898" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Красный флаг M8: если в сделке есть стадия, но нет комментария и активности с датой, значит она</tspan>
+<tspan x="68" dy="28">перестала быть управляемой и начинает превращаться в «мертвую» сделку.</tspan>
+</text>
+<text data-owner="note-7" x="68" y="1010" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Хорошая сделка всегда отвечает на четыре вопроса: кто клиент, на какой она стадии, что произошло</tspan>
+<tspan x="68" dy="28">последним и что должно произойти следующим шагом.</tspan>
+</text>
+</g>
+</svg>

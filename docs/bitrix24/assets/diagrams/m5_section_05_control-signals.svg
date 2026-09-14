@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="942" viewBox="0 0 1120 942" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема управленческих сигналов проекта</title>
+<desc id="desc">Схема показывает, какой управленческий сигнал руководитель получает от проекта, канбана, диаграммы Ганта и календаря.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="942" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="synthesis" d="M508,301.2 L560,301.2 L560,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="synthesis" d="M612,301.2 L560,301.2 L560,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="synthesis" d="M508,509.2 L560,509.2 L560,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="synthesis" d="M612,509.2 L560,509.2 L560,663.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="213.2" width="464" height="176" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="233.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-2" data-card="true" x="616" y="213.2" width="464" height="176" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="233.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-3" data-card="true" x="40" y="421.2" width="464" height="176" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="441.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-4" data-card="true" x="616" y="421.2" width="464" height="176" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="617" y="441.2" width="4" height="136" rx="2" fill="#0b7285"/>
+<rect id="card-5" data-card="true" x="220" y="669.2" width="680" height="232" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="221" y="689.2" width="4" height="192" rx="2" fill="#0b7285"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M5 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">У каждого инструмента M5 свой управленческий сигнал</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Руководитель смотрит на проект не ради интерфейса: каждый инструмент должен подсказывать, что</tspan>
+<tspan x="40" dy="28">происходит и где нужно действие.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Проект</tspan>
+</text>
+<text data-owner="card-1" x="64" y="306.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Сигнал: есть ли единый контур, владелец и</tspan>
+<tspan x="64" dy="28">состав работ по объекту</tspan>
+</text>
+<text data-owner="card-2" x="640" y="261.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Канбан</tspan>
+</text>
+<text data-owner="card-2" x="640" y="306.79999999999995" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Сигнал: где накопилось слишком много</tspan>
+<tspan x="640" dy="28">задач и какая стадия тормозит поток</tspan>
+</text>
+<text data-owner="card-3" x="64" y="469.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Гант</tspan>
+</text>
+<text data-owner="card-3" x="64" y="514.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Сигнал: где срок уже сдвигается и какие</tspan>
+<tspan x="64" dy="28">зависимости пострадают</tspan>
+</text>
+<text data-owner="card-4" x="640" y="469.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="640" dy="0">Календарь</tspan>
+</text>
+<text data-owner="card-4" x="640" y="514.8" font-size="20" font-weight="400" fill="#526579">
+<tspan x="640" dy="0">Сигнал: где конфликтуют встречи, выезды,</tspan>
+<tspan x="640" dy="28">окна работ и контрольные точки</tspan>
+</text>
+<text data-owner="card-5" x="244" y="717.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="244" dy="0">Управленческий вывод руководителя</tspan>
+</text>
+<text data-owner="card-5" x="244" y="762.8000000000001" font-size="20" font-weight="400" fill="#526579">
+<tspan x="244" dy="0">Если сигналы расходятся, проект теряет управляемость. Если</tspan>
+<tspan x="244" dy="28">сигналы читаются вместе, руководитель видит и структуру, и</tspan>
+<tspan x="244" dy="28">стадию, и сдвиг сроков, и календарный конфликт до того, как</tspan>
+<tspan x="244" dy="28">проблема выйдет в реальную работу.</tspan>
+</text>
+</g>
+</svg>

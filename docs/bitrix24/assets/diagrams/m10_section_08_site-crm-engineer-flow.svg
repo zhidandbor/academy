@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1100" viewBox="0 0 1120 1100" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Сайт → CRM → задача инженеру</title>
+<desc id="desc">Учебная схема сквозного маршрута для M10: заявка с сайта, CRM, задача инженеру, журнал и реестр.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="1100" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,272.2 L560,307.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,400.2 L560,435.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,528.2 L560,563.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="185.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="205.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="209.2" x2="330" y2="245.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="313.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="333.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="337.2" x2="330" y2="373.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="441.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="461.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="465.2" x2="330" y2="501.20000000000005" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="569.2" width="1040" height="84" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="589.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="593.2" x2="330" y2="629.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="736" width="328" height="204" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="756" width="4" height="164" rx="2" fill="#0b7285"/>
+<rect id="card-6" data-card="true" x="396" y="736" width="328" height="204" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="397" y="756" width="4" height="164" rx="2" fill="#0b7285"/>
+<rect id="card-7" data-card="true" x="752" y="736" width="328" height="204" rx="18" fill="#eef5fc" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="753" y="756" width="4" height="164" rx="2" fill="#0b7285"/>
+<rect id="note-8" data-card="true" x="40" y="972" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M10 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Сквозной маршрут M10</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Как один сценарий проходит путь от сайта до CRM, задачи инженеру и управляемого сопровождения.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Сайт</tspan>
+</text>
+<text data-owner="card-1" x="354" y="229.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Форма заявки с обязательными полями</tspan>
+</text>
+<text data-owner="card-2" x="64" y="361.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">CRM</tspan>
+</text>
+<text data-owner="card-2" x="354" y="357.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Лид или сделка с источником заявки</tspan>
+</text>
+<text data-owner="card-3" x="64" y="489.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Задача</tspan>
+</text>
+<text data-owner="card-3" x="354" y="485.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Поручение инженеру с нужными полями</tspan>
+</text>
+<text data-owner="card-4" x="64" y="617.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Журнал</tspan>
+</text>
+<text data-owner="card-4" x="354" y="613.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Успех, ошибка, дубли и повторы</tspan>
+</text>
+<text data-owner="" x="40" y="707.2" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Проверки, права и реестр сопровождают весь маршрут</tspan>
+</text>
+<text data-owner="card-5" x="64" y="784" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">Проверки</tspan>
+</text>
+<text data-owner="card-5" x="64" y="829.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="64" dy="0">Пустое поле Повторная</tspan>
+<tspan x="64" dy="28">отправка Недоступность</tspan>
+<tspan x="64" dy="28">сервиса</tspan>
+</text>
+<text data-owner="card-6" x="420" y="784" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="420" dy="0">Права</tspan>
+</text>
+<text data-owner="card-6" x="420" y="829.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="420" dy="0">Минимальные scope</tspan>
+<tspan x="420" dy="28">Защищенный URL</tspan>
+<tspan x="420" dy="28">Назначенный владелец</tspan>
+</text>
+<text data-owner="card-7" x="776" y="784" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="776" dy="0">Реестр</tspan>
+</text>
+<text data-owner="card-7" x="776" y="829.6" font-size="20" font-weight="400" fill="#526579">
+<tspan x="776" dy="0">Цель и тип интеграции</tspan>
+<tspan x="776" dy="28">Ответственные и тест Дата</tspan>
+<tspan x="776" dy="28">проверки и ссылка</tspan>
+</text>
+<text data-owner="note-8" x="68" y="1012" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">M10 учит не подключать API ради API, а строить управляемый маршрут с проверками, правами и</tspan>
+<tspan x="68" dy="28">сопровождением.</tspan>
+</text>
+</g>
+</svg>

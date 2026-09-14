@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="942" viewBox="0 0 1120 942" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Схема вопрос отчет метрика вывод действие</title>
+<desc id="desc">Учебная схема для модуля M7, показывающая путь от управленческого вопроса к отчету, метрике, выводу и действию.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="942" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<g id="connections">
+<path data-edge="true" data-relation="sequence" d="M560,272.2 L560,307.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,400.2 L560,435.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,528.2 L560,563.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+<path data-edge="true" data-relation="sequence" d="M560,656.2 L560,691.2" fill="none" stroke="#0b7285" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+</g>
+<g id="blocks">
+<rect id="card-1" data-card="true" x="40" y="185.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="205.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="209.2" x2="330" y2="245.2" stroke="#bfd0dc"/>
+<rect id="card-2" data-card="true" x="40" y="313.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="333.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="337.2" x2="330" y2="373.2" stroke="#bfd0dc"/>
+<rect id="card-3" data-card="true" x="40" y="441.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="461.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="465.2" x2="330" y2="501.20000000000005" stroke="#bfd0dc"/>
+<rect id="card-4" data-card="true" x="40" y="569.2" width="1040" height="84" rx="18" fill="#fff" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="589.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="593.2" x2="330" y2="629.2" stroke="#bfd0dc"/>
+<rect id="card-5" data-card="true" x="40" y="697.2" width="1040" height="84" rx="18" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+<rect x="41" y="717.2" width="4" height="44" rx="2" fill="#0b7285"/>
+<line x1="330" y1="721.2" x2="330" y2="757.2" stroke="#bfd0dc"/>
+<rect id="note-6" data-card="true" x="40" y="813.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M7 / СХЕМА РАБОТЫ</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Вопрос → отчет → метрика → вывод → действие</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Центральная учебная модель M7: отчетность нужна не для просмотра цифр, а для управленческого шага.</tspan>
+</text>
+<text data-owner="card-1" x="64" y="233.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">1. Вопрос</tspan>
+</text>
+<text data-owner="card-1" x="354" y="229.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Что нужно понять по объекту, сотруднику или подразделению?</tspan>
+</text>
+<text data-owner="card-2" x="64" y="361.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">2. Отчет</tspan>
+</text>
+<text data-owner="card-2" x="354" y="357.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Где это смотреть: базовый отчет, список задач, BI?</tspan>
+</text>
+<text data-owner="card-3" x="64" y="489.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">3. Метрика</tspan>
+</text>
+<text data-owner="card-3" x="354" y="485.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Какой сигнал важен: просрочки, без движения, загрузка?</tspan>
+</text>
+<text data-owner="card-4" x="64" y="617.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">4. Вывод</tspan>
+</text>
+<text data-owner="card-4" x="354" y="613.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Что означает сигнал: риск срока, блокер, неверная нагрузка?</tspan>
+</text>
+<text data-owner="card-5" x="64" y="745.2" font-size="24" font-weight="700" fill="#17324d">
+<tspan x="64" dy="0">5. Действие</tspan>
+</text>
+<text data-owner="card-5" x="354" y="741.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="354" dy="0">Что делаем дальше: уточняем, меняем срок, перераспределяем.</tspan>
+</text>
+<text data-owner="note-6" x="68" y="853.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Правило чтения M7: нельзя останавливать отчетность на цифре. Каждый показатель должен</tspan>
+<tspan x="68" dy="28">заканчиваться проверкой причины и конкретным управленческим действием.</tspan>
+</text>
+</g>
+</svg>

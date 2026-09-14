@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="794" viewBox="0 0 1120 794" role="img" aria-labelledby="title desc" font-family="Segoe UI, sans-serif">
+<title id="title">Учебный график выполнения задач в срок</title>
+<desc id="desc">Учебный линейный график для модуля M7, показывающий долю задач, выполненных в срок по неделям.</desc>
+<defs>
+<marker id="arrow-teal" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#0b7285" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-red" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#ac3549" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+<path d="M1 1 L9 5 L1 9" fill="none" stroke="#946019" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1120" height="794" rx="24" fill="#f5f8fb"/>
+<path d="M40 16H1080" stroke="#b6d9df" stroke-width="3"/>
+<line x1="120" y1="571.2" x2="1000" y2="571.2" stroke="#bfd0dc"/>
+<line x1="120" y1="491.20000000000005" x2="1000" y2="491.20000000000005" stroke="#bfd0dc"/>
+<line x1="120" y1="411.20000000000005" x2="1000" y2="411.20000000000005" stroke="#bfd0dc"/>
+<line x1="120" y1="331.20000000000005" x2="1000" y2="331.20000000000005" stroke="#0b7285" stroke-dasharray="7 6"/>
+<line x1="120" y1="251.20000000000005" x2="1000" y2="251.20000000000005" stroke="#bfd0dc"/>
+<g id="connections">
+<polyline data-chart="line" data-values="82,79,74,68,71,84" fill="none" stroke="#0b7285" stroke-width="3" points="164,315.20000000000005 322.4,339.20000000000005 480.8,379.20000000000005 639.2,427.20000000000005 797.6,403.20000000000005 956,299.20000000000005"/>
+</g>
+<g id="blocks">
+<circle data-value="82" cx="164" cy="315.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<circle data-value="79" cx="322.4" cy="339.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<circle data-value="74" cx="480.8" cy="379.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<circle data-value="68" cx="639.2" cy="427.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<circle data-value="71" cx="797.6" cy="403.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<circle data-value="84" cx="956" cy="299.20000000000005" r="6" fill="#fff" stroke="#0b7285" stroke-width="2"/>
+<rect id="note-1" data-card="true" x="40" y="665.2" width="1040" height="96" rx="14" fill="#edf8f5" stroke="#bfd0dc" stroke-width="1.5"/>
+</g>
+<g id="labels">
+<text data-owner="" x="40" y="48" font-size="16" font-weight="700" fill="#0b7285">
+<tspan x="40" dy="0">M7 / УЧЕБНЫЙ ГРАФИК</tspan>
+</text>
+<text data-owner="" x="40" y="100.4" font-size="32" font-weight="700" fill="#17324d">
+<tspan x="40" dy="0">Учебный график: как читать динамику выполнения задач в срок</tspan>
+</text>
+<text data-owner="" x="40" y="145.2" font-size="20" font-weight="400" fill="#526579">
+<tspan x="40" dy="0">Учебные данные для M7, не реальные показатели компании.</tspan>
+</text>
+<text data-owner="" x="40" y="205.2" font-size="20" font-weight="600" fill="#17324d">
+<tspan x="40" dy="0">Доля выполненных в срок, %</tspan>
+</text>
+<text data-owner="" x="700" y="205.2" font-size="20" font-weight="600" fill="#0b7285">
+<tspan x="700" dy="0">Целевой ориентир: 80%</tspan>
+</text>
+<text data-owner="" x="48" y="575.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="48" dy="0">50%</tspan>
+</text>
+<text data-owner="" x="48" y="495.20000000000005" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="48" dy="0">60%</tspan>
+</text>
+<text data-owner="" x="48" y="415.20000000000005" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="48" dy="0">70%</tspan>
+</text>
+<text data-owner="" x="48" y="335.20000000000005" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="48" dy="0">80%</tspan>
+</text>
+<text data-owner="" x="48" y="255.20000000000005" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="48" dy="0">90%</tspan>
+</text>
+<text data-owner="" x="142" y="289.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="142" dy="0">82%</tspan>
+</text>
+<text data-owner="" x="116" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="116" dy="0">Неделя 1</tspan>
+</text>
+<text data-owner="" x="300.4" y="313.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="300.4" dy="0">79%</tspan>
+</text>
+<text data-owner="" x="274.4" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="274.4" dy="0">Неделя 2</tspan>
+</text>
+<text data-owner="" x="458.8" y="353.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="458.8" dy="0">74%</tspan>
+</text>
+<text data-owner="" x="432.8" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="432.8" dy="0">Неделя 3</tspan>
+</text>
+<text data-owner="" x="617.2" y="401.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="617.2" dy="0">68%</tspan>
+</text>
+<text data-owner="" x="591.2" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="591.2" dy="0">Неделя 4</tspan>
+</text>
+<text data-owner="" x="775.6" y="377.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="775.6" dy="0">71%</tspan>
+</text>
+<text data-owner="" x="749.6" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="749.6" dy="0">Неделя 5</tspan>
+</text>
+<text data-owner="" x="934" y="273.20000000000005" font-size="22" font-weight="700" fill="#17324d">
+<tspan x="934" dy="0">84%</tspan>
+</text>
+<text data-owner="" x="908" y="609.2" font-size="18" font-weight="400" fill="#17324d">
+<tspan x="908" dy="0">Неделя 6</tspan>
+</text>
+<text data-owner="note-1" x="68" y="705.2" font-size="20" font-weight="400" fill="#17324d">
+<tspan x="68" dy="0">Интерпретация для M7: снижение процента выполнения в срок не равно готовому выводу. Оно требует</tspan>
+<tspan x="68" dy="28">проверки постановки задач, ритма контроля и перегрузки команды.</tspan>
+</text>
+</g>
+</svg>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модуль M5. Проекты, канбан, диаграмма Ганта, календари</title>
+<link rel="stylesheet" href="assets/common/course-theme.css">
+<link rel="stylesheet" href="assets/pages/m5.css">
+<link rel="stylesheet" href="assets/common/module-components.css">
+<link rel="stylesheet" href="assets/common/module-layout.css">
+<link rel="stylesheet" href="assets/common/module-hero.css">
+<link rel="stylesheet" href="assets/common/course-refresh.css">
+</head>
+<body class="course-module">
+<a class="skip-link" href="#course-content">Перейти к содержанию</a>
+<div class="page">
+  <div class="topbar course-header course-header--module">
+      <div>
+        <strong>Курс Битрикс24 для сотрудников</strong>
+        <div class="module-meta">Модуль M5 · Расширенный уровень · Практика и самопроверка</div>
+      </div>
+      <div class="module-links course-nav course-nav--meta" role="navigation" aria-label="Модули курса">
+      <a href="course_bitrix24_v02_index.html">&#1050;&#1091;&#1088;&#1089;</a>
+      <a href="module_m1_bitrix24_v02.html">M1</a>
+      <a href="module_m2_bitrix24_v02.html">M2</a>
+      <a href="module_m3_bitrix24_v02.html">M3</a>
+      <a href="module_m4_bitrix24_v02.html">M4</a>
+      <span aria-current="page">M5</span>
+      <a href="module_m6_bitrix24_v02.html">M6</a>
+      <a href="module_m7_bitrix24_v02.html">M7</a>
+      <a href="module_m8_bitrix24_v02.html">M8</a>
+      <a href="module_m9_bitrix24_v02.html">M9</a>
+      <a href="module_m10_bitrix24_v02.html">M10</a>
+    </div>
+    </div>
+
+  <main>
+  <section class="hero hero--module">
+    <div class="hero-grid hero-grid--module">
+      <div class="module-hero-copy">
+        <h1 id="course-content" tabindex="-1">Проекты, канбан, диаграмма Ганта, календари</h1>
+        <p class="lead">Этот модуль учит использовать проект в Битрикс24 как управленческий контур: где задачи распределены по ответственности, канбан показывает реальное движение, Гант отражает сроки и зависимости, а календарь связывает события, встречи, выезды и контрольные точки.</p>
+        <div class="nav-card nav-card--module-intro">
+          <h2>Навигация по модулю</h2>
+          <nav class="section-nav course-nav course-nav--section" aria-label="Разделы модуля">
+      <a href="#project">Когда нужен проект</a>
+      <a href="#kanban">Канбан</a>
+      <a href="#gantt">Гант</a>
+      <a href="#calendar">Календари</a>
+      <a href="#linkage">Связка инструментов</a>
+      <a href="#route">Сквозная практика</a>
+      <a href="#whatif">Что делать, если…</a>
+      <a href="#test">Самопроверка</a>
+      <a href="#final-task">Итоговое задание</a>
+      <a href="#next">&#1063;&#1090;&#1086; &#1076;&#1072;&#1083;&#1100;&#1096;&#1077;</a>
+      <a href="#sources">&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;</a>
+    </nav>
+        </div>
+      </div>
+      <div class="module-hero-side">
+        <div class="info-card">
+        <h3>Что важно понять в M5</h3>
+        <p>Проект нужен не ради самого проекта. Он нужен тогда, когда разрозненные задачи и чаты уже не дают руководителю видеть общую картину по объекту, срокам, стадиям и рискам.</p>
+        
+      </div>
+        <div class="info-card">
+          <h3>Результат прохождения</h3>
+          <p>сотрудник умеет собрать проект под объект, настроить стадии, читать Гант и планировать ключевые события</p>
+        </div>
+              <div class="info-card module-remember-panel">
+          <h3>Что стоит запомнить</h3>
+          <div class="remember-grid">
+      <div class="important">
+          <div class="label">Пять вопросов M5</div>
+          <p><strong>Проект</strong> отвечает: где живет вся работа по объекту? <strong>Задачи</strong> — что нужно сделать и кто отвечает? <strong>Канбан</strong> — на какой стадии работа? <strong>Гант</strong> — как работа разложена во времени? <strong>Календарь</strong> — когда происходят встречи, выезды и контрольные события?</p>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+  </section>
+
+  <section class="section-card module-passport-card">
+    <h2>Паспорт модуля</h2>
+    <div class="passport-grid">
+      <div class="mini-card passport-card"><h3 class="card-heading">Место в курсе</h3><p>после M1–M4</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Входной уровень</h3><p>пользователь понимает коммуникации, рабочие группы и задачи</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Целевая аудитория</h3><p>Сотрудники, руководители и участники рабочих процессов, которым нужно уверенно применять материал модуля в ежедневной работе.</p></div>
+      <div class="mini-card passport-card"><h3 class="card-heading">Итоговый результат</h3><p>сотрудник умеет собрать проект под объект, настроить стадии, читать Гант и планировать ключевые события</p></div>
+    </div>
+    <div class="success passport-result-card">
+      <div class="label">Ожидаемый результат обучения</div>
+      <p>сотрудник умеет собрать проект под объект, настроить стадии, читать Гант и планировать ключевые события</p>
+    </div>
+  </section>
+
+  <aside class="note" aria-label="В работе">
+    <p>Проект объединяет задачи команды. Стадия канбана показывает положение в рабочем процессе, а статус задачи отражает состояние ее выполнения.</p>
+  </aside>
+
+  <section class="section-card" id="project">
+    <h2>1. Когда отдельных задач уже недостаточно и нужен проект</h2>
+    <p>Откройте <strong>Проекты</strong> или <strong>Задачи → Проекты</strong>, выберите нужное пространство и его задачи. Порядок создания и проверки доступа описан в <a href="module_m3_bitrix24_v02.html#launch">M3</a>. <a href="https://helpdesk.bitrix24.ru/open/28540716/" target="_blank" rel="noopener">Официальная инструкция</a>.</p>
+    <p>Проект нужен там, где работа идет не одной задачей, а набором связанных задач по объекту, этапу, программе работ или инициативе. Если руководитель уже не может держать картину в голове, значит системе нужен общий контур управления.</p>
+
+    <div class="success">
+      <div class="label">Признаки, что пора создавать проект</div>
+      <p>Есть цель, сроки, владелец, несколько участников, этапы, задачи, события и зависимость одних работ от других. Если все это уже существует, но пока живет вразнобой, проект становится рабочей рамкой управления.</p>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--official">
+      <a class="visual-open" href="assets/official/m5-img-01.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-01.jpg" alt="Проекты в разделе задач: роли пользователя и показатели работы команды" width="2824" height="1490"></a>
+      <figcaption><strong>Рисунок M5-01.</strong> Проекты в разделе задач: роли пользователя и показатели работы команды. <a href="https://helpdesk.bitrix24.ru/open/28540716/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+    </figure>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Когда отдельных задач уже недостаточно и нужен проект: Ситуация / Что выбрать / Почему">
+<table aria-label="Когда отдельных задач уже недостаточно и нужен проект: Ситуация / Что выбрать / Почему">
+      <thead>
+        <tr>
+          <th scope="col">Ситуация</th>
+          <th scope="col">Что выбрать</th>
+          <th scope="col">Почему</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Одна небольшая разовая задача</td>
+          <td>Отдельная задача</td>
+          <td>Не нужен дополнительный управленческий контур</td>
+        </tr>
+        <tr>
+          <td>Несколько связанных задач по этапу или объекту</td>
+          <td>Проект</td>
+          <td>Нужно видеть ответственность, стадии, сроки и события в одном месте</td>
+        </tr>
+        <tr>
+          <td>Постоянная тема подразделения без финальной точки завершения</td>
+          <td>Проект для постоянной темы</td>
+          <td>Нужна стабильная среда с владельцем и регулярной ревизией; в новом интерфейсе используется тот же формат проекта</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="warning">
+      <div class="label">Управленческое правило</div>
+      <p>Проект не должен создаваться ради одной мелкой задачи. Но и большой объект не должен вестись как набор случайных задач без общей структуры и владельца.</p>
+    </div>
+
+    <div class="task-levels grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Диагностика</div>
+        <p>Назовите один рабочий объект или инициативу, где уже слишком много связанных задач для личного списка.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Проверка структуры</div>
+        <p>Определите: есть ли у этой работы цель, владелец, этапы, сроки и календарные события.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Решение</div>
+        <p>Сформулируйте, почему в вашей ситуации нужен именно проект, а не только несколько задач.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="kanban">
+    <h2>2. Канбан: как видеть реальное движение работы</h2>
+    <div class="note"><p><strong>Проверка статуса.</strong> Перенос карточки в колонку «Готово» сам по себе не доказывает завершение задачи: колонка отражает стадию вашего процесса. Откройте карточку, проверьте статус, результат и настройки роботов. Практика: сравните стадию и статус одной учебной задачи до и после перемещения. <a href="https://helpdesk.bitrix24.ru/open/18075818/" target="_blank" rel="noopener">Справка по канбану</a>.</p></div>
+    <p>Канбан нужен не для красоты, а чтобы быстро понимать, где застревают задачи, на какой стадии находится работа и где у команды появляются узкие места.</p>
+
+    <div class="important">
+      <div class="label">Главная мысль</div>
+      <p>Колонка канбана — это стадия процесса, а не просто другой способ посмотреть на статус задачи. Канбан должен отражать реальную логику прохождения работы.</p>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--official">
+      <a class="visual-open" href="assets/official/m5-img-02.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-02.jpg" alt="Канбан проекта: стадии процесса и карточки задач" width="1280" height="662"></a>
+      <figcaption><strong>Рисунок M5-02.</strong> Канбан проекта: стадии процесса и карточки задач. <a href="https://helpdesk.bitrix24.ru/open/18075818/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+    </figure>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Канбан: как видеть реальное движение работы: Хорошая практика / Почему работает">
+<table aria-label="Канбан: как видеть реальное движение работы: Хорошая практика / Почему работает">
+      <thead>
+        <tr>
+          <th scope="col">Хорошая практика</th>
+          <th scope="col">Почему работает</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4–6 колонок для базового уровня</td>
+          <td>Доска остается читаемой и не расползается в хаос</td>
+        </tr>
+        <tr>
+          <td>Названия колонок соответствуют процессу</td>
+          <td>Команде понятно, что означает переход между стадиями</td>
+        </tr>
+        <tr>
+          <td>Доска обновляется регулярно</td>
+          <td>Иначе руководитель видит не реальность, а архив вчерашнего дня</td>
+        </tr>
+        <tr>
+          <td>Структуру колонок меняет не любой участник</td>
+          <td>Иначе канбан перестает быть управленческой системой</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="compare-grid">
+      <div class="compare-card bad">
+        <h3 class="card-heading">Плохая канбан-доска</h3>
+        <ul>
+          <li>Слишком много колонок без ясной логики.</li>
+          <li>Названия размыты: «разное», «в работе 2», «потом».</li>
+          <li>Никто не отвечает за структуру доски.</li>
+          <li>Задачи неделями стоят в одной колонке без управленческого вывода.</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h3 class="card-heading">Хорошая канбан-доска</h3>
+        <ul>
+          <li>Стадии отражают реальный процесс.</li>
+          <li>Переход по колонкам понятен всей команде.</li>
+          <li>У застрявших задач есть причина и управленческое действие.</li>
+          <li>Руководитель видит загрузку и узкие места.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mock-board">
+      <div class="mock-head"><span>Учебная канбан-доска проекта</span><span>4 стадии</span></div>
+      <div class="board-grid">
+        <div class="board-col">
+          <h3 class="card-heading">Новый этап</h3>
+          <div class="task-chip"><strong>Подготовить график работ</strong>Назначить владельцев и базовые сроки</div>
+        </div>
+        <div class="board-col">
+          <h3 class="card-heading">В работе</h3>
+          <div class="task-chip"><strong>Согласовать отключение</strong>Ожидается подтверждение от смежной службы</div>
+          <div class="task-chip"><strong>Подготовить комплект документов</strong>Собираются подписи и вложения</div>
+        </div>
+        <div class="board-col">
+          <h3 class="card-heading">На проверке</h3>
+          <div class="task-chip"><strong>Проверить схему доступа</strong>Требуется подтверждение руководителя</div>
+        </div>
+        <div class="board-col">
+          <h3 class="card-heading">Готово</h3>
+          <div class="task-chip"><strong>Назначить стартовую планерку</strong>Событие внесено в календарь проекта</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-levels grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Навигация</div>
+        <p>Откройте проект и переключитесь в канбан. Посмотрите, можно ли по доске понять, где сейчас стоит каждая задача.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Настройка под процесс</div>
+        <p>Возьмите 8–10 задач и сократите возможные стадии до 4–6 понятных колонок.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Узкие места</div>
+        <p>Определите, в какой колонке задачи застревают чаще всего, и сформулируйте управленческое действие.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="gantt">
+    <h2>3. Диаграмма Ганта: как увидеть сроки, зависимости и сдвиги</h2>
+    <p>Гант помогает увидеть проект во времени. Он нужен для вопросов «что когда начинается», «что от чего зависит», «какие задачи критичны» и «какой сдвиг потянет за собой другие работы».</p>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m5-img-03.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-03.jpg" alt="Диаграмма Ганта: задачи и их длительность на временной шкале" width="2554" height="1424"></a>
+        <figcaption><strong>Рисунок M5-03.</strong> Диаграмма Ганта: задачи и их длительность на временной шкале. <a href="https://helpdesk.bitrix24.ru/open/18127718/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m5-img-04.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-04.jpg" alt="Связь между задачами на диаграмме Ганта задает зависимость их сроков" width="2538" height="1414"></a>
+        <figcaption><strong>Рисунок M5-04.</strong> Связь между задачами на диаграмме Ганта задает зависимость их сроков. <a href="https://helpdesk.bitrix24.ru/open/18127718/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Диаграмма Ганта: как увидеть сроки, зависимости и сдвиги: Понятие / Что означает / Почему важно">
+<table aria-label="Диаграмма Ганта: как увидеть сроки, зависимости и сдвиги: Понятие / Что означает / Почему важно">
+      <thead>
+        <tr>
+          <th scope="col">Понятие</th>
+          <th scope="col">Что означает</th>
+          <th scope="col">Почему важно</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Start date</td>
+          <td>Плановая дата начала работы</td>
+          <td>Показывает, когда задача должна стартовать</td>
+        </tr>
+        <tr>
+          <td>End date</td>
+          <td>Плановая дата окончания периода работы</td>
+          <td>Позволяет видеть длительность задачи</td>
+        </tr>
+        <tr>
+          <td>Deadline</td>
+          <td>Точный срок завершения</td>
+          <td>Это контрольная дата, а не просто полоса на графике</td>
+        </tr>
+        <tr>
+          <td>Зависимость</td>
+          <td>Связь между задачами</td>
+          <td>Сдвиг одной задачи влияет на другие</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="warning">
+      <div class="label">Что портит Гант</div>
+      <p>Если у всех задач одинаковые сроки, нет дат начала, зависимости не заданы и сама информация в задачах не обновляется, диаграмма становится бесполезной. Гант не заменяет дисциплину ведения задач.</p>
+    </div>
+
+    <div class="mock-gantt">
+      <div class="mock-head"><span>Учебный Гант проекта</span><span>4 ключевые задачи</span></div>
+      <div class="gantt-body">
+        <div class="gantt-row"><div class="gantt-label">Подготовка</div><div class="gantt-track"><div class="gantt-bar gantt-bar--prep"></div></div></div>
+        <div class="gantt-row"><div class="gantt-label">Согласования</div><div class="gantt-track"><div class="gantt-bar warn gantt-bar--approval"></div></div></div>
+        <div class="gantt-row"><div class="gantt-label">Выезд на объект</div><div class="gantt-track"><div class="gantt-bar alt gantt-bar--site"></div></div></div>
+        <div class="gantt-row"><div class="gantt-label">Контрольная приемка</div><div class="gantt-track"><div class="gantt-bar gantt-bar--acceptance"></div></div></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="label">Управленческий вопрос по Ганту</div>
+      <p>Если согласование сдвинулось на три дня, какие следующие задачи тоже смещаются? Именно такие вопросы делает Гант полезным руководителю, а не просто визуальным графиком.</p>
+    </div>
+
+    <div class="task-levels grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Чтение</div>
+        <p>Откройте диаграмму Ганта и найдите задачу, у которой есть самая длинная полоса по времени.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Анализ</div>
+        <p>Определите, какие задачи влияют на итоговый срок проекта и где возможен сдвиг.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Управленческий вывод</div>
+        <p>Сформулируйте, что нужно сделать, чтобы не сорвать дедлайн, если одна из ключевых задач смещается.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="calendar">
+    <h2>4. Календари: как планировать события, окна работ и точки контроля</h2>
+    <p>Календарь в M5 — это не просто список встреч. Это инструмент планирования событий, ресурсов, выездов, контрольных точек и взаимосвязи между проектной работой и реальным расписанием команды.</p>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Прокручиваемая таблица: Календари: как планировать события, окна работ и точки контроля: Тип календаря / Для чего нужен">
+<table aria-label="Календари: как планировать события, окна работ и точки контроля: Тип календаря / Для чего нужен">
+      <thead>
+        <tr>
+          <th scope="col">Тип календаря</th>
+          <th scope="col">Для чего нужен</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Личный календарь</td>
+          <td>Личное расписание, приглашения, рабочее время сотрудника</td>
+        </tr>
+        <tr>
+          <td>Календарь компании</td>
+          <td>Общие корпоративные события и доступные всем ориентиры</td>
+        </tr>
+        <tr>
+          <td>Календарь проекта или группы</td>
+          <td>Планерки, выезды, контрольные точки, окна работ по объекту</td>
+        </tr>
+        <tr>
+          <td>Календарь задач</td>
+          <td>Отображение задач по датам и дедлайнам</td>
+        </tr>
+        <tr>
+          <td>Календарь ресурса</td>
+          <td>Бронирование настроенных переговорных; учет техники и бригад зависит от принятого в компании решения</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="success">
+      <div class="label">Практический смысл календаря</div>
+      <p>Календарь связывает работу с реальным временем. Если в проекте есть выезд, окно отключения, планерка или контрольная приемка, их нужно видеть не только в описании задач, но и в событии календаря.</p>
+    </div>
+
+    <div class="grid-2">
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m5-img-05.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-05.jpg" alt="Выбор отображаемых календарей, включая задачи и календари команд" width="1280" height="651"></a>
+        <figcaption><strong>Рисунок M5-05.</strong> Выбор отображаемых календарей, включая задачи и календари команд. <a href="https://helpdesk.bitrix24.ru/open/25570792/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+      <figure class="official-shot visual-card visual-card--official">
+        <a class="visual-open" href="assets/official/m5-img-06.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-06.jpg" alt="Настройки календаря: отображение задач и синхронизация календаря задач" width="1280" height="731"></a>
+        <figcaption><strong>Рисунок M5-06.</strong> Настройки календаря: отображение задач и синхронизация календаря задач. <a href="https://helpdesk.bitrix24.ru/open/24853428/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="mock-calendar">
+      <div class="mock-head"><span>Календарь проекта</span><span>Ключевая неделя</span></div>
+      <div class="calendar-grid">
+        <div class="day-card"><strong>Пн</strong><span class="day-event">Стартовая планерка</span></div>
+        <div class="day-card"><strong>Вт</strong><span class="day-event alt">Выезд на объект</span></div>
+        <div class="day-card"><strong>Ср</strong><span class="day-event warn">Окно отключения</span></div>
+        <div class="day-card"><strong>Чт</strong><span class="day-event">Контроль прогресса</span></div>
+        <div class="day-card"><strong>Пт</strong><span class="day-event alt">Приемка этапа</span></div>
+        <div class="day-card"><strong>Сб</strong></div>
+        <div class="day-card"><strong>Вс</strong></div>
+      </div>
+    </div>
+
+    <div class="task-levels grid-3">
+      <div class="task-card level1">
+        <div class="task-title">Уровень 1. Навигация</div>
+        <p>Откройте календарь проекта и создайте одно событие: планерка, выезд или контрольная точка.</p>
+      </div>
+      <div class="task-card level2">
+        <div class="task-title">Уровень 2. Полезная структура</div>
+        <p>Создайте набор из 3–5 событий, которые реально помогают управлять проектом.</p>
+      </div>
+      <div class="task-card level3">
+        <div class="task-title">Уровень 3. Конфликт календарей</div>
+        <p>Проверьте, нет ли у команды конфликта по ресурсам, выездам или времени встреч, и предложите корректировку.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card" id="linkage">
+    <h2>5. Связка «проект — задачи — канбан — Гант — календарь»</h2>
+    <p>Это главное методическое ядро M5. Пользователь должен понять не отдельные кнопки, а общую систему управления объектом.</p>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m5_section_05_project-system-map.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m5_section_05_project-system-map.svg" alt="Учебная схема связки проект, задачи, канбан, диаграмма Ганта и календарь в Bitrix24" width="1120" height="954"></a>
+      <figcaption><strong>Рисунок M5-07.</strong> Учебная схема полной связки M5: проект собирает задачи, канбан, Гант и календарь в один управленческий контур. Схема помогает пользователю перестать воспринимать эти инструменты как отдельные экраны и увидеть общую систему планирования и контроля. Источник: создано внутри проекта.</figcaption>
+    </figure>
+
+    <div class="decision-grid">
+      <div class="mini-card"><h3 class="card-heading">Проект</h3><p>Хранит общий контур работы: цель, команда, задачи, события и материалы.</p></div>
+      <div class="mini-card"><h3 class="card-heading">Задачи</h3><p>Отвечают за конкретную работу, срок и ответственность.</p></div>
+      <div class="mini-card"><h3 class="card-heading">Канбан</h3><p>Показывает, на какой стадии сейчас находится каждая задача.</p></div>
+      <div class="mini-card"><h3 class="card-heading">Гант</h3><p>Показывает временную логику проекта: даты, длительность, зависимости, сдвиги.</p></div>
+      <div class="mini-card"><h3 class="card-heading">Календарь</h3><p>Показывает встречи, выезды, окна работ и контрольные точки проекта.</p></div>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--official">
+      <a class="visual-open" href="assets/official/m5-img-08.jpg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/official/m5-img-08.jpg" alt="Переход к задачам из рабочего пространства проекта" width="2812" height="1490"></a>
+      <figcaption><strong>Рисунок M5-08.</strong> Переход к задачам из рабочего пространства проекта. <a href="https://helpdesk.bitrix24.ru/open/16697770/" target="_blank" rel="noopener">Справка Битрикс24</a>.</figcaption>
+    </figure>
+
+    <div class="important">
+      <div class="label">Полная формула</div>
+      <p><strong>Проект</strong> отвечает, где живет вся работа по объекту. <strong>Задачи</strong> — что нужно сделать и кто отвечает. <strong>Канбан</strong> — на какой стадии работа. <strong>Гант</strong> — как работа разложена во времени. <strong>Календарь</strong> — когда происходят встречи, выезды, окна работ и контрольные события.</p>
+    </div>
+
+    <div class="case">
+      <div class="label">Что видит руководитель</div>
+      <p>Если задачи стоят в одной колонке — канбан покажет узкое место. Если сроки начинают смещаться — это будет видно в Ганте. Если встреча или выезд не запланированы, конфликт проявится в календаре. Вместе эти инструменты дают управленческую картину, которой не дает просто список задач.</p>
+    </div>
+
+    <figure class="official-shot visual-card visual-card--diagram">
+      <a class="visual-open" href="assets/diagrams/m5_section_05_control-signals.svg" target="_blank" rel="noopener" title="Открыть рисунок крупнее в новой вкладке"><img loading="lazy" decoding="async" src="assets/diagrams/m5_section_05_control-signals.svg" alt="Учебная схема управленческих сигналов проекта, канбана, Ганта и календаря" width="1120" height="942"></a>
+      <figcaption><strong>Рисунок M5-09.</strong> Учебная схема управленческих сигналов M5: проект показывает контур и владельца, канбан — узкое место, Гант — сдвиг и зависимость, календарь — конфликт событий и ресурсов. Этот визуал завершает модуль мыслью о том, что руководитель принимает решения, читая сигналы сразу из нескольких представлений проекта. Источник: создано внутри проекта.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section-card" id="route">
+    <h2>6. Сквозная практика: «Управление учебным объектом от структуры до контроля сроков»</h2>
+    <p>Этот маршрут проходит через весь модуль и превращает набор функций в управленческий сценарий.</p>
+
+    <div class="route">
+      <div class="step-card"><div class="step-no route-step__index">1</div><h3 class="card-heading">Есть объект и разрозненные задачи</h3><p>Руководитель понимает, что отдельных задач и чатов уже недостаточно.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">2</div><h3 class="card-heading">Создаем проект</h3><p>Определяем цель, владельца, сроки и команду проекта.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">3</div><h3 class="card-heading">Раскладываем работу</h3><p>Создаем набор задач по этапам и ответственности.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">4</div><h3 class="card-heading">Настраиваем канбан</h3><p>Собираем 4–6 стадий процесса и разносим задачи по колонкам.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">5</div><h3 class="card-heading">Задаем даты</h3><p>Определяем Start date, End date и дедлайны по ключевым задачам.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">6</div><h3 class="card-heading">Читаем Гант</h3><p>Проверяем сдвиги, зависимости и критичные задачи.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">7</div><h3 class="card-heading">Создаем события</h3><p>Планируем планерки, выезды, окна работ и контрольные точки в календаре.</p></div>
+      <div class="step-card"><div class="step-no route-step__index">8</div><h3 class="card-heading">Формулируем риски</h3><p>Делаем управленческий вывод по канбану, Ганту и календарю.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="whatif">
+    <h2>7. Что делать, если…</h2>
+
+    <details>
+      <summary>Если неясно, нужен ли проект</summary>
+      <div>
+        <p>Проверьте: есть ли у работы цель, сроки, этапы, команда, события и связанные задачи. Если да, проект почти наверняка нужен.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если канбан не отражает реальность</summary>
+      <div>
+        <p>Скорее всего, стадии сформулированы не по процессу или доска давно не обновлялась. Сократите структуру до 4–6 рабочих колонок и договоритесь, кто отвечает за поддержание актуальности.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если в канбане задачи застряли в одной колонке</summary>
+      <div>
+        <p>Это не проблема интерфейса, а управленческий сигнал. Нужно понять, что блокирует переход: люди, согласования, ресурсы или отсутствие решения.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если диаграмма Ганта выглядит бесполезной</summary>
+      <div>
+        <p>Проверьте, заданы ли Start date, End date, дедлайны и зависимости. Без этих данных Гант превращается в пустую картинку.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если одна задача сдвинулась и тянет за собой другие</summary>
+      <div>
+        <p>Проверьте зависимые задачи, обновите Гант, уведомите участников и скорректируйте календарные события, которые были привязаны к старым срокам.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если событие есть в личном календаре, но команда его не видит</summary>
+      <div>
+        <p>Создайте событие в календаре проекта или пригласите участников в нужный календарный контур. Для проектной коммуникации личного события недостаточно.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Если у бригады или ресурса конфликт в календаре</summary>
+      <div>
+        <p>Нужно пересмотреть загрузку, временные окна и последовательность событий. Иначе конфликт проявится уже на объекте, а не только в системе.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="mistakes">
+    <h2>8. Типичные управленческие ошибки</h2>
+    <div class="grid-2">
+      <div class="trouble"><div class="label">Ошибка 1</div><p>Создать проект, но не назначить владельца и не определить управленческую цель.</p></div>
+      <div class="trouble"><div class="label">Ошибка 2</div><p>Использовать канбан как декоративную доску, которую никто не обновляет.</p></div>
+      <div class="trouble"><div class="label">Ошибка 3</div><p>Заполнять Гант без реальных дат, зависимостей и контроля изменений.</p></div>
+      <div class="trouble"><div class="label">Ошибка 4</div><p>Держать важные встречи и выезды только в личных календарях, а не в проектном контуре.</p></div>
+      <div class="trouble"><div class="label">Ошибка 5</div><p>Смешивать в одном проекте слишком разные процессы без понятной структуры этапов.</p></div>
+      <div class="trouble"><div class="label">Ошибка 6</div><p>Не связывать между собой задачи, стадии, сроки и события, из-за чего проект распадается на отдельные куски.</p></div>
+    </div>
+  </section>
+
+  <section class="section-card" id="test">
+    <h2>9. Самопроверка</h2>
+    <p>Вопросы ниже проверяют не знание терминов, а понимание того, как использовать M5 для управления работой.</p>
+
+    <div class="result-card">
+      <h3 class="card-heading">Вопросы</h3>
+      <ol>
+        <li>Когда набора отдельных задач уже недостаточно и нужен проект?</li>
+        <li>Какую управленческую роль выполняет проект в Битрикс24?</li>
+        <li>Что показывает канбан-доска?</li>
+        <li>Почему канбан нужно регулярно обновлять?</li>
+        <li>Что показывают Start date, End date и Deadline в Ганте?</li>
+        <li>Как сдвиг одной задачи может повлиять на другие?</li>
+        <li>Зачем нужен календарь проекта, если уже есть задачи?</li>
+        <li>Чем личный календарь отличается от проектного?</li>
+        <li>Как связаны проект, задачи, канбан, Гант и календарь?</li>
+        <li>Какой управленческий вывод можно сделать, если задачи скопились в одной колонке канбана?</li>
+      </ol>
+    </div>
+
+    <details>
+      <summary>Проверить свои ответы</summary>
+      <div>
+        <ol>
+          <li>Когда есть цель, сроки, этапы, команда и набор связанных задач, которые нужно видеть в едином контуре.</li>
+          <li>Проект становится общей рамкой управления объектом: людьми, задачами, сроками, событиями и материалами.</li>
+          <li>На какой стадии находится работа и где есть узкие места процесса.</li>
+          <li>Без регулярного обновления доска перестает показывать реальность и теряет управленческую ценность.</li>
+          <li>Start date — старт работы, End date — конец планового периода, Deadline — точный срок завершения.</li>
+          <li>Если задачи связаны зависимостями, сдвиг одной может сместить весь следующий участок графика.</li>
+          <li>Календарь показывает встречи, выезды, окна работ и контрольные события, а не только сами задачи.</li>
+          <li>Личный календарь — про расписание сотрудника, проектный — про события и координацию по объекту.</li>
+          <li>Они вместе отвечают на вопросы где, что, на какой стадии, когда и с какими рисками идет работа.</li>
+          <li>Это признак узкого места: нужно понять, что именно тормозит переход задач дальше по процессу.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <section class="section-card" id="final-task">
+    <h2>10. Итоговое практическое задание</h2>
+    <p><strong>Сценарий:</strong> нужно организовать управление учебным объектом или программой работ в Битрикс24 так, чтобы руководитель видел структуру, стадии, сроки и ключевые события проекта.</p>
+
+    <ol>
+      <li>Определите, почему в вашей ситуации нужен именно проект.</li>
+      <li>Создайте проект с понятным названием, целью, владельцем и составом участников.</li>
+      <li>Создайте 5–10 задач по этапам работ.</li>
+      <li>Настройте канбан-стадии под реальный процесс.</li>
+      <li>Разнесите задачи по колонкам канбана.</li>
+      <li>Задайте ключевым задачам Start date, End date и Deadline.</li>
+      <li>Откройте диаграмму Ганта и определите рисковые задачи или возможные сдвиги.</li>
+      <li>Создайте в календаре проекта 3–5 событий: планерка, выезд, окно работ, контрольная точка, приемка.</li>
+      <li>Проверьте связку: задачи → канбан → Гант → календарь.</li>
+      <li>Сформулируйте краткий управленческий вывод: где главный риск и что нужно сделать руководителю.</li>
+    </ol>
+
+    <h3>Критерии успешного прохождения</h3>
+    <ul class="checklist">
+      <li>Сотрудник умеет определить, когда нужен проект.</li>
+      <li>Сотрудник собирает проект как единый контур работы, а не просто папку задач.</li>
+      <li>Сотрудник умеет настроить и использовать канбан.</li>
+      <li>Сотрудник умеет открыть и прочитать диаграмму Ганта.</li>
+      <li>Сотрудник умеет создать календарные события проекта.</li>
+      <li>Сотрудник понимает, как связать проект, задачи, канбан, Гант и календарь в единую систему контроля.</li>
+      <li>Сотрудник способен сделать управленческий вывод по результатам обзора проекта.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="next">
+    <h2>11. Что дальше в курсе</h2>
+    <ul class="next-list">
+      <li><strong>M6. Документы и база знаний:</strong> как удерживать проектные материалы, шаблоны и знания в управляемой структуре.</li>
+      <li><strong>Связка с M4:</strong> без качественных задач канбан и Гант будут давать искаженную картину.</li>
+      <li><strong>Связка с M3:</strong> проектный контур строится поверх правильного пространства и правил командной работы.</li>
+    </ul>
+  </section>
+
+  <section class="section-card" id="sources">
+    <h2>12. Полезные материалы</h2>
+    <ul class="source-list">
+      <li><a href="https://helpdesk.bitrix24.ru/open/16697770/" target="_blank" rel="noopener">Инструменты проекта и работа с задачами</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18075818/" target="_blank" rel="noopener">Канбан задач проекта</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/28126534/" target="_blank" rel="noopener">Как работать с задачами в мобильном приложении</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/18127718/" target="_blank" rel="noopener">Зависимости задач на диаграмме Ганта</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/25570792/" target="_blank" rel="noopener">Мой календарь: встречи и события</a></li>
+      <li><a href="https://helpdesk.bitrix24.ru/open/24853428/" target="_blank" rel="noopener">Как настроить календарь</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <div class="footer-card course-footer-card">
+
+    <p class="small">Используйте модуль как практическую шпаргалку: сначала пройдите материал целиком, затем возвращайтесь к нужным разделам по мере работы в Битрикс24.</p>
+    <div class="footer-actions">
+      <a class="button button--secondary secondary" href="course_bitrix24_v02_index.html#modules">&#1050; &#1082;&#1072;&#1088;&#1090;&#1077; &#1082;&#1091;&#1088;&#1089;&#1072;</a>
+      <a class="button button--secondary secondary" href="module_m4_bitrix24_v02.html">&#1053;&#1072;&#1079;&#1072;&#1076;: M4</a>
+      <a class="button button--primary primary" href="module_m6_bitrix24_v02.html">&#1044;&#1072;&#1083;&#1100;&#1096;&#1077;: M6</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
