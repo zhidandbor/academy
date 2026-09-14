@@ -1,0 +1,3 @@
+* text=auto
+# Preserve the verified course payload byte-for-byte.
+docs/bitrix24/** -text
