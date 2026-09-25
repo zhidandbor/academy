@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Библиотека учебных курсов: Битрикс24, инженер ПТО, исполнительная документация, пожарная безопасность и разработка ППР.">
+  <meta name="description" content="Библиотека учебных курсов: Битрикс24, инженер ПТО, исполнительная документация, пожарная безопасность, разработка ППР и строительный контроль.">
   <title>Библиотека знаний — учебные курсы и пособия</title>
   <style>
     :root{color-scheme:light;--ink:#183c4c;--muted:#496675;--blue:#226f8d;--paper:#fff;--wash:#eef6fa;--mint:#d8ede6;--line:#c6dbe4}
@@ -31,8 +31,11 @@
     .course--compact .course-body h3{font-size:21px;margin-bottom:10px}
     .course--compact .course-body p{font-size:15px;line-height:1.55;margin-bottom:18px}
     .course--compact .button{margin-top:auto}
+    .course--featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(250px,34%) 1fr}
+    .course--featured .course-sign{flex-direction:column;align-items:flex-start;justify-content:center;gap:4px}
+    .course--featured .course-sign span{text-align:left}
     .catalog-note{margin:8px 0 0;color:var(--muted);font-size:14px}
-    @media(max-width:760px){.course-grid{grid-template-columns:1fr}.group-heading{flex-direction:column}.course-group{padding:20px}}
+    @media(max-width:760px){.course-grid{grid-template-columns:1fr}.group-heading{flex-direction:column}.course-group{padding:20px}.course--featured{display:flex}.course--featured .course-sign{flex-direction:row;align-items:center}}
     @media(max-width:620px){.course--compact .course-sign{flex-direction:row}.course--compact .button{width:100%;text-align:center}}
   </style>
 </head>
@@ -49,12 +52,13 @@
       </article>
     </section>
     <section class="course-group course-group--hes" id="hes" aria-labelledby="hes-title">
-      <div class="group-heading"><div><h2 id="hes-title">Строительство и ПТО</h2><p>Четыре локальных архива учебных курсов по строительной документации и организации работ.</p></div><span class="source-label">Репозиторий HES</span></div>
+      <div class="group-heading"><div><h2 id="hes-title">Строительство и ПТО</h2><p>Пять локальных архивов учебных курсов по строительной документации и организации работ.</p></div><span class="source-label">Репозиторий HES</span></div>
       <div class="course-grid">
         <article class="course course--compact"><div class="course-sign"><strong>Инженер ПТО</strong><span>9 тем · 94 урока</span></div><div class="course-body"><h3>Инженер производственно-технического отдела</h3><p>Проектная и рабочая документация, организация строительства, исполнительные материалы и работа специалиста ПТО.</p><a class="button" href="hes/course_engineer_pto/">Открыть курс</a></div></article>
         <article class="course course--compact"><div class="course-sign"><strong>ИД</strong><span>6 тем · 68 уроков</span></div><div class="course-body"><h3>Исполнительная документация в строительстве</h3><p>Уроки, таблицы и сохранённые документы по подготовке и ведению исполнительной документации.</p><a class="button" href="hes/course_ispolnitelnaya_dokumentatsiya/">Открыть курс</a></div></article>
         <article class="course course--compact"><div class="course-sign"><strong>Пожарная безопасность</strong><span>2 темы · 11 уроков</span></div><div class="course-body"><h3>Обеспечение пожарной безопасности при строительстве</h3><p>Статические материалы уроков, схемы и доступные локальные вложения по пожарной безопасности.</p><a class="button" href="hes/course_pozharnaya_bezopasnost/">Открыть курс</a></div></article>
         <article class="course course--compact"><div class="course-sign"><strong>Разработчик ППР</strong><span>4 темы · 51 урок</span></div><div class="course-body"><h3>Разработчик проекта производства работ</h3><p>Уроки и сохранённые материалы по подготовке проекта производства работ.</p><a class="button" href="hes/course_razrabotchik_ppr/">Открыть курс</a></div></article>
+        <article class="course course--compact course--featured"><div class="course-sign"><strong>Строительный контроль</strong><span>2 темы · 17 уроков</span></div><div class="course-body"><h3>Строительный контроль объектов капитального строительства</h3><p>Уроки и локальные учебные материалы по организации строительного контроля. Встроенные PDF и страницы сохранены рядом с курсом; отдельные внешние материалы требуют подключения к сети.</p><a class="button" href="hes/course_stroitelny_kontrol/">Открыть курс</a></div></article>
       </div>
     </section>
     <p class="catalog-note">Локальные копии курсов являются независимыми учебными архивами, а не официальными сайтами исходных платформ. Внешние упражнения и проверка ответов могут требовать исходный сайт.</p>
