@@ -1,0 +1,602 @@
+{
+  "course": "course_ii_v_proektirovanii",
+  "title": "Искусственный интеллект в проектировании",
+  "source_repository": "zhidandbor/HES",
+  "source_revision": "928999a9e8202a7086c8ef6d3fca93d15472f27e",
+  "source_path": "course_offline/course_ii_v_proektirovanii",
+  "entry": "index.html",
+  "files": 171,
+  "bytes": 4315971,
+  "media_release_tag": "hes-media-2026-09-27",
+  "external_assets": [
+    {
+      "path": "assets/images/08819018-c73f-4d82-b131-a4894f90ae3b.png",
+      "bytes": 288397,
+      "sha256": "fc644603b4008926cb08421dd4b89763c17c30025a53325c5112f4cd6fbe0310",
+      "asset_name": "hes-fc644603b4008926cb08421dd4b89763.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-fc644603b4008926cb08421dd4b89763.png"
+    },
+    {
+      "path": "assets/images/16b5ff05-43c8-40ae-92c8-bcbbea25cbf1.png",
+      "bytes": 453917,
+      "sha256": "110abd0f590bc9d7af5a1f72b5005ce2a2f2cbe0dd70b827f0587ce08a75e430",
+      "asset_name": "hes-110abd0f590bc9d7af5a1f72b5005ce2.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-110abd0f590bc9d7af5a1f72b5005ce2.png"
+    },
+    {
+      "path": "assets/images/1d795214-5c49-45b5-827f-54767e73cbf9.png",
+      "bytes": 328121,
+      "sha256": "7ff28dc87eabcdb6ae1b25728d368cf22ee9bb87d64f76a1f6b7ac38756660e1",
+      "asset_name": "hes-7ff28dc87eabcdb6ae1b25728d368cf2.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-7ff28dc87eabcdb6ae1b25728d368cf2.png"
+    },
+    {
+      "path": "assets/images/3b04a2db-522d-4b56-b5d9-c97d8618fb98.png",
+      "bytes": 1338521,
+      "sha256": "5c714f13a00aadadaa49e9f3d1ba634662b9d40c96b2717f1538f6b4691965d6",
+      "asset_name": "hes-5c714f13a00aadadaa49e9f3d1ba6346.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-5c714f13a00aadadaa49e9f3d1ba6346.png"
+    },
+    {
+      "path": "assets/images/77bfa32304a890391789.png",
+      "bytes": 508802,
+      "sha256": "6aed9508f4f57e69ae4521d0572a999ac23578dcec0f464e78484cb0f278af3b",
+      "asset_name": "hes-6aed9508f4f57e69ae4521d0572a999a.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-6aed9508f4f57e69ae4521d0572a999a.png"
+    },
+    {
+      "path": "attachments/c1c82325-4527-4dec-9841-ad35712953a1.pdf",
+      "bytes": 310931,
+      "sha256": "a8447dfb34a67e3b3c8bed6e87dffeb3dd79f5b5ad46139fd1da23acda6f0f4f",
+      "asset_name": "hes-a8447dfb34a67e3b3c8bed6e87dffeb3.pdf",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-a8447dfb34a67e3b3c8bed6e87dffeb3.pdf"
+    },
+    {
+      "path": "attachments/shared_project_export/пп.pdf",
+      "bytes": 2353281,
+      "sha256": "b7d1493ba404245560cb8a3cd04f05e491dc7e7f7a46058c71e62d74db69d679",
+      "asset_name": "hes-b7d1493ba404245560cb8a3cd04f05e4.pdf",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b7d1493ba404245560cb8a3cd04f05e4.pdf"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive/phone.png",
+      "bytes": 3162286,
+      "sha256": "33ec1aa2879bb2cb84a357c2d7bf4a96b39d34d3e0ffb0694ba4c248c109d1ff",
+      "asset_name": "hes-33ec1aa2879bb2cb84a357c2d7bf4a96.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-33ec1aa2879bb2cb84a357c2d7bf4a96.png"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/phone.png",
+      "bytes": 3162286,
+      "sha256": "33ec1aa2879bb2cb84a357c2d7bf4a96b39d34d3e0ffb0694ba4c248c109d1ff",
+      "asset_name": "hes-33ec1aa2879bb2cb84a357c2d7bf4a96.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-33ec1aa2879bb2cb84a357c2d7bf4a96.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/19ee347b-e0bc-4e4c-9d42-4b77a14a8674/images/1.png",
+      "bytes": 543489,
+      "sha256": "a2e29c53f5a7f8ff1758d548f9382218a3488cd0e1ae8fc9a9dc40ca53af0abc",
+      "asset_name": "hes-a2e29c53f5a7f8ff1758d548f9382218.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-a2e29c53f5a7f8ff1758d548f9382218.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/images/1.png",
+      "bytes": 297571,
+      "sha256": "b68b93372532d8b3f270517fa0a53c0d617439cde4901655b328de4ac4465be5",
+      "asset_name": "hes-b68b93372532d8b3f270517fa0a53c0d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b68b93372532d8b3f270517fa0a53c0d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/images/2.png",
+      "bytes": 297571,
+      "sha256": "b68b93372532d8b3f270517fa0a53c0d617439cde4901655b328de4ac4465be5",
+      "asset_name": "hes-b68b93372532d8b3f270517fa0a53c0d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b68b93372532d8b3f270517fa0a53c0d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/images/3.png",
+      "bytes": 297571,
+      "sha256": "b68b93372532d8b3f270517fa0a53c0d617439cde4901655b328de4ac4465be5",
+      "asset_name": "hes-b68b93372532d8b3f270517fa0a53c0d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b68b93372532d8b3f270517fa0a53c0d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/images/4.png",
+      "bytes": 297571,
+      "sha256": "b68b93372532d8b3f270517fa0a53c0d617439cde4901655b328de4ac4465be5",
+      "asset_name": "hes-b68b93372532d8b3f270517fa0a53c0d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b68b93372532d8b3f270517fa0a53c0d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/images/5.png",
+      "bytes": 297571,
+      "sha256": "b68b93372532d8b3f270517fa0a53c0d617439cde4901655b328de4ac4465be5",
+      "asset_name": "hes-b68b93372532d8b3f270517fa0a53c0d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b68b93372532d8b3f270517fa0a53c0d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/1.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/2.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/3.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/4.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/5.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/6.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/images/7.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7de7b2db-80a7-41d0-b380-a1716fde35cd/images/1.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7de7b2db-80a7-41d0-b380-a1716fde35cd/images/2.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7de7b2db-80a7-41d0-b380-a1716fde35cd/images/3.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7de7b2db-80a7-41d0-b380-a1716fde35cd/images/4.png",
+      "bytes": 893195,
+      "sha256": "0ae3f367acc559dba3b0580a75e7e30595ec25aa9f6f9c44553fc626f981b90b",
+      "asset_name": "hes-0ae3f367acc559dba3b0580a75e7e305.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0ae3f367acc559dba3b0580a75e7e305.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/c6f08947-e7de-4ec6-bda5-40bd44c1d589/images/3.png",
+      "bytes": 384865,
+      "sha256": "4cd6d808420f8cb480971d6baf47b73d9de0e06c564eec6645871185f6d3f526",
+      "asset_name": "hes-4cd6d808420f8cb480971d6baf47b73d.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-4cd6d808420f8cb480971d6baf47b73d.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/c6f08947-e7de-4ec6-bda5-40bd44c1d589/images/4.png",
+      "bytes": 498241,
+      "sha256": "cf584fcae5e0afd027c3ccf2efcaa336e6387894ec6b38b6116af0d306a55d8b",
+      "asset_name": "hes-cf584fcae5e0afd027c3ccf2efcaa336.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-cf584fcae5e0afd027c3ccf2efcaa336.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/c6f08947-e7de-4ec6-bda5-40bd44c1d589/images/7.png",
+      "bytes": 267202,
+      "sha256": "ef90fc677aad01a55350f7ec68b5106548f2b2eb50e217d0d2fe9a64abe4ae84",
+      "asset_name": "hes-ef90fc677aad01a55350f7ec68b51065.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-ef90fc677aad01a55350f7ec68b51065.png"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/c6f08947-e7de-4ec6-bda5-40bd44c1d589/images/8.png",
+      "bytes": 385491,
+      "sha256": "dc5957728d0dfb08cb5d41a0346b63487173845d1aa93407680d2ed249c2fdcb",
+      "asset_name": "hes-dc5957728d0dfb08cb5d41a0346b6348.png",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-dc5957728d0dfb08cb5d41a0346b6348.png"
+    },
+    {
+      "path": "media/interactive/16.mp4",
+      "bytes": 12113458,
+      "sha256": "bfef379ec5cabe623945b4fcc1d7c3050033e0a568c69106b02051ffccc7fa01",
+      "asset_name": "hes-bfef379ec5cabe623945b4fcc1d7c305.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-bfef379ec5cabe623945b4fcc1d7c305.mp4"
+    },
+    {
+      "path": "media/interactive/17.mp4",
+      "bytes": 11124837,
+      "sha256": "ce97364197eaacdf6259d18c5efc7c46f2e257cfdcebc216428a8a57eb0161be",
+      "asset_name": "hes-ce97364197eaacdf6259d18c5efc7c46.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-ce97364197eaacdf6259d18c5efc7c46.mp4"
+    },
+    {
+      "path": "media/interactive/18.mp4",
+      "bytes": 6445106,
+      "sha256": "72f0743991f9faa78f53a197a86edba6b2cb06f1f65632f0ba42528bd323e8a0",
+      "asset_name": "hes-72f0743991f9faa78f53a197a86edba6.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-72f0743991f9faa78f53a197a86edba6.mp4"
+    },
+    {
+      "path": "media/interactive/31.mp4",
+      "bytes": 12811696,
+      "sha256": "e8e6efbea1cc1c216dd7e4a52ce6efc4d9d92ca3427930e18d83845fb09fc533",
+      "asset_name": "hes-e8e6efbea1cc1c216dd7e4a52ce6efc4.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-e8e6efbea1cc1c216dd7e4a52ce6efc4.mp4"
+    },
+    {
+      "path": "media/interactive/download.mp4",
+      "bytes": 9761482,
+      "sha256": "0edf9dbb68e35c51bcb6a48850ec595001a9d38d332d9fa6283564e177213865",
+      "asset_name": "hes-0edf9dbb68e35c51bcb6a48850ec5950.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0edf9dbb68e35c51bcb6a48850ec5950.mp4"
+    },
+    {
+      "path": "media/interactive2/10.mp4",
+      "bytes": 4878290,
+      "sha256": "26a6c24749470ea5e4ff8af407d01d0e1b83153f30a244808d2ac234706e682b",
+      "asset_name": "hes-26a6c24749470ea5e4ff8af407d01d0e.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-26a6c24749470ea5e4ff8af407d01d0e.mp4"
+    },
+    {
+      "path": "media/interactive2/11.mp4",
+      "bytes": 4446184,
+      "sha256": "e031ef18844c030b2e2be2953132d5b65d970ac44396b12e0f10536c522ee7a5",
+      "asset_name": "hes-e031ef18844c030b2e2be2953132d5b6.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-e031ef18844c030b2e2be2953132d5b6.mp4"
+    },
+    {
+      "path": "media/interactive2/12.mp4",
+      "bytes": 8407047,
+      "sha256": "f62a4d237a2046be2d35374c9b894217dcf2af21304c24276dffef6e9d69fd24",
+      "asset_name": "hes-f62a4d237a2046be2d35374c9b894217.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-f62a4d237a2046be2d35374c9b894217.mp4"
+    },
+    {
+      "path": "media/interactive2/13.mp4",
+      "bytes": 5172311,
+      "sha256": "b24c790f12f957cac37f71affe1fd98627155238a8a29343088e46b4b6450bbd",
+      "asset_name": "hes-b24c790f12f957cac37f71affe1fd986.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-b24c790f12f957cac37f71affe1fd986.mp4"
+    },
+    {
+      "path": "media/interactive2/14.mp4",
+      "bytes": 1587708,
+      "sha256": "13b829294379a7bb991e7de0ce356f8fd31f20d14c6968e1c521585c45de2f40",
+      "asset_name": "hes-13b829294379a7bb991e7de0ce356f8f.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-13b829294379a7bb991e7de0ce356f8f.mp4"
+    },
+    {
+      "path": "media/interactive2/19.mp4",
+      "bytes": 16053232,
+      "sha256": "1a40c4bf710e723094ce4cf8d1e0b3ed8f016cdce0782d4722d47d15ec8bea2a",
+      "asset_name": "hes-1a40c4bf710e723094ce4cf8d1e0b3ed.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-1a40c4bf710e723094ce4cf8d1e0b3ed.mp4"
+    },
+    {
+      "path": "media/interactive2/21.mp4",
+      "bytes": 1028338,
+      "sha256": "0d0db0fff89edf76c3a8dfd56f76a70f7fb67f25b26b026ccdcf538ddf0a1f55",
+      "asset_name": "hes-0d0db0fff89edf76c3a8dfd56f76a70f.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-0d0db0fff89edf76c3a8dfd56f76a70f.mp4"
+    },
+    {
+      "path": "media/interactive2/22.mp4",
+      "bytes": 11002258,
+      "sha256": "ebc1a627cea825d1677a0b4b6e659fe3718c835b6b5751c297d5388733c1e839",
+      "asset_name": "hes-ebc1a627cea825d1677a0b4b6e659fe3.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-ebc1a627cea825d1677a0b4b6e659fe3.mp4"
+    },
+    {
+      "path": "media/interactive2/23.mp4",
+      "bytes": 1064095,
+      "sha256": "c9705bf59382f50c1cefa9f570652102ffe3514990a5b8bf95a73570551529be",
+      "asset_name": "hes-c9705bf59382f50c1cefa9f570652102.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-c9705bf59382f50c1cefa9f570652102.mp4"
+    },
+    {
+      "path": "media/interactive2/24.mp4",
+      "bytes": 6799449,
+      "sha256": "35103d90bbc6c9be3ecfb0134a7c1a0d2574569527fa2931fe2f4e4140af4632",
+      "asset_name": "hes-35103d90bbc6c9be3ecfb0134a7c1a0d.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-35103d90bbc6c9be3ecfb0134a7c1a0d.mp4"
+    },
+    {
+      "path": "media/interactive2/26.mp4",
+      "bytes": 1818152,
+      "sha256": "46c18e7d81f306649337fa3064b7946f8f298a37ac28d4002c3158ae1ca2a913",
+      "asset_name": "hes-46c18e7d81f306649337fa3064b7946f.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-46c18e7d81f306649337fa3064b7946f.mp4"
+    },
+    {
+      "path": "media/interactive2/29.mp4",
+      "bytes": 1416345,
+      "sha256": "a1ef97c0ef3044692c05d1171448b3956fd232a53c81a2209842bebf001b3e40",
+      "asset_name": "hes-a1ef97c0ef3044692c05d1171448b395.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-a1ef97c0ef3044692c05d1171448b395.mp4"
+    },
+    {
+      "path": "media/interactive2/30.mp4",
+      "bytes": 16774177,
+      "sha256": "56d8327d9cdd930e20497d78a215f82b7022c4e19aa376b40304e447a5977b28",
+      "asset_name": "hes-56d8327d9cdd930e20497d78a215f82b.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-56d8327d9cdd930e20497d78a215f82b.mp4"
+    },
+    {
+      "path": "media/interactive2/9.mp4",
+      "bytes": 2064103,
+      "sha256": "4d09af0d3770b0940616625df0118a5e8a538b4573df5abc18b25db3eb3c24f9",
+      "asset_name": "hes-4d09af0d3770b0940616625df0118a5e.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-4d09af0d3770b0940616625df0118a5e.mp4"
+    },
+    {
+      "path": "media/interactive2/compressed_20.mp4",
+      "bytes": 2651377,
+      "sha256": "737cd107b8fae9ab1b41f32984f47ffef6c0faf12792ca35f8bd909387be91b6",
+      "asset_name": "hes-737cd107b8fae9ab1b41f32984f47ffe.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-737cd107b8fae9ab1b41f32984f47ffe.mp4"
+    },
+    {
+      "path": "media/interactive2/compressed_25.mp4",
+      "bytes": 2290915,
+      "sha256": "67681c112b8510fb16cfd28d3322040eec6cfe78aafb79cc652ea65aefc0d1e0",
+      "asset_name": "hes-67681c112b8510fb16cfd28d3322040e.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-67681c112b8510fb16cfd28d3322040e.mp4"
+    },
+    {
+      "path": "media/interactive2/compressed_27.mp4",
+      "bytes": 2521731,
+      "sha256": "3231950272ba9365834aa7e093890824cb1070f6e2a896c33a02cb5bde532cc3",
+      "asset_name": "hes-3231950272ba9365834aa7e093890824.mp4",
+      "url": "https://github.com/zhidandbor/academy/releases/download/hes-media-2026-09-27/hes-3231950272ba9365834aa7e093890824.mp4"
+    }
+  ],
+  "rewritten_files": [
+    {
+      "path": "attachments/index.html",
+      "source_sha256": "42875267eae46efbad147c37822823b1c7b94f90b6a64ade979fba49f860cb81",
+      "published_sha256": "8a9966469fe57d8cc2f96128e466481ec2a71ac6fe808ecc1b842451075ac1d1"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive/ipad4.html",
+      "source_sha256": "28d2550d61c95578d780eb5a5f868b1851e095eadb6354e0e826cbe44c8cfc1b",
+      "published_sha256": "9adc8811aea891665f8852813dd7cfebd1bb9c564536a4dd116e292d6099f989"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive/ipad5.html",
+      "source_sha256": "5dff0edbfcf1180385bf1d3be90ae93a99fffe4dfd00ce74d024668d314fd5b6",
+      "published_sha256": "d50ab545e204c59a842a0b82b8252321b6395d57d2ed37ed8c637e9c47574344"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive/iphoone.html",
+      "source_sha256": "d3d38e7dac9454a0ce70ceb66acf9afea4549c5ec82b5d9368c39b71185a35da",
+      "published_sha256": "d131610aa0e31a43db20f57985c1fcbceb1953f76d10c68ca30b086e5c0b432b"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect.html",
+      "source_sha256": "aaf288a44b78c6bd1349fe82aab41995758dd8ed5c86d2cd036ee0c797d51823",
+      "published_sha256": "16878118d6810fea144e6c5425e71cf2b0c335cd9bb5fc416f56ac82e21d0669"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect1.html",
+      "source_sha256": "a20665aa901ecf3f310f48eb6d1fab72f46c92468d036c28c53f5fc37bf34bba",
+      "published_sha256": "5d93b70523a4968d12fbfe145b20f81b168b8a84e8b50cb289da8aee3a5d9294"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect10.html",
+      "source_sha256": "bf6d3c6c09fa06546efe8335872ef7eddfd1d16eb768c50068c8ab76cf24ffcf",
+      "published_sha256": "f58b7fe6608508c287b13078d577def0b6669b9e501b5d27aabeb70d889f70a3"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect11.html",
+      "source_sha256": "1cb56a95a6ac68e13ad45947823a40cd17974795be9e53ec5e92cc5f57d94b35",
+      "published_sha256": "a93a3d2ea8e4d9529af86ce4e79a16b9aa0e6448d7a62c58f59ef8f0ef1b627f"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect12.html",
+      "source_sha256": "c8048037e0f1b266794277dc5e8cd102f7fb8523ddeaa1ba1d66c6b926f56792",
+      "published_sha256": "b3925b40f0d58ee85ddeff4f78f364f0b950b66dcef26b65420f3676b16ac503"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect2.html",
+      "source_sha256": "ef0cdc9aa57f0bf17e9b0a116f2db96b6efc3b84fe818f3bc32480d316ecc371",
+      "published_sha256": "2c645806ed871d8fc7a1e6ddf8692f4546e751664a0ab75bd44f5925c5bc6075"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect5.html",
+      "source_sha256": "935b5487e6cc5c2ec3dff72f13d91ef14569f523bfde3942889810ffa8cece86",
+      "published_sha256": "db7224040e99c50e2f9d7fbf5916b71995615206a1c1d5095f2597baa1fcdf41"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect6.html",
+      "source_sha256": "c96366dedd6a0173e28941b59aff2f09a89e71aaa43986462069bfc853f08f9f",
+      "published_sha256": "dc3d9c83bc861aedd5022ccc7a1f336518a0c7e5ebf1768bc7cc269e9a8982f7"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect7.html",
+      "source_sha256": "9db7bf4557718f8828e67b438c8373f752f2263f5d6e8f80fa3812cb1017a2d8",
+      "published_sha256": "70c769403cf5ae94b5757b200b6a6b0417ab86c51f1763306bfb3b40d48e6fb0"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect8.html",
+      "source_sha256": "d0a4d3728a7669b8082d9b8cce0fba4d78a2c6492ed7e6497af875620d5f3580",
+      "published_sha256": "39f1a909a73ea250e70576324b5cf4c476c6cf20456f8d3257e7c0490bd242df"
+    },
+    {
+      "path": "embeds/grigoryevalexandra-lgtm.github.io/interactive2/proect9.html",
+      "source_sha256": "82f59e6c1f281d3794a744149563a8ed5a62cf7811a8b39d9a007e411d4e56f4",
+      "published_sha256": "74dc78f1c0484d0aa7b52ced73be1655ba480e636529379fb6c898fc527b35fb"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/19ee347b-e0bc-4e4c-9d42-4b77a14a8674/index.html",
+      "source_sha256": "4acca75be0f8be3e752ba30c91910ceed990d0ffd47365174b67b832bd2fbb46",
+      "published_sha256": "b5af477f66bddf819690da073e7e01270854da7b8ca2da42c118b20bd768b304"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/44b1ee32-e509-4c8b-99f4-bb082126a000/index.html",
+      "source_sha256": "5de22665ad23f711af212c4f66ecaf7c6c15e5360be09c39c192effa3ddec71d",
+      "published_sha256": "774f6007ab08c782374a84bf9937d8fb374a2f0aa135dc4c0348965eb6a7f90c"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7915684e-fefa-49e9-9a94-3b49224d06b4/index.html",
+      "source_sha256": "4c3bdc914890d3d25d27b1a955969fabf62e53dc8b8b2b1403e7b5497f349fb5",
+      "published_sha256": "0969788e20683f32ff0b65661c53c01ce7076c5cec42df0ae1fa6d7614369dd7"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/7de7b2db-80a7-41d0-b380-a1716fde35cd/index.html",
+      "source_sha256": "6e7f6f2f105d4406be5255e58ef658cf67c93ed5624ef4c28156e0c79606e823",
+      "published_sha256": "5d4f9c67d34f728f97a52190f1e4f76e2be453fcc60cb1c3bb83b97ab17ffdcf"
+    },
+    {
+      "path": "embeds/school.a-sstroy.ru/interactive/doc/c6f08947-e7de-4ec6-bda5-40bd44c1d589/index.html",
+      "source_sha256": "30d5ddff71699b89e0556cfbe3a6a337ca705b145ea935f6ff8928023a144a69",
+      "published_sha256": "f049169c43ac87a4b610e2fb6e83a08f8384f31d6d9791bb8a05f3b30fb533f0"
+    },
+    {
+      "path": "index.html",
+      "source_sha256": "67dca03d58a4b8c2d99b4b065b01fb2e8b93c45a42b38bf96e41a7c90f1e639e",
+      "published_sha256": "cda3b34b23a24056d94fd02e5ae3cf63365d18cff7c35ad0b7d9c871430eb75e"
+    },
+    {
+      "path": "lessons/lesson-01-01.html",
+      "source_sha256": "8977c8c0e90b889f012c61d4a13b9901360b9b6934c0dd35d8871c7241ae0ec4",
+      "published_sha256": "f53bd9e0090e0f577a56daee0e0450d873379f736050cd975b787f2628e7fefb"
+    },
+    {
+      "path": "lessons/lesson-01-02.html",
+      "source_sha256": "1d28f0f21e2d35ef08a40b65d0b20b6cc26a9d9e3d93330977ee47d34ae89cb5",
+      "published_sha256": "29b9b97a76f3aefd2c9d29cacd185b76135ad1067baa99a5931bab8f46af2cf8"
+    },
+    {
+      "path": "lessons/lesson-01-03.html",
+      "source_sha256": "a49dd065043029ed2dbc1d7add9f2fd28cf2e1b27f89c09acd53ddfde6e619d9",
+      "published_sha256": "e02c328fde6acaff4be0261b7bdd4e34882fceecada08c9750bf15247a8d08d4"
+    },
+    {
+      "path": "lessons/lesson-01-04.html",
+      "source_sha256": "3f87c06cb921ffcf321127df2fa789f56415bfb0e77bd988f4a8c791607831b8",
+      "published_sha256": "cbdd3b83bcbd25ba5b5057d342749fd87c1f7d97b0248ccb00c54acd0f5a287e"
+    },
+    {
+      "path": "lessons/lesson-01-05.html",
+      "source_sha256": "669aa0bb63e28bcadb11c12d0b0a1831d4558d897529e60ef5ff6cbb51c912d4",
+      "published_sha256": "207b101c496c05ea89ad3631fe642ebdc35cfcbc2a9e64b2b4922863b09b9ab2"
+    },
+    {
+      "path": "lessons/lesson-01-06.html",
+      "source_sha256": "60fce4e998ff8924b6c6eba6f9e761460ca4a8d1b17ebd498164ad5cd610273f",
+      "published_sha256": "4583f67bc70960cfdad9ec3240e899bea23e39276f77fd5f560589d13cda0d18"
+    },
+    {
+      "path": "lessons/lesson-02-01.html",
+      "source_sha256": "cd720298cb6cb0dc0307825050e4f0364bb704d6fe0fec6abf7cf594cb5157a4",
+      "published_sha256": "b6d93bc9347fc51656511bbad57b21f3e6199266292fafd2d5c4dfbc8c0df0c0"
+    },
+    {
+      "path": "lessons/lesson-02-02.html",
+      "source_sha256": "d9bb292a5a4b4400025610c90344e361569fd96e567fd24fd14c9a8170373514",
+      "published_sha256": "dd45d59365e9309580bf3764d01f42fc14052c5ed97b96f49692b24fd640eeeb"
+    },
+    {
+      "path": "lessons/lesson-02-03.html",
+      "source_sha256": "6498aa17cd01ec6a280543c7deb5f8614ed624659fb8ed5d8c5f539a540674fd",
+      "published_sha256": "71530468a96e3c4deb589db78374c74554660aa04bcaa9c0393476d98792bd69"
+    },
+    {
+      "path": "lessons/lesson-02-04.html",
+      "source_sha256": "6d77d97022d14a64e8a0ec9f5aa3e379bb26abe0632df2b20e90b896e850f247",
+      "published_sha256": "09ebccd74a58c3d4b98c4c1e2f0101cead4f3c0711e50e499447aa92d2530457"
+    },
+    {
+      "path": "lessons/lesson-02-05.html",
+      "source_sha256": "cea403f18fd7ef2dff56d172fb307cabf1ea2962d7b5d86093b413399d225f7a",
+      "published_sha256": "f593fa1c80d51607427f7cae7f40636a8353d4dfbad8583382886428c2e35589"
+    },
+    {
+      "path": "lessons/lesson-02-06.html",
+      "source_sha256": "141ea044cd2afce81d58ab955c604f76619ee6714d9d6a725e6040ae31b2c583",
+      "published_sha256": "c30bcc0c91405e71d461f95088e98f54ca7e22038a64439fa825e123558344a1"
+    },
+    {
+      "path": "lessons/lesson-02-07.html",
+      "source_sha256": "1b57f8ae7f9e3dc563a93d7fd12ca5ac90f7f4d8cc2f6b702b98737edcaa10a1",
+      "published_sha256": "293c028adab7158e46d20076b495ab1a2a6263eba22c13a8b61c74b745e4d471"
+    },
+    {
+      "path": "lessons/lesson-02-08.html",
+      "source_sha256": "001b668ee1415202dd1d9938819461e15714ba32c092e685866f8a7b36995a65",
+      "published_sha256": "98c2badf1febe6c1a0136b7fe5ef441075411419cc168e34cfe9e0f840161b32"
+    }
+  ],
+  "embedded_link_warnings": [
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\main.css: missing ../../fonts/Bureausans-Regular.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\main.css: missing ../../fonts/Bureausans-Bold.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\main.css: missing ../../fonts/Price_Didone-webfont.ttf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\main.css: missing ../../images/memo/logos/action.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\styles.css: missing ../svg/pen.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\styles.css: missing ../../fonts/Bureausans-Regular.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\styles.css: missing ../../fonts/Bureausans-Bold.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\memo\\styles.css: missing graph.png",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\sliders\\styles.css: missing ../svg/pen.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\sliders\\styles.css: missing ../../fonts/Bureausans-Regular.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\sliders\\styles.css: missing ../../fonts/Bureausans-Bold.otf",
+    "embeds\\school.a-sstroy.ru\\interactive\\common\\css\\sliders\\styles.css: missing graph.png",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\0ecb6a2b-866e-4909-b942-539f4f1a870d\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\0ecb6a2b-866e-4909-b942-539f4f1a870d\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\0ecb6a2b-866e-4909-b942-539f4f1a870d\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\14bf81bb-535c-422b-9ff7-386559fb89a1\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\14bf81bb-535c-422b-9ff7-386559fb89a1\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\14bf81bb-535c-422b-9ff7-386559fb89a1\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\1722b761-bee2-45ab-9a03-a4a60aa4cc8f\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\1722b761-bee2-45ab-9a03-a4a60aa4cc8f\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\1722b761-bee2-45ab-9a03-a4a60aa4cc8f\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\308a2809-0d24-4ade-984c-f30cb0326814\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\308a2809-0d24-4ade-984c-f30cb0326814\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\308a2809-0d24-4ade-984c-f30cb0326814\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\46a6b0d5-8662-4783-b173-e3e500ed9044\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\46a6b0d5-8662-4783-b173-e3e500ed9044\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\46a6b0d5-8662-4783-b173-e3e500ed9044\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\5b7fa7e7-bb39-499e-854b-3ccd3ae75ec7\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\5b7fa7e7-bb39-499e-854b-3ccd3ae75ec7\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\5b7fa7e7-bb39-499e-854b-3ccd3ae75ec7\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\8a4c40a5-e72b-421c-ba0e-cd7ab8188009\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\8a4c40a5-e72b-421c-ba0e-cd7ab8188009\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\8a4c40a5-e72b-421c-ba0e-cd7ab8188009\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\adb5a1b8-d19f-4c2d-a047-b4987a215aea\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\adb5a1b8-d19f-4c2d-a047-b4987a215aea\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\adb5a1b8-d19f-4c2d-a047-b4987a215aea\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\b1cd42e3-6cac-41b0-8f2d-2858cbcadcf4\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\b1cd42e3-6cac-41b0-8f2d-2858cbcadcf4\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\b1cd42e3-6cac-41b0-8f2d-2858cbcadcf4\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\c6f08947-e7de-4ec6-bda5-40bd44c1d589\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ce6bd8ba-c6a7-401a-b253-06a943dcb5be\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ce6bd8ba-c6a7-401a-b253-06a943dcb5be\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ce6bd8ba-c6a7-401a-b253-06a943dcb5be\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ecb53afa-1159-436a-be37-d08314070057\\index.html: site-absolute URL /interactive/custom/style.css",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ecb53afa-1159-436a-be37-d08314070057\\index.html: missing ./img/logos/stroy.svg",
+    "embeds\\school.a-sstroy.ru\\interactive\\doc\\ecb53afa-1159-436a-be37-d08314070057\\index.html: missing ./img/logos/stroy.svg"
+  ]
+}
