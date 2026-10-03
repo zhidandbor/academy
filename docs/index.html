@@ -35,6 +35,14 @@
     .course--featured .course-sign{flex-direction:column;align-items:flex-start;justify-content:center;gap:4px}
     .course--featured .course-sign span{text-align:left}
     .catalog-note{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .course-group--mini{background:#faf8f1;border-left:6px solid #c1a05b}
+    .course-group--hes .course-sign{background:#dceaf3}
+    .course-group--mini .course-sign{background:#f4ecd2}
+    .repo-links{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .repo-links .button{margin:0}
+    .repo-links a:not(.button){font-weight:600}
+    .course-group--hes .course-body,.course-group--mini .course-body{padding:28px 30px}
+    .course-group--hes .course-body h3,.course-group--mini .course-body h3{font-size:25px}
     @media(max-width:760px){.course-grid{grid-template-columns:1fr}.group-heading{flex-direction:column}.course-group{padding:20px}.course--featured{display:flex}.course--featured .course-sign{flex-direction:row;align-items:center}}
     @media(max-width:620px){.course--compact .course-sign{flex-direction:row}.course--compact .button{width:100%;text-align:center}}
   </style>
@@ -42,7 +50,7 @@
 <body>
   <a class="skip" href="#courses">Перейти к курсам</a>
   <header><div class="wrap"><a class="brand" href="./">Библиотека знаний</a></div></header>
-  <section class="intro"><div class="wrap"><h1>Знания для повседневной работы</h1><p>Учебные курсы и практические пособия. Изучайте темы последовательно или возвращайтесь к нужному разделу, когда решаете рабочую задачу.</p><nav class="course-nav" aria-label="Разделы библиотеки"><a href="#bitrix24">Битрикс24</a><a href="#hes">Строительство и ПТО</a></nav></div></section>
+  <section class="intro"><div class="wrap"><h1>Знания для повседневной работы</h1><p>Учебные курсы и практические пособия. Изучайте темы последовательно или возвращайтесь к нужному разделу, когда решаете рабочую задачу.</p><nav class="course-nav" aria-label="Разделы библиотеки"><a href="#bitrix24">Битрикс24</a><a href="#hes">Основные курсы HES</a><a href="#mini">Миникурсы HES</a></nav></div></section>
   <main class="wrap" id="courses">
     <section class="course-group course-group--bitrix" id="bitrix24" aria-labelledby="bitrix-title">
       <div class="group-heading"><div><h2 id="bitrix-title">Битрикс24</h2><p>Отдельный курс по работе в корпоративном портале.</p></div><span class="source-label">Репозиторий bitrix24</span></div>
@@ -52,24 +60,14 @@
       </article>
     </section>
     <section class="course-group course-group--hes" id="hes" aria-labelledby="hes-title">
-      <div class="group-heading"><div><h2 id="hes-title">Строительство и ПТО</h2><p>13 учебных архивов по строительству, проектированию и рабочим инструментам инженера.</p></div><span class="source-label">Репозиторий HES</span></div>
-      <div class="course-grid">
-        <article class="course course--compact"><div class="course-sign"><strong>Инженер ПТО</strong><span>9 тем · 94 урока</span></div><div class="course-body"><h3>Инженер производственно-технического отдела</h3><p>Проектная и рабочая документация, организация строительства, исполнительные материалы и работа специалиста ПТО.</p><a class="button" href="hes/course_engineer_pto/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>ИД</strong><span>6 тем · 68 уроков</span></div><div class="course-body"><h3>Исполнительная документация в строительстве</h3><p>Уроки, таблицы и сохранённые документы по подготовке и ведению исполнительной документации.</p><a class="button" href="hes/course_ispolnitelnaya_dokumentatsiya/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Пожарная безопасность</strong><span>2 темы · 11 уроков</span></div><div class="course-body"><h3>Обеспечение пожарной безопасности при строительстве</h3><p>Статические материалы уроков, схемы и доступные локальные вложения по пожарной безопасности.</p><a class="button" href="hes/course_pozharnaya_bezopasnost/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Разработчик ППР</strong><span>4 темы · 51 урок</span></div><div class="course-body"><h3>Разработчик проекта производства работ</h3><p>Уроки и сохранённые материалы по подготовке проекта производства работ.</p><a class="button" href="hes/course_razrabotchik_ppr/">Открыть курс</a></div></article>
-        <article class="course course--compact course--featured"><div class="course-sign"><strong>Строительный контроль</strong><span>2 темы · 17 уроков</span></div><div class="course-body"><h3>Строительный контроль объектов капитального строительства</h3><p>Уроки и локальные учебные материалы по организации строительного контроля. Встроенные PDF и страницы сохранены рядом с курсом; отдельные внешние материалы требуют подключения к сети.</p><a class="button" href="hes/course_stroitelny_kontrol/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Excel · базовый уровень</strong><span>2 темы · 14 уроков</span></div><div class="course-body"><h3>Excel для инженеров-строителей: базовый уровень</h3><p>Основы работы с таблицами и практические задачи для инженеров-строителей.</p><a class="button" href="hes/course_excel_dlya_inzhenerov_stroiteley/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Excel · средний уровень</strong><span>1 тема · 10 уроков</span></div><div class="course-body"><h3>Excel для инженеров-строителей: средний уровень</h3><p>Продолжение курса Excel с сохранёнными уроками и доступными файлами.</p><a class="button" href="hes/course_excel_sredniy_uroven/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Геодезия</strong><span>1 тема · 8 уроков</span></div><div class="course-body"><h3>Геодезия в строительстве</h3><p>Практические навыки для начинающих: сохранённые уроки, изображения и материалы курса.</p><a class="button" href="hes/course_geodeziya_v_stroitelstve/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>ИИ в проектировании</strong><span>2 темы · 14 уроков</span></div><div class="course-body"><h3>Искусственный интеллект в проектировании</h3><p>Инструменты ИИ для инженерных расчётов, подготовки документов и защиты проекта.</p><a class="button" href="hes/course_ii_v_proektirovanii/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Инженер-проектировщик</strong><span>6 тем · 49 уроков</span></div><div class="course-body"><h3>Инженер-проектировщик</h3><p>Уроки и сохранённые документы по инженерному проектированию.</p><a class="button" href="hes/course_inzhener_proektirovshchik/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>Сдача объекта в ГСН</strong><span>2 темы · 12 уроков</span></div><div class="course-body"><h3>Как сдать объект в ГСН</h3><p>Порядок подготовки к сдаче объекта, материалы уроков и сохранённые PDF.</p><a class="button" href="hes/course_kak_sdat_obekt_v_gsn/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>ГРАНД-Смета</strong><span>3 темы · 23 урока</span></div><div class="course-body"><h3>Сметное дело в строительстве. ГРАНД-Смета</h3><p>Уроки по работе со сметами и доступные примеры из курса.</p><a class="button" href="hes/course_smetnoe_delo_grand_smeta/">Открыть курс</a></div></article>
-        <article class="course course--compact"><div class="course-sign"><strong>XML-схемы Минстроя</strong><span>1 тема · 7 уроков</span></div><div class="course-body"><h3>XML-схемы Минстроя</h3><p>Сохранённые уроки и материалы по работе с XML-схемами.</p><a class="button" href="hes/course_xml_shemy_minstroya/">Открыть курс</a></div></article>
-      </div>
+      <div class="group-heading"><div><h2 id="hes-title">Основные курсы инженерной школы</h2><p>15 курсов по строительству, проектированию, Excel, управлению и закупкам.</p></div><span class="source-label">Репозиторий academy-hes</span></div>
+      <article class="course"><div class="course-sign"><strong>HES</strong><span>15 основных курсов</span></div><div class="course-body"><h3>Библиотека основных курсов</h3><p>ПТО, исполнительная документация, строительный контроль, сметы, геодезия, ИИ в проектировании, MBA и закупки. У каждого курса собственная страница и состав выпуска.</p><div class="repo-links"><a class="button" href="https://zhidandbor.github.io/academy-hes/">Открыть курсы</a><a href="https://github.com/zhidandbor/academy-hes">Репозиторий</a></div></div></article>
     </section>
-    <p class="catalog-note">Курсы HES являются учебными архивами. Крупные вложения новых курсов загружаются из выпуска GitHub Releases и требуют подключения к сети. Внешние упражнения и проверка ответов могут требовать исходную платформу.</p>
+    <section class="course-group course-group--mini" id="mini" aria-labelledby="mini-title">
+      <div class="group-heading"><div><h2 id="mini-title">Миникурсы инженерной школы</h2><p>Короткие учебные архивы для решения прикладных задач.</p></div><span class="source-label">Репозиторий academy-hes-mini</span></div>
+      <article class="course"><div class="course-sign"><strong>Миникурсы</strong><span>2 курса · 12 уроков</span></div><div class="course-body"><h3>ИИ для рутины и расчёт объёмов</h3><p>Как делегировать ИИ строительную рутину и как рассчитать объёмы работ. Уроки и доступные материалы опубликованы отдельно от основных курсов.</p><div class="repo-links"><a class="button" href="https://zhidandbor.github.io/academy-hes-mini/">Открыть миникурсы</a><a href="https://github.com/zhidandbor/academy-hes-mini">Репозиторий</a></div></div></article>
+    </section>
+    <p class="catalog-note">Крупные материалы HES загружаются из GitHub Releases и требуют подключения к сети. Внешние упражнения и проверка ответов могут требовать исходную платформу.</p>
     <section class="planned" aria-labelledby="planned-title"><h2 id="planned-title">Планируемые направления</h2><article><h3>Инфографика</h3><p>Курс появится в каталоге после подготовки и проверки материалов.</p></article><article><h3>Подготовка к НОК</h3><p>Учебные материалы будут опубликованы отдельным курсом.</p></article></section>
   </main>
   <footer><div class="wrap">Курсы открываются в браузере без регистрации и установки программ.</div></footer>

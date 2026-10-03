@@ -1,1 +1,0 @@
-document.querySelectorAll(".online").forEach(x=>{if(!navigator.onLine){const f=x.querySelector("iframe");if(f)f.hidden=true}});
