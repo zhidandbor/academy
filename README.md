@@ -2,12 +2,13 @@
 
 Публичный каталог: https://zhidandbor.github.io/academy/
 
-Этот репозиторий содержит главную страницу библиотеки и опубликованный курс Битрикс24. Курсы Высшей инженерной школы размещены в двух отдельных репозиториях:
+Этот репозиторий содержит главную страницу библиотеки и опубликованный курс Битрикс24. Курсы и вебинары Высшей инженерной школы размещены в отдельных репозиториях:
 
 | Раздел | Репозиторий | Каталог |
 | --- | --- | --- |
 | 15 основных курсов HES | [academy-hes](https://github.com/zhidandbor/academy-hes) | [Открыть курсы](https://zhidandbor.github.io/academy-hes/) |
 | 2 миникурса HES | [academy-hes-mini](https://github.com/zhidandbor/academy-hes-mini) | [Открыть миникурсы](https://zhidandbor.github.io/academy-hes-mini/) |
+| 13 вебинаров HES | [academy-hes-webinars](https://github.com/zhidandbor/academy-hes-webinars) | [Открыть вебинары](https://zhidandbor.github.io/academy-hes-webinars/) |
 
 ## Публикация
 

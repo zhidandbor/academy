@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Библиотека учебных курсов: Битрикс24, ПТО, строительный контроль, проектирование, геодезия, Excel, сметы и XML-схемы.">
+  <meta name="description" content="Библиотека учебных курсов и вебинаров: Битрикс24, ПТО, строительный контроль, проектирование, геодезия, Excel, сметы и XML-схемы.">
   <title>Библиотека знаний — учебные курсы и пособия</title>
   <style>
     :root{color-scheme:light;--ink:#183c4c;--muted:#496675;--blue:#226f8d;--paper:#fff;--wash:#eef6fa;--mint:#d8ede6;--line:#c6dbe4}
@@ -36,13 +36,15 @@
     .course--featured .course-sign span{text-align:left}
     .catalog-note{margin:8px 0 0;color:var(--muted);font-size:14px}
     .course-group--mini{background:#faf8f1;border-left:6px solid #c1a05b}
+    .course-group--webinars{background:#f7f6fc;border-left:6px solid #8174bf}
     .course-group--hes .course-sign{background:#dceaf3}
     .course-group--mini .course-sign{background:#f4ecd2}
+    .course-group--webinars .course-sign{background:#e7e2f7}
     .repo-links{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
     .repo-links .button{margin:0}
     .repo-links a:not(.button){font-weight:600}
-    .course-group--hes .course-body,.course-group--mini .course-body{padding:28px 30px}
-    .course-group--hes .course-body h3,.course-group--mini .course-body h3{font-size:25px}
+    .course-group--hes .course-body,.course-group--mini .course-body,.course-group--webinars .course-body{padding:28px 30px}
+    .course-group--hes .course-body h3,.course-group--mini .course-body h3,.course-group--webinars .course-body h3{font-size:25px}
     @media(max-width:760px){.course-grid{grid-template-columns:1fr}.group-heading{flex-direction:column}.course-group{padding:20px}.course--featured{display:flex}.course--featured .course-sign{flex-direction:row;align-items:center}}
     @media(max-width:620px){.course--compact .course-sign{flex-direction:row}.course--compact .button{width:100%;text-align:center}}
   </style>
@@ -50,7 +52,7 @@
 <body>
   <a class="skip" href="#courses">Перейти к курсам</a>
   <header><div class="wrap"><a class="brand" href="./">Библиотека знаний</a></div></header>
-  <section class="intro"><div class="wrap"><h1>Знания для повседневной работы</h1><p>Учебные курсы и практические пособия. Изучайте темы последовательно или возвращайтесь к нужному разделу, когда решаете рабочую задачу.</p><nav class="course-nav" aria-label="Разделы библиотеки"><a href="#bitrix24">Битрикс24</a><a href="#hes">Основные курсы HES</a><a href="#mini">Миникурсы HES</a></nav></div></section>
+  <section class="intro"><div class="wrap"><h1>Знания для повседневной работы</h1><p>Учебные курсы, вебинары и практические пособия. Изучайте темы последовательно или возвращайтесь к нужному разделу, когда решаете рабочую задачу.</p><nav class="course-nav" aria-label="Разделы библиотеки"><a href="#bitrix24">Битрикс24</a><a href="#hes">Основные курсы HES</a><a href="#mini">Миникурсы HES</a><a href="#webinars">Вебинары HES</a></nav></div></section>
   <main class="wrap" id="courses">
     <section class="course-group course-group--bitrix" id="bitrix24" aria-labelledby="bitrix-title">
       <div class="group-heading"><div><h2 id="bitrix-title">Битрикс24</h2><p>Отдельный курс по работе в корпоративном портале.</p></div><span class="source-label">Репозиторий bitrix24</span></div>
@@ -67,7 +69,11 @@
       <div class="group-heading"><div><h2 id="mini-title">Миникурсы инженерной школы</h2><p>Короткие учебные архивы для решения прикладных задач.</p></div><span class="source-label">Репозиторий academy-hes-mini</span></div>
       <article class="course"><div class="course-sign"><strong>Миникурсы</strong><span>2 курса · 12 уроков</span></div><div class="course-body"><h3>ИИ для рутины и расчёт объёмов</h3><p>Как делегировать ИИ строительную рутину и как рассчитать объёмы работ. Уроки и доступные материалы опубликованы отдельно от основных курсов.</p><div class="repo-links"><a class="button" href="https://zhidandbor.github.io/academy-hes-mini/">Открыть миникурсы</a><a href="https://github.com/zhidandbor/academy-hes-mini">Репозиторий</a></div></div></article>
     </section>
-    <p class="catalog-note">Крупные материалы HES загружаются из GitHub Releases и требуют подключения к сети. Внешние упражнения и проверка ответов могут требовать исходную платформу.</p>
+    <p class="catalog-note">Крупные материалы курсов HES загружаются из GitHub Releases и требуют подключения к сети. Внешние упражнения и проверка ответов могут требовать исходную платформу.</p>
+    <section class="course-group course-group--webinars" id="webinars" aria-labelledby="webinars-title">
+      <div class="group-heading"><div><h2 id="webinars-title">Вебинары инженерной школы</h2><p>Записи встреч по строительству, проектированию, сметам и цифровым инструментам.</p></div><span class="source-label">Репозиторий academy-hes-webinars</span></div>
+      <article class="course"><div class="course-sign"><strong>Вебинары</strong><span>13 записей</span></div><div class="course-body"><h3>Прошедшие вебинары HES</h3><p>Каталог вебинаров со сведениями о спикерах и прямыми ссылками на записи на Rutube.</p><div class="repo-links"><a class="button" href="https://zhidandbor.github.io/academy-hes-webinars/">Открыть вебинары</a><a href="https://github.com/zhidandbor/academy-hes-webinars">Репозиторий</a></div></div></article>
+    </section>
     <section class="planned" aria-labelledby="planned-title"><h2 id="planned-title">Планируемые направления</h2><article><h3>Инфографика</h3><p>Курс появится в каталоге после подготовки и проверки материалов.</p></article><article><h3>Подготовка к НОК</h3><p>Учебные материалы будут опубликованы отдельным курсом.</p></article></section>
   </main>
   <footer><div class="wrap">Курсы открываются в браузере без регистрации и установки программ.</div></footer>
