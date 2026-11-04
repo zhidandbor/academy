@@ -2,3 +2,7 @@
 # Preserve the verified course payload byte-for-byte.
 docs/bitrix24/** -text
 docs/hes/** -text
+
+.gitattributes text eol=lf
+/README.md text eol=lf
+/docs/index.html text eol=lf
